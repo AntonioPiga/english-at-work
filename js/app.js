@@ -18,11 +18,11 @@ const NAV_FOR = { home: 'home', placement: 'home', track: 'home', module: 'home'
 
 const app = document.getElementById('app');
 const store = createStore();
+let leaveHandlers = [];
+const onLeave = (fn) => leaveHandlers.push(fn);
 const ctx = { store, content, speech, onLeave, navigate: (hash) => { location.hash = hash; } };
 
 let renderToken = 0;
-let leaveHandlers = [];
-const onLeave = (fn) => leaveHandlers.push(fn);
 
 startRouter(async (route) => {
   const token = ++renderToken;
