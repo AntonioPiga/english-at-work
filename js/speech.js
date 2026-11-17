@@ -1,9 +1,12 @@
 // Thin wrapper over the Web Speech API. Every function degrades to a no-op when unsupported.
+// One recognition session at a time; speak() resolves false when it was cancelled.
 
 const synth = globalThis.speechSynthesis;
 const Recognition = globalThis.SpeechRecognition || globalThis.webkitSpeechRecognition;
 
 let voicesCache = null;
+let speakEpoch = 0;
+let active = null; // current recognition session
 
 function pickVoice() {
   if (!synth) return null;
@@ -23,20 +26,23 @@ export function canSpeak() {
 }
 
 export function stopSpeaking() {
+  speakEpoch += 1;
   if (synth) synth.cancel();
 }
 
+// Resolves true when the utterance finished, false when it was cancelled or unsupported.
 export function speak(text, { rate = 1 } = {}) {
-  if (!canSpeak()) return Promise.resolve();
+  if (!canSpeak()) return Promise.resolve(false);
   return new Promise((resolve) => {
     synth.cancel();
+    const epoch = ++speakEpoch;
     const u = new SpeechSynthesisUtterance(text);
     const voice = pickVoice();
     if (voice) u.voice = voice;
     u.lang = voice?.lang || 'en-GB';
     u.rate = rate;
-    u.onend = () => resolve();
-    u.onerror = () => resolve();
+    u.onend = () => resolve(epoch === speakEpoch);
+    u.onerror = () => resolve(false);
     synth.speak(u);
   });
 }
@@ -45,29 +51,65 @@ export function canListen() {
   return Boolean(Recognition);
 }
 
-export function listen({ lang = 'en-GB', onInterim } = {}) {
+export function isListening() {
+  return Boolean(active);
+}
+
+export function stopListening() {
+  if (active) active.stop();
+}
+
+const ERROR_MESSAGES = {
+  'not-allowed': 'Microfono non autorizzato dal browser.',
+  'service-not-allowed': 'Riconoscimento vocale non disponibile.',
+  'audio-capture': 'Nessun microfono trovato.',
+  network: 'Il riconoscimento vocale richiede la connessione.',
+  'language-not-supported': 'Lingua non supportata dal riconoscimento vocale.',
+};
+
+export function errorMessage(code) {
+  return ERROR_MESSAGES[code] || 'Riconoscimento vocale interrotto.';
+}
+
+// Starts listening. Restarts itself when the engine stops on its own (silence) until stop() is called.
+export function listen({ lang = 'en-GB', onInterim, onError } = {}) {
   if (!Recognition) return { stop() {}, result: Promise.resolve('') };
+  if (active) active.stop();
+  let finalText = '';
+  let interimText = '';
+  let wantRunning = true;
+  let resolveResult;
+  const result = new Promise((resolve) => { resolveResult = resolve; });
+  const session = { stop() { wantRunning = false; try { rec.stop(); } catch { finish(); } } };
+  const finish = () => {
+    if (active === session) active = null;
+    resolveResult((finalText + ' ' + interimText).trim());
+  };
   const rec = new Recognition();
   rec.lang = lang;
   rec.continuous = true;
   rec.interimResults = true;
-  let finalText = '';
-  let resolveResult;
-  const result = new Promise((resolve) => { resolveResult = resolve; });
   rec.onresult = (ev) => {
-    let interim = '';
+    interimText = '';
     for (let i = ev.resultIndex; i < ev.results.length; i++) {
       const r = ev.results[i];
       if (r.isFinal) finalText += r[0].transcript + ' ';
-      else interim += r[0].transcript;
+      else interimText += r[0].transcript;
     }
-    onInterim?.((finalText + interim).trim());
+    onInterim?.((finalText + interimText).trim());
   };
-  rec.onerror = () => { try { rec.stop(); } catch { /* ignore */ } };
-  rec.onend = () => resolveResult(finalText.trim());
-  try { rec.start(); } catch { resolveResult(''); }
-  return {
-    stop() { try { rec.stop(); } catch { resolveResult(finalText.trim()); } },
-    result,
+  rec.onerror = (ev) => {
+    const code = ev?.error;
+    if (code === 'no-speech' || code === 'aborted') return; // harmless: onend will restart or finish
+    wantRunning = false;
+    onError?.(code);
   };
+  rec.onend = () => {
+    if (wantRunning) {
+      try { rec.start(); return; } catch { /* fall through */ }
+    }
+    finish();
+  };
+  try { rec.start(); active = session; } catch { finish(); }
+  return { stop: session.stop, result };
 }

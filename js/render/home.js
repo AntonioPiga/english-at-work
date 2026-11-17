@@ -1,4 +1,4 @@
-import { h, levelBadge, pct } from '../dom.js';
+import { h, levelBadge, pct, currentStreak } from '../dom.js';
 import { buildSession } from '../srs.js';
 
 export async function render({ store, content }) {
@@ -33,7 +33,7 @@ export async function render({ store, content }) {
     for (const d of decks) due += buildSession(d.cards.map((c) => c.id), state.srs, now, 0).length;
   } catch { /* ignore: cards are optional on home */ }
 
-  const streak = state.streak.days;
+  const streak = currentStreak(state.streak);
   root.append(
     h('h1', null, 'English at Work'),
     h('p', { class: 'muted' }, 'Call tecniche, mail formali e presentazioni. Dieci-quindici minuti al giorno, sempre nel tuo contesto di lavoro.'),

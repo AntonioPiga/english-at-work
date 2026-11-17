@@ -3,7 +3,7 @@ import { h, levelBadge, pct, errorView } from '../dom.js';
 export async function render({ params, store, content }) {
   const idx = await content.loadIndex();
   const track = idx.tracks.find((t) => t.id === params.id);
-  if (!track) return errorView('Percorso non trovato.', '#/');
+  if (!track) return errorView('Percorso non trovato.');
   const state = store.get();
   const root = h('div', { dataset: { title: track.title } });
   root.append(

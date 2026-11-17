@@ -59,7 +59,7 @@ export function validateModule(m) {
   const reorders = Array.isArray(m.reorder) ? m.reorder : [];
   if (gaps.length + reorders.length < 4 || gaps.length + reorders.length > 6) errs.push(`${w}: gapfill + reorder must total 4-6 items (got ${gaps.length + reorders.length})`);
   gaps.forEach((gp, i) => {
-    if (!isStr(gp.text) || !gp.text.includes('___')) errs.push(`${w}: gapfill[${i}].text must contain ___`);
+    if (!isStr(gp.text) || gp.text.split('___').length !== 2) errs.push(`${w}: gapfill[${i}].text must contain exactly one ___`);
     if (!Array.isArray(gp.answers) || gp.answers.length === 0 || !gp.answers.every(isStr)) errs.push(`${w}: gapfill[${i}].answers must be a non-empty string array`);
     if (!isStr(gp.hint)) errs.push(`${w}: gapfill[${i}].hint missing`);
   });
@@ -82,7 +82,7 @@ export function validateModule(m) {
     if (!isStr(f.prompt)) errs.push(`${p}.prompt missing`);
     if (!isInt(f.seconds) || f.seconds < 15 || f.seconds > 120) errs.push(`${p}.seconds must be 15-120`);
     if (!isStr(f.model)) errs.push(`${p}.model missing`);
-    if (!Array.isArray(f.keyPhrases) || f.keyPhrases.length < 1 || f.keyPhrases.length > 6) errs.push(`${p}.keyPhrases must have 1-6 items`);
+    if (!Array.isArray(f.keyPhrases) || f.keyPhrases.length < 3 || f.keyPhrases.length > 6) errs.push(`${p}.keyPhrases must have 3-6 items`);
     else if (isStr(f.model)) {
       const model = ` ${norm(f.model)} `;
       f.keyPhrases.forEach((k) => { if (!model.includes(` ${norm(k)} `)) errs.push(`${p}.keyPhrases "${k}" not found in model`); });
@@ -128,6 +128,10 @@ export function validatePlacement(p) {
   const errs = [];
   if (!p || !Array.isArray(p.questions)) return ['placement.questions must be an array'];
   if (p.questions.length !== 0 && p.questions.length !== 20) errs.push(`placement must have exactly 20 questions (got ${p.questions.length})`);
+  if (p.questions.length === 20) {
+    const count = (l) => p.questions.filter((q) => q.level === l).length;
+    if (count('B1') !== 7 || count('B2') !== 7 || count('C1') !== 6) errs.push(`placement level split must be 7 B1 / 7 B2 / 6 C1 (got ${count('B1')}/${count('B2')}/${count('C1')})`);
+  }
   p.questions.forEach((q, i) => {
     checkQuestion(q, i, 'placement', errs);
     if (!LEVELS.includes(q.level)) errs.push(`placement.quiz[${i}].level must be B1, B2 or C1`);

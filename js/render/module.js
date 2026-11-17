@@ -5,15 +5,17 @@ import * as reorder from './exercises/reorder.js';
 import * as fluency from './exercises/fluency.js';
 import * as write from './exercises/write.js';
 
-export async function render({ params, store, content, speech }) {
+export async function render({ params, store, content, speech, onLeave }) {
   const idx = await content.loadIndex();
   const track = idx.tracks.find((t) => t.modules.some((m) => m.id === params.id));
-  if (!track) return errorView('Modulo non trovato.', '#/');
+  if (!track) return errorView('Modulo non trovato.');
   const entry = track.modules.find((m) => m.id === params.id);
   const pos = track.modules.indexOf(entry);
   const next = track.modules[pos + 1];
   const mod = await content.loadModule(params.id);
   const settings = store.get().settings;
+  let touched = false;
+  const onActivity = () => { if (touched) return; touched = true; store.update((d) => { d.streak = updateStreak(d.streak, todayKey()); }); };
 
   const results = {
     quiz: { correct: 0, total: mod.quiz.length },
@@ -56,13 +58,14 @@ export async function render({ params, store, content, speech }) {
         h('button', { class: 'btn btn-icon btn-sm', type: 'button', 'aria-label': 'Ascolta', onClick: () => speech.speak(p.en, { rate: settings.rate }) }, '🔊'),
         h('div', null, h('div', { class: 'when' }, p.when), h('div', { class: 'en' }, p.en), h('div', { class: 'it' }, p.it)))),
       h('div', { class: 'row', style: 'margin-top:.75rem' },
-        h('button', { class: 'btn btn-sm', type: 'button', onClick: async () => { for (const p of mod.phrases) await speech.speak(p.en, { rate: settings.rate }); } }, '🔊 Ascolta tutte'),
+        h('button', { class: 'btn btn-sm', type: 'button', onClick: async () => { for (const p of mod.phrases) { const done = await speech.speak(p.en, { rate: settings.rate }); if (!done) break; } } }, '🔊 Ascolta tutte'),
         h('button', { class: 'btn btn-sm', type: 'button', onClick: () => speech.stopSpeaking() }, '■ Stop'))));
   markDone('phrases');
 
   // 3. Quiz
   const quizBox = h('div', { class: 'card' });
   quiz.mount(quizBox, mod.quiz, { onProgress: ({ answered, correct, total }) => {
+    onActivity();
     results.quiz.correct = correct;
     if (answered === total) { markDone('quiz'); quizBox.append(h('p', { class: 'result' }, `Quiz: ${correct}/${total}`)); }
   } });
@@ -75,24 +78,24 @@ export async function render({ params, store, content, speech }) {
   const partDone = () => { exDone += 1; if (exDone === exTotalParts) markDone('exercises'); };
   if (mod.gapfill?.length) {
     exBox.append(h('h3', null, 'Completa'));
-    gapfill.mount(exBox, mod.gapfill, { onProgress: ({ answered, correct, total }) => { gapState.correct = correct; sumExercises(); if (answered === total) partDone(); } });
+    gapfill.mount(exBox, mod.gapfill, { onProgress: ({ answered, correct, total }) => { onActivity(); gapState.correct = correct; sumExercises(); if (answered === total) partDone(); } });
   }
   if (mod.reorder?.length) {
     exBox.append(h('h3', { style: 'margin-top:1rem' }, 'Riordina'));
-    reorder.mount(exBox, mod.reorder, { onProgress: ({ answered, correct, total }) => { reorderState.correct = correct; sumExercises(); if (answered === total) partDone(); } });
+    reorder.mount(exBox, mod.reorder, { onProgress: ({ answered, correct, total }) => { onActivity(); reorderState.correct = correct; sumExercises(); if (answered === total) partDone(); } });
   }
   section('exercises', 4, 'Esercizi', exBox);
 
   // 5. Fluency
   const flBox = h('div', { class: 'card' });
   flBox.append(h('p', { class: 'small muted' }, 'Leggi la situazione, avvia il timer e rispondi a voce come se fossi in call. Allo scadere confronta con il modello.'));
-  fluency.mount(flBox, mod.fluency, { speech, settings, onProgress: ({ answered, stars, total }) => { results.fluency = stars; if (answered === total) markDone('fluency'); } });
+  fluency.mount(flBox, mod.fluency, { speech, settings, onLeave, onActivity, onProgress: ({ answered, stars, total }) => { results.fluency = stars; if (answered === total) markDone('fluency'); } });
   section('fluency', 5, 'Fluidità', flBox);
 
   // 6. Write (optional)
   if (mod.write?.length) {
     const wBox = h('div', { class: 'card' });
-    write.mount(wBox, mod.write, { onProgress: ({ answered, correct, total }) => { writeState.correct = correct; sumExercises(); if (answered === total) markDone('write'); } });
+    write.mount(wBox, mod.write, { onProgress: ({ answered, correct, total }) => { onActivity(); writeState.correct = correct; sumExercises(); if (answered === total) markDone('write'); } });
     section('write', 6, 'Scrivi', wBox);
   }
 
@@ -104,14 +107,13 @@ export async function render({ params, store, content, speech }) {
       d.modules[mod.id] = { quiz: { ...results.quiz }, exercises: { ...results.exercises }, fluency: results.fluency.filter(Boolean), completedAt: new Date().toISOString() };
       d.streak = updateStreak(d.streak, todayKey());
     });
-    completeBtn.disabled = true;
     completeMsg.replaceChildren(
       h('h2', null, 'Modulo completato'),
       h('p', null, `Quiz ${results.quiz.correct}/${results.quiz.total} · Esercizi ${results.exercises.correct}/${results.exercises.total} · Fluidità ${results.fluency.filter(Boolean).length ? (results.fluency.filter(Boolean).reduce((a, b) => a + b, 0) / results.fluency.filter(Boolean).length).toFixed(1) + '★' : '–'}`),
       h('div', { class: 'row' },
         next ? h('a', { class: 'btn btn-primary', href: `#/module/${next.id}` }, `Prossimo: ${next.title} →`) : h('a', { class: 'btn btn-primary', href: '#/' }, 'Percorso finito, torna al corso'),
         h('a', { class: 'btn', href: `#/track/${track.id}` }, 'Torna al percorso')));
-  } }, 'Segna il modulo come completato');
+  } }, saved?.completedAt ? 'Salva di nuovo i risultati' : 'Segna il modulo come completato');
   completeMsg.append(
     h('h2', null, 'Fine del modulo'),
     h('p', { class: 'muted' }, saved?.completedAt ? 'Lo avevi già completato: rifarlo aggiorna i punteggi.' : 'Quando hai fatto tutto quello che volevi, salva i risultati.'),

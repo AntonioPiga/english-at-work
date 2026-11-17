@@ -195,9 +195,9 @@ textarea { width: 100%; min-height: 9rem; font: inherit; padding: 0.7rem 0.8rem;
 
 /* Flashcards */
 .flashcard { perspective: 1000px; cursor: pointer; }
-.flashcard .inner { position: relative; min-height: 220px; transition: transform 0.45s; transform-style: preserve-3d; }
+.flashcard .inner { display: grid; min-height: 220px; transition: transform 0.45s; transform-style: preserve-3d; }
 .flashcard.flipped .inner { transform: rotateY(180deg); }
-.flashcard .face { position: absolute; inset: 0; backface-visibility: hidden; display: grid; place-items: center; text-align: center; padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); font-size: 1.25rem; font-weight: 600; }
+.flashcard .face { grid-area: 1 / 1; position: relative; backface-visibility: hidden; display: grid; place-items: center; text-align: center; padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); font-size: 1.25rem; font-weight: 600; }
 .flashcard .face.back { transform: rotateY(180deg); background: var(--accent-soft); }
 .flashcard .face .example { font-size: 0.95rem; font-weight: 400; color: var(--muted); margin-top: 0.6rem; }
 .flashcard .face .label { position: absolute; top: 0.6rem; left: 0.9rem; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }

@@ -45,9 +45,15 @@ function dayDiff(a, b) {
 export function updateStreak(streak, today = todayKey()) {
   if (!streak?.last) return { last: today, days: 1 };
   const diff = dayDiff(streak.last, today);
-  if (diff === 0) return { last: today, days: streak.days };
+  if (diff <= 0) return { last: today, days: streak.days };
   if (diff === 1) return { last: today, days: streak.days + 1 };
   return { last: today, days: 1 };
+}
+
+// Streak as it should be displayed: 0 once a day has been skipped.
+export function currentStreak(streak, today = todayKey()) {
+  if (!streak?.last) return 0;
+  return dayDiff(streak.last, today) <= 1 ? streak.days : 0;
 }
 
 export function formatDate(iso) {
@@ -58,8 +64,10 @@ export function formatDate(iso) {
   }
 }
 
-export function errorView(message, retryHash) {
-  return h('div', { class: 'error' }, message, ' ', retryHash ? h('a', { href: retryHash, onClick: () => location.reload() }, 'Riprova') : null);
+// { retry: true } offers a reload; { back: '#/x', label } offers a link away.
+export function errorView(message, { retry = false, back = '#/', label = 'Torna al corso' } = {}) {
+  return h('div', { class: 'error', role: 'alert' }, message, ' ',
+    retry ? h('a', { href: location.hash || '#/', onClick: (e) => { e.preventDefault(); location.reload(); } }, 'Riprova') : h('a', { href: back }, label));
 }
 
 export function levelBadge(level) {

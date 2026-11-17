@@ -1,4 +1,4 @@
-import { h, levelBadge, pct, formatDate } from '../dom.js';
+import { h, levelBadge, pct, formatDate, currentStreak } from '../dom.js';
 
 export async function render({ store, content, speech }) {
   const idx = await content.loadIndex();
@@ -11,7 +11,7 @@ export async function render({ store, content, speech }) {
 
   root.append(h('div', { class: 'kpi' },
     h('div', { class: 'card' }, h('strong', null, `${completed}/${allModules.length}`), h('span', { class: 'small muted' }, 'moduli completati')),
-    h('div', { class: 'card' }, h('strong', null, state.streak.days), h('span', { class: 'small muted' }, 'giorni di serie')),
+    h('div', { class: 'card' }, h('strong', null, currentStreak(state.streak)), h('span', { class: 'small muted' }, 'giorni di serie')),
     h('div', { class: 'card' }, h('strong', null, state.placement ? state.placement.level : '–'), h('span', { class: 'small muted' }, 'livello consigliato')),
     h('div', { class: 'card' }, h('strong', null, boxes[4]), h('span', { class: 'small muted' }, 'carte consolidate'))));
 
@@ -59,6 +59,7 @@ export async function render({ store, content, speech }) {
         const blob = new Blob([store.exportJSON()], { type: 'application/json' });
         const a = h('a', { href: URL.createObjectURL(blob), download: 'english-at-work-progress.json' });
         document.body.append(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(a.href), 1000);
       } }, '⬇ Esporta progressi'),
       h('button', { class: 'btn', type: 'button', onClick: () => fileInput.click() }, '⬆ Importa'),
       fileInput,

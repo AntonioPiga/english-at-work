@@ -9,7 +9,7 @@ export async function render({ store, content }) {
     h('p', { class: 'muted' }, 'Ripetizione spaziata: le carte che sbagli tornano prima, quelle che sai si allontanano. Ogni giorno: prima le carte in scadenza, poi fino a 20 nuove per mazzo.'));
   for (const entry of idx.decks ?? []) {
     let deck;
-    try { deck = await content.loadDeck(entry.id); } catch { continue; }
+    deck = await content.loadDeck(entry.id);
     const ids = deck.cards.map((c) => c.id);
     const due = buildSession(ids, state.srs, now, 0).length;
     const fresh = ids.filter((id) => !state.srs[id]).length;

@@ -3,7 +3,10 @@ import { buildSession, review } from '../srs.js';
 
 export async function render({ params, store, content, speech }) {
   let deck;
-  try { deck = await content.loadDeck(params.deck); } catch { return errorView('Mazzo non trovato.', '#/flashcards'); }
+  try { deck = await content.loadDeck(params.deck); } catch (e) {
+    if (e?.message === 'content-not-found') return errorView('Mazzo non trovato.', { back: '#/flashcards', label: 'Vai ai mazzi' });
+    throw e;
+  }
   const settings = store.get().settings;
   const byId = new Map(deck.cards.map((c) => [c.id, c]));
   const now = Date.now();
@@ -13,7 +16,7 @@ export async function render({ params, store, content, speech }) {
     h('a', { class: 'btn btn-ghost btn-sm', href: '#/flashcards' }, '← Mazzi'),
     h('h1', null, deck.title), h('p', { class: 'muted' }, deck.description), stage);
 
-  let known = 0; let unknown = 0; let seen = 0; const total0 = queue.length;
+  let known = 0; let unknown = 0; let seen = 0; let total0 = queue.length;
   const counter = h('p', { class: 'small muted' });
 
   const runCard = () => {
@@ -33,7 +36,7 @@ export async function render({ params, store, content, speech }) {
     fc.addEventListener('click', flip);
     fc.addEventListener('keydown', (e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flip(); } });
     const answer = (correct) => {
-      store.update((d) => { d.srs[id] = review(d.srs[id], correct, Date.now()); });
+      store.update((d) => { d.srs[id] = review(d.srs[id], correct, Date.now()); d.streak = updateStreak(d.streak, todayKey()); });
       queue.shift();
       if (correct) known += 1; else { unknown += 1; queue.push(id); }
       seen += 1;
@@ -43,7 +46,6 @@ export async function render({ params, store, content, speech }) {
   };
 
   const done = () => {
-    store.update((d) => { d.streak = updateStreak(d.streak, todayKey()); });
     stage.replaceChildren(h('div', { class: 'card' },
       h('h2', null, 'Sessione finita'),
       h('p', null, `${known} sapute, ${unknown} da rivedere. Le carte sbagliate torneranno domani.`),
@@ -55,7 +57,10 @@ export async function render({ params, store, content, speech }) {
       h('h2', null, 'Niente da ripassare oggi'),
       h('p', { class: 'muted' }, 'Tutte le carte di questo mazzo sono in pari. Puoi comunque fare un giro di ripasso libero.'),
       h('button', { class: 'btn btn-primary', type: 'button', onClick: () => {
-        queue = deck.cards.map((c) => c.id).sort(() => Math.random() - 0.5).slice(0, 10);
+        const ids = deck.cards.map((c) => c.id);
+        for (let i = ids.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; }
+        queue = ids.slice(0, 10);
+        total0 = queue.length; seen = 0; known = 0; unknown = 0;
         runCard();
       } }, 'Ripassa 10 carte a caso')));
     return root;

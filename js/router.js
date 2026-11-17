@@ -13,7 +13,8 @@ const ROUTES = [
 
 export function parseRoute(hash) {
   const path = (hash || '').replace(/^#\/?/, '');
-  const segments = path.split('/').filter(Boolean).map(decodeURIComponent);
+  let segments;
+  try { segments = path.split('/').filter(Boolean).map(decodeURIComponent); } catch { return { name: 'notfound', params: {} }; }
   for (const route of ROUTES) {
     if (route.pattern.length !== segments.length) continue;
     const params = {};

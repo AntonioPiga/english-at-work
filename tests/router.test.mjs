@@ -12,3 +12,4 @@ test('deck', () => assert.deepEqual(parseRoute('#/flashcards/false-friends'), { 
 test('reference', () => assert.equal(parseRoute('#/reference').name, 'reference'));
 test('progress', () => assert.equal(parseRoute('#/progress').name, 'progress'));
 test('notfound', () => assert.equal(parseRoute('#/nope/x/y').name, 'notfound'));
+test('malformed percent-encoding is notfound, not a crash', () => assert.equal(parseRoute('#/module/%E0').name, 'notfound'));

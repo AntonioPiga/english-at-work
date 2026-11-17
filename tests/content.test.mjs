@@ -34,9 +34,9 @@ export function fixtureModule() {
       { words: ['Can', 'you', 'hear', 'me'], answer: 'Can you hear me' },
     ],
     fluency: [
-      { prompt: 'Explain the failure.', seconds: 45, model: 'The root cause was a timeout. We have rolled back.', keyPhrases: ['root cause', 'rolled back'] },
-      { prompt: 'Open the call.', seconds: 30, model: 'Thanks everyone for joining.', keyPhrases: ['thanks everyone'] },
-      { prompt: 'Close the call.', seconds: 30, model: 'Let me recap the actions.', keyPhrases: ['recap'] },
+      { prompt: 'Explain the failure.', seconds: 45, model: 'The root cause was a timeout. We have rolled back.', keyPhrases: ['root cause', 'rolled back', 'timeout'] },
+      { prompt: 'Open the call.', seconds: 30, model: 'Thanks everyone for joining.', keyPhrases: ['thanks everyone', 'for joining', 'everyone for joining'] },
+      { prompt: 'Close the call.', seconds: 30, model: 'Let me recap the actions.', keyPhrases: ['let me recap', 'recap', 'the actions'] },
     ],
   };
 }
@@ -112,7 +112,9 @@ test('valid deck has no errors, duplicate ids flagged', () => {
 test('placement needs 0 or exactly 20 levelled questions', () => {
   assert.deepEqual(validatePlacement({ questions: [] }), []);
   const q = (lvl) => ({ ...quizQ(1), level: lvl });
-  assert.deepEqual(validatePlacement({ questions: Array.from({ length: 20 }, () => q('B1')) }), []);
+  const balanced = [...Array(7).fill('B1'), ...Array(7).fill('B2'), ...Array(6).fill('C1')].map(q);
+  assert.deepEqual(validatePlacement({ questions: balanced }), []);
+  assert.match(validatePlacement({ questions: Array.from({ length: 20 }, () => q('B1')) }).join('\n'), /split/);
   assert.match(validatePlacement({ questions: [q('B1')] }).join('\n'), /20/);
   assert.match(validatePlacement({ questions: Array.from({ length: 20 }, () => q('A1')) }).join('\n'), /level/);
 });

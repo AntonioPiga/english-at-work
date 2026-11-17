@@ -18,9 +18,11 @@ const NAV_FOR = { home: 'home', placement: 'home', track: 'home', module: 'home'
 
 const app = document.getElementById('app');
 const store = createStore();
-const ctx = { store, content, speech, navigate: (hash) => { location.hash = hash; } };
+const ctx = { store, content, speech, onLeave, navigate: (hash) => { location.hash = hash; } };
 
 let renderToken = 0;
+let leaveHandlers = [];
+const onLeave = (fn) => leaveHandlers.push(fn);
 
 startRouter(async (route) => {
   const token = ++renderToken;
@@ -29,6 +31,9 @@ startRouter(async (route) => {
     else a.removeAttribute('aria-current');
   });
   speech.stopSpeaking();
+  speech.stopListening();
+  for (const fn of leaveHandlers) { try { fn(); } catch (e) { console.error(e); } }
+  leaveHandlers = [];
   app.replaceChildren(h('p', { class: 'muted' }, 'Caricamento…'));
   try {
     const view = VIEWS[route.name] || notfound;
@@ -37,10 +42,11 @@ startRouter(async (route) => {
     el.classList.add('fade-in');
     app.replaceChildren(el);
     window.scrollTo({ top: 0 });
+    app.focus({ preventScroll: true });
     document.title = (el.dataset.title ? `${el.dataset.title} · ` : '') + 'English at Work';
   } catch (err) {
     console.error(err);
     if (token !== renderToken) return;
-    app.replaceChildren(errorView('Non riesco a caricare i contenuti.', location.hash || '#/'));
+    app.replaceChildren(errorView('Non riesco a caricare i contenuti.', { retry: true }));
   }
 });

@@ -13,10 +13,15 @@ export const DEFAULT_STATE = Object.freeze({
 
 const clone = (v) => JSON.parse(JSON.stringify(v));
 
+const isPlain = (v) => typeof v === 'object' && v !== null && !Array.isArray(v);
+
 function deepMerge(base, extra) {
-  if (Array.isArray(base) || Array.isArray(extra)) return clone(extra ?? base);
-  if (typeof base !== 'object' || base === null || typeof extra !== 'object' || extra === null) {
-    return extra === undefined ? clone(base) : clone(extra);
+  if (isPlain(base)) {
+    if (!isPlain(extra)) return clone(base); // wrong shape: keep the default
+  } else if (Array.isArray(base)) {
+    return Array.isArray(extra) ? clone(extra) : clone(base);
+  } else {
+    return extra === undefined || extra === null ? clone(base) : clone(extra);
   }
   const out = clone(base);
   for (const k of Object.keys(extra)) out[k] = k in base ? deepMerge(base[k], extra[k]) : clone(extra[k]);
@@ -27,7 +32,7 @@ function safe(fn, fallback) {
   try { return fn(); } catch { return fallback; }
 }
 
-export function createStore(storage = globalThis.localStorage) {
+export function createStore(storage = safe(() => globalThis.localStorage, null)) {
   let state = load();
 
   function load() {
@@ -45,6 +50,7 @@ export function createStore(storage = globalThis.localStorage) {
   return {
     get: () => clone(state),
     update(fn) {
+      state = load(); // re-read: another tab may have written meanwhile
       const draft = clone(state);
       fn(draft);
       state = draft;
