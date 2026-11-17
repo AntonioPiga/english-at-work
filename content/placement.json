@@ -57,7 +57,7 @@
         "to"
       ],
       "answer": 0,
-      "level": "B2",
+      "level": "B1",
       "why": "'Depend on' è la collocazione fissa. 'Dipendere da' induce gli italiani a dire 'depend from', che è un errore."
     },
     {
@@ -69,11 +69,11 @@
         "consistent"
       ],
       "answer": 0,
-      "level": "C1",
+      "level": "B2",
       "why": "'Comprehensive' = completo, esaustivo. 'Comprehensible' = comprensibile; 'understanding' = comprensivo (indulgente); 'consistent' = coerente. Falsi amici classici."
     },
     {
-      "q": "We are ___ testing the new release, so it isn't in production yet.",
+      "q": "'Attualmente stiamo testando la nuova release' → We are ___ testing the new release, so it isn't in production yet.",
       "options": [
         "actually",
         "eventually",
@@ -85,16 +85,16 @@
       "why": "'Attualmente' = 'currently'. 'Actually' significa 'in realtà', 'eventually' significa 'alla fine'."
     },
     {
-      "q": "All the tests passed. ___, we found a performance issue in staging.",
+      "q": "Not only ___ the deadline, but they also sent us the wrong file.",
       "options": [
-        "Therefore",
-        "However",
-        "Moreover",
-        "Otherwise"
+        "they missed",
+        "did they miss",
+        "they did miss",
+        "missed they"
       ],
       "answer": 1,
-      "level": "B2",
-      "why": "Serve un connettore di contrasto: 'However'. 'Therefore' indica conseguenza, 'Moreover' aggiunta, 'Otherwise' alternativa."
+      "level": "C1",
+      "why": "Con 'Not only' a inizio frase serve l'inversione con l'ausiliare, come in una domanda: 'Not only did they miss…'. Senza inversione la frase è sbagliata, e 'missed they' inverte senza ausiliare."
     },
     {
       "q": "It ___ have been the certificate, because we renewed it yesterday.",
@@ -121,16 +121,16 @@
       "why": "Primo condizionale: 'if' + present simple, poi 'will'. Mai 'will' dopo 'if' in questo tipo di frase."
     },
     {
-      "q": "The error rate spiked, so we had to ___ the release.",
+      "q": "The reason the batch failed ___ the input file was empty.",
       "options": [
-        "roll out",
-        "roll up",
-        "roll back",
-        "roll over"
+        "is because of",
+        "was why",
+        "was that",
+        "is due"
       ],
       "answer": 2,
-      "level": "B2",
-      "why": "'Roll back' = tornare alla versione precedente. 'Roll out' è il contrario: rilasciare."
+      "level": "C1",
+      "why": "La struttura formale è 'The reason (why)… is/was that…'. 'Because of' vuole un nome, non una frase; 'was why' non regge la costruzione; 'due' richiede 'to' + nome."
     },
     {
       "q": "The release review is ___ Monday ___ 10 a.m.",
@@ -178,7 +178,7 @@
       ],
       "answer": 2,
       "level": "B1",
-      "why": "'Assistere a una riunione' = 'attend'. 'Assist' significa aiutare; 'participate' vuole 'in'; 'frequent' è un luogo abituale."
+      "why": "'Assistere a una riunione' = 'attend'. 'Assist' significa aiutare; 'participate' vuole 'in'; 'frequent' significa frequentare abitualmente un luogo."
     },
     {
       "q": "Would you mind telling us ___ the incident?",
@@ -189,7 +189,7 @@
         "what was it caused"
       ],
       "answer": 0,
-      "level": "C1",
+      "level": "B2",
       "why": "Domanda indiretta sul soggetto: 'what caused the incident', senza ausiliare 'did' e senza inversione."
     },
     {
@@ -205,16 +205,16 @@
       "why": "'Dati sensibili' = 'sensitive data'. 'Sensible' significa assennato, ragionevole: falso amico."
     },
     {
-      "q": "Which is the most appropriate closing for a formal email to a new client?",
+      "q": "___ the risks earlier, we would have postponed the go-live.",
       "options": [
-        "Cheers,",
-        "See you,",
-        "Love,",
-        "Kind regards,"
+        "If we knew",
+        "Did we know",
+        "Were we knowing",
+        "Had we known"
       ],
       "answer": 3,
-      "level": "B1",
-      "why": "'Kind regards' è la chiusura standard nelle mail formali. 'Cheers' e 'See you' sono informali; 'Love' è personale."
+      "level": "C1",
+      "why": "Terzo condizionale con inversione formale: 'Had we known…' = 'If we had known…'. 'If we knew' è secondo condizionale e non concorda con 'would have postponed'; le altre inversioni non esistono."
     },
     {
       "q": "We will only proceed with the migration ___ the partner bank confirms the new cut-off time.",
@@ -225,8 +225,8 @@
         "so that"
       ],
       "answer": 1,
-      "level": "C1",
-      "why": "'Provided that' = a patto che: introduce una condizione necessaria. 'Unless' = a meno che, 'in case' = nel caso, 'so that' = affinché."
+      "level": "B2",
+      "why": "'Provided that' = a patto che: introduce una condizione necessaria. 'Unless' = a meno che, 'in case' = per precauzione (non 'se'), 'so that' = affinché."
     },
     {
       "q": "The audit isn't finished, so the board wants to ___ the go-live date to next quarter.",

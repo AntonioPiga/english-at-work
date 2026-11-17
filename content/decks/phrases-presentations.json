@@ -127,7 +127,7 @@
       "id": "pp-in-other-words",
       "front": "Riformulare",
       "back": "In other words, ...",
-      "example": "In other words, we can release every week instead of monthly."
+      "example": "In other words, we can release weekly instead of monthly."
     },
     {
       "id": "pp-compare",
@@ -175,7 +175,7 @@
       "id": "pp-conclude",
       "front": "Concludere",
       "back": "That brings me to the end of my presentation.",
-      "example": "That brings me to the end of my presentation, thank you."
+      "example": "That brings me to the end of my presentation. Thank you."
     },
     {
       "id": "pp-call-to-action",
@@ -217,7 +217,7 @@
       "id": "pp-outside-scope",
       "front": "Domanda fuori tema",
       "back": "That's slightly outside the scope of today's talk.",
-      "example": "That's slightly outside the scope of today's talk, but let's discuss afterwards."
+      "example": "That's slightly outside the scope of today's talk, but let's discuss it afterwards."
     },
     {
       "id": "pp-time-check",

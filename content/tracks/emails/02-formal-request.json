@@ -39,13 +39,13 @@
     { "q": "Choose the most polite way to ask the vendor for an extra test slot.", "options": ["We need another test slot.", "Give us another test slot, please.", "Another test slot is necessary.", "Would it be possible to schedule another test slot?"], "answer": 3, "why": "'Would it be possible to…?' è una richiesta indiretta e molto cortese." }
   ],
   "gapfill": [
-    { "text": "Would you mind ___ the IP addresses to your whitelist?", "answers": ["adding"], "hint": "aggiungere (dopo 'would you mind')" },
+    { "text": "Would you mind ___ the IP addresses to your allowlist?", "answers": ["adding"], "hint": "aggiungere (dopo 'would you mind')" },
     { "text": "I would be ___ if you could confirm receipt of the file.", "answers": ["grateful"], "hint": "grato" },
     { "text": "___ you be able to share the test results by Friday?", "answers": ["Would", "Could"], "hint": "modale di cortesia" }
   ],
   "reorder": [
-    { "words": ["Could", "you", "please", "send", "us", "the", "credentials"], "answer": "Could you please send us the credentials" },
-    { "words": ["I", "would", "appreciate", "it", "if", "you", "could", "reply"], "answer": "I would appreciate it if you could reply" }
+    { "words": ["Could", "you", "please", "send", "us", "the", "credentials"], "answer": "Could you please send us the credentials?" },
+    { "words": ["I", "would", "appreciate", "it", "if", "you", "could", "reply"], "answer": "I would appreciate it if you could reply." }
   ],
   "fluency": [
     { "prompt": "Dictate aloud a two-sentence request to the vendor: you need the updated API documentation by Friday so the team can start testing on Monday. 30 seconds.", "seconds": 30, "model": "Could you please send us the updated API documentation by Friday? This would allow us to start testing on Monday.", "keyPhrases": ["could you please send us", "by Friday", "this would allow us to"] },
@@ -55,7 +55,7 @@
   "write": [
     {
       "prompt": "Write an email to the fund platform requesting test access to their order API. Include: you need credentials for three developers; you would like them by Wednesday 20 March; this would allow you to start integration tests the following week. Use at least two different polite request structures.",
-      "model": "Subject: Request for test credentials – order API\n\nDear Mr [Surname],\n\nI am writing to request test access to your order API for our integration project.\n\nCould you please create credentials for the three developers listed below? I would appreciate it if you could send them by Wednesday 20 March, as this would allow us to start integration tests the following week.\n\nPlease let me know if you need any further information from our side.\n\nThank you in advance for your help.\n\nKind regards,\n\n[Name]\nSoftware Architect",
+      "model": "Subject: Request for test credentials – order API\n\nDear Mr [Surname],\n\nI am writing to request test access to your order API for our integration project.\n\nCould you please create credentials for the three developers listed in the attached file? I would appreciate it if you could send them by Wednesday 20 March, as this would allow us to start integration tests the following week.\n\nPlease let me know if you need any further information from our side.\n\nThank you in advance for your help.\n\nKind regards,\n\n[Name]\nSoftware Architect",
       "checklist": ["Oggetto chiaro e specifico", "Richiesta formulata con modali di cortesia (could / would)", "Richiesta esplicita con scadenza precisa", "Motivazione della scadenza", "Chiusura appropriata"],
       "keyPhrases": ["I am writing to request", "Could you please", "I would appreciate it if you could", "this would allow us to"]
     }

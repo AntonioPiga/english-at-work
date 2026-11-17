@@ -6,7 +6,7 @@
     {
       "id": "pe-dear-sir-madam",
       "front": "Gentili Signori (destinatario sconosciuto)",
-      "back": "Dear Sir or Madam,",
+      "back": "Dear Sir or Madam, (closing: Yours faithfully)",
       "example": "Dear Sir or Madam, I am writing regarding our integration request."
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "id": "pe-thank-reply",
-      "front": "Grazie per la sua risposta",
+      "front": "Grazie per la Sua risposta",
       "back": "Thank you for your reply.",
       "example": "Thank you for your reply and for the updated file specification."
     },
@@ -169,7 +169,7 @@
       "id": "pe-works-for-me",
       "front": "Per me va bene",
       "back": "That works for me.",
-      "example": "That works for me, I'll send an invitation for Tuesday."
+      "example": "That works for me. I'll send an invitation for Tuesday."
     },
     {
       "id": "pe-reschedule",
@@ -235,7 +235,7 @@
       "id": "pe-kind-regards",
       "front": "Cordiali saluti",
       "back": "Kind regards,",
-      "example": "Kind regards, and thank you again for your support."
+      "example": "Thank you again for your support. Kind regards,"
     },
     {
       "id": "pe-best-wishes-informal",

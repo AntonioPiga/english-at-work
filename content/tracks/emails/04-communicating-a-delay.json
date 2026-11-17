@@ -43,22 +43,22 @@
   ],
   "gapfill": [
     { "text": "It ___ that some orders were not sent to the fund platform.", "answers": ["appears", "seems"], "hint": "sembra (hedging)" },
-    { "text": "The migration will be completed ___ later than planned.", "answers": ["slightly", "a little"], "hint": "leggermente" },
+    { "text": "The migration will be completed ___ later than planned.", "answers": ["slightly", "a little", "a bit", "somewhat"], "hint": "leggermente" },
     { "text": "The release has ___ postponed until next Tuesday.", "answers": ["been"], "hint": "passivo del present perfect" }
   ],
   "reorder": [
-    { "words": ["We", "may", "need", "to", "reschedule", "the", "test", "window"], "answer": "We may need to reschedule the test window" },
-    { "words": ["A", "fix", "is", "currently", "being", "tested"], "answer": "A fix is currently being tested" }
+    { "words": ["We", "may", "need", "to", "reschedule", "the", "test", "window"], "answer": "We may need to reschedule the test window." },
+    { "words": ["A", "fix", "is", "currently", "being", "tested"], "answer": "A fix is currently being tested.", "answers": ["Currently a fix is being tested."] }
   ],
   "fluency": [
-    { "prompt": "Your manager asks you to summarise aloud the email you'll send to the partner bank: the release is delayed by one week because a bug was found in the reconciliation module. 45 seconds.", "seconds": 45, "model": "I'll explain that an issue has been identified in the reconciliation module during final testing. As a result, the release has been postponed by one week, to 21 March. I'll add that a fix is currently being tested and that we'll send them an update on Friday.", "keyPhrases": ["an issue has been identified", "the release has been postponed", "a fix is currently being tested", "an update"] },
+    { "prompt": "Your manager asks you to summarise aloud the email you'll send to the partner bank: the release is delayed by one week because a bug was found in the reconciliation module. 45 seconds.", "seconds": 45, "model": "I'll explain that an issue was identified in the reconciliation module during final testing. As a result, the release has been postponed by one week, to 21 March. I'll add that a fix is currently being tested and that we'll send them an update on Friday.", "keyPhrases": ["an issue was identified", "the release has been postponed", "a fix is currently being tested", "an update"] },
     { "prompt": "Dictate the core of an email to the fund platform: some orders may not have been forwarded last night, the cause is not yet confirmed. 40 seconds.", "seconds": 40, "model": "It appears that some orders from last night were not forwarded to your platform. At this stage, the cause has not been confirmed, but we are investigating with high priority. We may need to resend the affected orders this morning.", "keyPhrases": ["it appears that", "at this stage", "has not been confirmed", "we may need to"] },
     { "prompt": "Tell a junior colleague aloud how to structure an email that communicates a problem. 50 seconds.", "seconds": 50, "model": "Start with what happened, using the passive, for example 'an issue has been identified'. Then describe the impact carefully, with phrases like 'at this stage' or 'we may need to'. After that, say what you are doing about it, and always finish with a date for the next update.", "keyPhrases": ["using the passive", "at this stage", "we may need to", "the next update"] }
   ],
   "write": [
     {
       "prompt": "Write an email to management. The migration of the client onboarding service to the new cluster was planned for 14 March. During testing, an issue was found with the signature provider's callback. The cause is probably a certificate configuration. The migration will now happen around 21 March. No client is affected because the old service is still running. You will send an update on Monday.",
-      "model": "Subject: Onboarding service migration – revised date\n\nDear all,\n\nI am writing to let you know that the migration of the onboarding service, planned for 14 March, has been postponed.\n\nDuring final testing, an issue was identified with the signature provider's callback. It appears that the cause is a certificate configuration, and a fix is currently being tested. The migration is now likely to take place around 21 March, slightly later than planned.\n\nAt this stage, no clients are affected, as the current service remains fully operational. I will send you an update on Monday.\n\nKind regards,\n\n[Name]",
+      "model": "Subject: Onboarding service migration – revised date\n\nDear all,\n\nI am writing to let you know that the migration of the onboarding service, planned for 14 March, has been postponed.\n\nDuring final testing, an issue was identified with the signature provider's callback. It appears that the cause is a certificate configuration issue, and a fix is currently being tested. The migration is now likely to take place around 21 March, slightly later than planned.\n\nAt this stage, no clients are affected, as the current service remains fully operational. I will send you an update on Monday.\n\nKind regards,\n\n[Name]",
       "checklist": ["Oggetto chiaro che anticipa la notizia", "Problema descritto al passivo, senza colpe", "Hedging sulle informazioni non ancora certe", "Impatto e azioni in corso spiegati", "Nuova data o data del prossimo aggiornamento"],
       "keyPhrases": ["has been postponed", "It appears that", "is currently being tested", "slightly later than planned", "At this stage"]
     }

@@ -22,7 +22,7 @@
     { "en": "We've had an incident on the order routing service.", "it": "Abbiamo avuto un incident sul servizio di routing degli ordini.", "when": "apertura incident" },
     { "en": "Let me walk you through what happened.", "it": "Vi spiego passo passo cosa è successo.", "when": "racconto" },
     { "en": "At around 2 a.m. the batch started failing.", "it": "Verso le 2 il batch ha iniziato a fallire.", "when": "cronologia" },
-    { "en": "The root cause was a certificate that expired overnight.", "it": "La causa era un certificato scaduto durante la notte.", "when": "causa" },
+    { "en": "The root cause was a certificate that expired overnight.", "it": "La causa principale era un certificato scaduto durante la notte.", "when": "causa" },
     { "en": "As soon as we noticed, we rolled back the release.", "it": "Appena ce ne siamo accorti, abbiamo fatto rollback del rilascio.", "when": "azione" },
     { "en": "The impact was limited to about forty orders.", "it": "L'impatto è stato limitato a circa quaranta ordini.", "when": "impatto" },
     { "en": "No client data was lost.", "it": "Nessun dato cliente è andato perso.", "when": "rassicurazione" },
@@ -41,13 +41,13 @@
     { "q": "'The KYC provider ___ the timeout on their side last night.'", "options": ["fixed", "has fixed", "have fixed", "was fixed"], "answer": 0, "why": "'Last night' è un tempo finito: past simple. 'Was fixed' è passivo e non regge l'oggetto." }
   ],
   "gapfill": [
-    { "text": "We ___ the release at nine o'clock and the errors stopped.", "answers": ["rolled back"], "hint": "fare rollback; c'è l'orario, quindi past simple" },
+    { "text": "We ___ the release at nine o'clock and the errors stopped.", "answers": ["rolled back", "reverted"], "hint": "fare rollback; c'è l'orario, quindi past simple" },
     { "text": "We haven't identified the root cause ___.", "answers": ["yet"], "hint": "'non ancora', a fine frase" },
     { "text": "So far, the service ___ been stable.", "answers": ["has"], "hint": "present perfect, terza persona singolare" }
   ],
   "reorder": [
     { "words": ["Let", "me", "walk", "you", "through", "what", "happened"], "answer": "Let me walk you through what happened." },
-    { "words": ["Since", "then", "the", "service", "has", "been", "stable"], "answer": "Since then, the service has been stable." }
+    { "words": ["Since", "then", "the", "service", "has", "been", "stable"], "answer": "Since then, the service has been stable.", "answers": ["The service has been stable since then."] }
   ],
   "fluency": [
     { "prompt": "The partner bank asks why yesterday's reconciliation file was rejected. Explain what happened and the current status. 45 seconds.", "seconds": 45, "model": "Yesterday morning our job rejected the file because the date format changed without notice. We noticed it at around nine and contacted your operations team straight away. Since then, we've updated the parser and we've reprocessed the file. Everything has been reconciled now.", "keyPhrases": ["yesterday morning", "we noticed it", "since then", "we've updated", "has been reconciled"] },

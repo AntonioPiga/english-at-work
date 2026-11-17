@@ -7,7 +7,7 @@
   "minutes": 12,
   "grammar": {
     "title": "Signposting: sequencer e 'I'd like to / Let's'",
-    "explanation": "Il signposting è la 'segnaletica' della presentazione: frasi brevi che dicono al pubblico dove siete e dove state andando. In inglese una presentazione chiara annuncia la struttura all'inizio e segnala ogni passaggio. Usa i sequencer per l'ordine: First / First of all, Then / After that, Finally. Per cambiare argomento: Moving on to + nome o -ing (Moving on to the timeline…), That brings me to + nome (That brings me to the next slide). Per annunciare cosa farai usa I'd like to + verbo base (I'd like to show you…, I'd like to start with…): è cortese e professionale. Per coinvolgere il pubblico usa Let's + verbo base (Let's look at the numbers, Let's move on). Attenzione: dopo 'to' di moving on to / that brings me to / I'd like to start with serve un nome o una forma in -ing, mai l'infinito. Tieni le frasi corte: una frase di segnaletica, una pausa, poi il contenuto.",
+    "explanation": "Il signposting è la 'segnaletica' della presentazione: frasi brevi che dicono al pubblico dove siete e dove state andando. In inglese una presentazione chiara annuncia la struttura all'inizio e segnala ogni passaggio. Usa i sequencer per l'ordine: First / First of all, Then / After that, Finally. Per cambiare argomento: Moving on to + nome o -ing (Moving on to the timeline…), That brings me to + nome (That brings me to the next slide). Per annunciare cosa farai usa I'd like to + verbo base (I'd like to show you…, I'd like to start with…): è cortese e professionale. Per coinvolgere il pubblico usa Let's + verbo base (Let's look at the numbers, Let's move on). Attenzione: dopo 'moving on to' e 'that brings me to' il 'to' è una preposizione, quindi serve un nome o una forma in -ing (Moving on to testing…), mai il verbo base; dopo 'I'd like to start with' serve un nome. Tieni le frasi corte: una frase di segnaletica, una pausa, poi il contenuto.",
     "examples": [
       { "en": "I'd like to start with a quick overview of the platform.", "note": "annunciare il primo punto" },
       { "en": "First, I'll cover the onboarding flow. Then we'll look at the results.", "note": "struttura in due tempi" },
@@ -42,11 +42,11 @@
   "gapfill": [
     { "text": "I've divided my presentation ___ three parts.", "answers": ["into"], "hint": "dividere in" },
     { "text": "___ on to the next point: the timeline.", "answers": ["Moving"], "hint": "passando a…" },
-    { "text": "That ___ me to the last slide.", "answers": ["brings"], "hint": "mi porta a" }
+    { "text": "That ___ me to the last slide.", "answers": ["brings", "leads", "takes"], "hint": "mi porta a" }
   ],
   "reorder": [
-    { "words": ["I'd", "like", "to", "start", "with", "the", "background"], "answer": "I'd like to start with the background" },
-    { "words": ["Let's", "take", "a", "look", "at", "the", "diagram"], "answer": "Let's take a look at the diagram" }
+    { "words": ["I'd", "like", "to", "start", "with", "the", "background"], "answer": "I'd like to start with the background." },
+    { "words": ["Let's", "take", "a", "look", "at", "the", "diagram"], "answer": "Let's take a look at the diagram." }
   ],
   "fluency": [
     { "prompt": "First slide of a project update for the management committee. Greet the audience, state the purpose and list three parts. 45 seconds.", "seconds": 45, "model": "Good morning, everyone, and thanks for having me. Today I'd like to give you an update on the new onboarding flow. I've divided my presentation into three parts. First, I'll give you some background. Then I'll walk you through the results, and finally I'll talk about next steps.", "keyPhrases": ["I'd like to give you an update", "divided my presentation into three parts", "First", "Then I'll walk you through", "finally"] },

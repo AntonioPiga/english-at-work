@@ -16,7 +16,7 @@
       { "en": "We'd be happy to do that, provided that the test environment is ready.", "note": "would + condizione" },
       { "en": "Unless the partner bank changes the format again, we'll be ready by the 20th.", "note": "unless = if not" }
     ],
-    "italianTrap": "Calcando l'italiano ('se ci manderete le specifiche, consegneremo'), gli italiani mettono will o would dopo if: 'If you will send the specs…', 'If we would drop the module…'. Dopo if niente will/would: 'If you send the specs, we'll deliver' e 'If we dropped the module, we could go live earlier'."
+    "italianTrap": "Calcando l'italiano ('se ci manderete le specifiche, consegneremo'), gli italiani mettono will o would dopo if: 'If you will send the specs…', 'If we would drop the module…'. Nel first e second conditional, dopo if niente will/would (eccezione: forme di cortesia come 'if you would like…'): 'If you send the specs, we'll deliver' e 'If we dropped the module, we could go live earlier'."
   },
   "phrases": [
     { "en": "What would work for you in terms of timing?", "it": "Che tempistiche andrebbero bene per voi?", "when": "apertura trattativa" },
@@ -27,7 +27,7 @@
     { "en": "What if we delivered the core features first and the reports later?", "it": "E se consegnassimo prima le funzionalità principali e i report dopo?", "when": "alternativa" },
     { "en": "We could probably do that, as long as the test environment is ready.", "it": "Probabilmente possiamo farlo, purché l'ambiente di test sia pronto.", "when": "condizione" },
     { "en": "I can't commit to that date today, but I'll check with the team.", "it": "Oggi non posso impegnarmi su quella data, ma verifico con il team.", "when": "evitare impegni" },
-    { "en": "Something would have to give: either the date or the scope.", "it": "Qualcosa dovrà cedere: o la data o lo scope.", "when": "trade-off" },
+    { "en": "Something would have to give: either the date or the scope.", "it": "Qualcosa dovrebbe cedere: o la data o lo scope.", "when": "trade-off" },
     { "en": "Let's meet halfway: we'll move the date by one week.", "it": "Veniamoci incontro: spostiamo la data di una settimana.", "when": "compromesso" },
     { "en": "So, to confirm, we're agreeing on the 15th for phase one.", "it": "Quindi, per conferma, siamo d'accordo sul 15 per la fase uno.", "when": "conferma" }
   ],
@@ -43,7 +43,7 @@
   ],
   "gapfill": [
     { "text": "If you confirm the scope today, we ___ start on Monday.", "answers": ["will", "'ll", "can"], "hint": "impegno concreto: first conditional" },
-    { "text": "If we ___ the go-live to April, we could include the second custodian.", "answers": ["moved", "pushed", "postponed", "shifted"], "hint": "second conditional: past simple dopo 'if'" },
+    { "text": "If we ___ the go-live to April, we could include the second custodian.", "answers": ["moved", "pushed", "postponed", "shifted", "delayed", "pushed back"], "hint": "second conditional: past simple dopo 'if'" },
     { "text": "We could do that, as ___ as the test environment is ready.", "answers": ["long"], "hint": "'a condizione che'" }
   ],
   "reorder": [

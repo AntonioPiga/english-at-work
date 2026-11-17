@@ -37,17 +37,17 @@
     { "q": "'Right now we ___ the logs with the vendor.'", "options": ["check", "checks", "checked", "are checking"], "answer": 3, "why": "'Right now' indica un'azione in corso: present continuous." },
     { "q": "'I ___ what you mean, but the file is still missing.'", "options": ["am understanding", "understand", "understanding", "am understand"], "answer": 1, "why": "'Understand' è un verbo di stato: resta al present simple anche quando parli di adesso." },
     { "q": "Which sentence sets the agenda?", "options": ["There are two points I'd like to cover.", "Can you hear me OK?", "Sorry, I'm a bit late, the previous meeting ran over.", "See you next week."], "answer": 0, "why": "Annuncia i punti da trattare: è la frase tipica per fissare l'agenda." },
-    { "q": "'This week the team ___ the new signature provider into the onboarding flow.'", "options": ["integrates", "integrate", "is integrating", "integrated"], "answer": 2, "why": "'This week' indica un lavoro temporaneo in corso: present continuous." },
+    { "q": "'This week the team ___ the new signature provider into the onboarding flow; they're about halfway through.'", "options": ["integrates", "integrate", "is integrating", "integrated"], "answer": 2, "why": "'This week' indica un lavoro temporaneo in corso: present continuous." },
     { "q": "The PM asks: 'What's the status of the migration?' Which answer is correct?", "options": ["We migrate it now.", "We are migrate it.", "Now we migrating it, it's nearly finished.", "We're migrating it right now."], "answer": 3, "why": "Azione in corso: 'be' + verbo in -ing. Le altre mancano di un pezzo o usano il simple." }
   ],
   "gapfill": [
-    { "text": "Shall we get ___?", "answers": ["started"], "hint": "iniziare: collocazione fissa con 'get'" },
+    { "text": "Shall we get ___?", "answers": ["started", "going"], "hint": "iniziare: collocazione fissa con 'get'" },
     { "text": "At the moment we ___ testing the fix in staging.", "answers": ["are", "'re"], "hint": "present continuous: manca il verbo 'essere'" },
-    { "text": "The batch usually ___ at two in the morning.", "answers": ["runs", "starts", "begins"], "hint": "routine, terza persona singolare" }
+    { "text": "The batch usually ___ at two in the morning.", "answers": ["runs", "starts", "begins", "finishes", "ends"], "hint": "routine, terza persona singolare" }
   ],
   "reorder": [
     { "words": ["There", "are", "three", "points", "I'd", "like", "to", "cover"], "answer": "There are three points I'd like to cover." },
-    { "words": ["We're", "currently", "migrating", "the", "batch", "to", "the", "new", "cluster"], "answer": "We're currently migrating the batch to the new cluster." }
+    { "words": ["We're", "currently", "migrating", "the", "batch", "to", "the", "new", "cluster"], "answer": "We're currently migrating the batch to the new cluster.", "answers": ["Currently we're migrating the batch to the new cluster."] }
   ],
   "fluency": [
     { "prompt": "You are hosting the weekly call with the partner bank. Thank them, state the purpose and list two agenda points. 30 seconds.", "seconds": 30, "model": "Thanks everyone for joining. The purpose of today's call is to review last week's reconciliation results. There are two points I'd like to cover: first the missing transactions, then the plan for next week.", "keyPhrases": ["thanks everyone for joining", "the purpose of today's call", "there are two points", "I'd like to cover"] },

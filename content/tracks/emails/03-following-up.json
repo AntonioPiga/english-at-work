@@ -213,7 +213,7 @@
         "my",
         "email"
       ],
-      "answer": "I am just following up on my email"
+      "answer": "I am just following up on my email."
     },
     {
       "words": [
@@ -222,19 +222,16 @@
         "already",
         "checked",
         "the",
-        "logs",
-        "on",
-        "our",
-        "side"
+        "logs"
       ],
-      "answer": "We have already checked the logs on our side"
+      "answer": "We have already checked the logs."
     }
   ],
   "fluency": [
     {
       "prompt": "Dictate aloud a short, polite first follow-up to the custodian about yesterday's position file, which has not arrived. 30 seconds.",
       "seconds": 30,
-      "model": "I am just following up on my email of yesterday. We have not received the position file yet, and we have already checked our SFTP folder. Could you give us an update when you have a moment?",
+      "model": "I am just following up on my email from yesterday. We have not received the position file yet, and we have already checked our SFTP folder. Could you give us an update when you have a moment?",
       "keyPhrases": [
         "I am just following up",
         "we have not received",

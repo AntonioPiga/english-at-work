@@ -53,7 +53,7 @@
     },
     {
       "id": "pc-set-agenda",
-      "front": "Oggi vorrei coprire tre punti",
+      "front": "Oggi vorrei trattare tre punti",
       "back": "There are three things I'd like to cover today.",
       "example": "There are three things I'd like to cover today, starting with the incident."
     },
@@ -89,7 +89,7 @@
     },
     {
       "id": "pc-both-spoke",
-      "front": "Abbiamo parlato insieme, scusa",
+      "front": "Scusa, abbiamo parlato in contemporanea",
       "back": "Sorry, we spoke over each other. You go first.",
       "example": "Sorry, we spoke over each other. You go first this time."
     },

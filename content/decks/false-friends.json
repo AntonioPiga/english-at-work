@@ -18,7 +18,7 @@
     {
       "id": "ff-control",
       "front": "controllare (verificare)",
-      "back": "to check (NOT 'to control' = comandare)",
+      "back": "to check (NOT 'to control' = gestire, regolare, tenere sotto controllo)",
       "example": "Could you check the logs before the call?"
     },
     {
@@ -192,7 +192,7 @@
     {
       "id": "ff-advise",
       "front": "avvisare",
-      "back": "to notify / to let know (NOT 'to advise' = consigliare)",
+      "back": "to notify / to let someone know ('to advise' = consigliare; 'advise sb of sth' = informare, ma è rigido)",
       "example": "Please notify the operations team before the maintenance window."
     },
     {

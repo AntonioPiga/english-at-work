@@ -36,8 +36,8 @@
     {
       "id": "vw-sign-off",
       "front": "approvare formalmente",
-      "back": "sign off on (something)",
-      "example": "The compliance team needs to sign off on the new KYC flow."
+      "back": "sign off (sth) / sign (sth) off (BrE); sign off on (AmE)",
+      "example": "The compliance team signed the new onboarding flow off yesterday."
     },
     {
       "id": "vw-follow-up",
@@ -133,7 +133,7 @@
       "id": "vw-catch-up",
       "front": "aggiornarsi (con qualcuno)",
       "back": "catch up (with someone)",
-      "example": "Let's catch up tomorrow about the migration plan."
+      "example": "Let's catch up tomorrow on the migration plan."
     },
     {
       "id": "vw-bring-forward",
@@ -174,7 +174,7 @@
     {
       "id": "vw-scale-up",
       "front": "scalare",
-      "back": "scale up / scale out (more nodes)",
+      "back": "scale up (bigger machines) / scale out (more nodes)",
       "example": "We scaled out the order service to handle the peak."
     },
     {
@@ -211,7 +211,7 @@
       "id": "vw-comply-with",
       "front": "rispettare (norme)",
       "back": "comply with (regulations)",
-      "example": "All client data must comply with GDPR requirements."
+      "example": "We must comply with GDPR when we process client data."
     },
     {
       "id": "vw-keep-posted",

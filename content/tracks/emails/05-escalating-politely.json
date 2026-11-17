@@ -44,7 +44,7 @@
     },
     {
       "en": "I am copying in [Name], who is responsible for the account on your side.",
-      "it": "Metto in copia [Name], responsabile dell'account per voi.",
+      "it": "Metto in copia [Name], responsabile dell'account da parte vostra.",
       "when": "escalation"
     },
     {
@@ -123,7 +123,7 @@
       "why": "Il secondo condizionale presenta il rifiuto come ipotesi e conseguenza, in modo diplomatico."
     },
     {
-      "q": "'If we ___ about the API change earlier, we could have updated our client in time.'",
+      "q": "'If we ___ about the API change earlier, we could have updated our integration in time.'",
       "options": [
         "were told",
         "would be told",
@@ -216,7 +216,7 @@
         "skip",
         "testing"
       ],
-      "answer": "While we understand the urgency, we cannot skip testing"
+      "answer": "While we understand the urgency, we cannot skip testing."
     },
     {
       "words": [
@@ -229,7 +229,7 @@
         "in",
         "scope"
       ],
-      "answer": "Our understanding was that this was in scope"
+      "answer": "Our understanding was that this was in scope."
     }
   ],
   "fluency": [
@@ -269,7 +269,7 @@
   "write": [
     {
       "prompt": "Write an escalation email to the KYC provider's account manager. An incident (ticket opened 10 days ago) is still open: identity checks time out for about 15% of new clients. Your understanding was that critical incidents are resolved within 48 hours. If it is not fixed by Friday, you will have to pause new client onboarding. Acknowledge their support team's effort and ask for a call.",
-      "model": "Subject: Escalation – open incident on identity checks (opened 10 days ago)\n\nDear Mr [Surname],\n\nI would like to escalate an incident that has now been open for ten days: around 15% of identity checks are timing out for new clients.\n\nWhile we appreciate the efforts of your support team, the issue remains unresolved. We were under the impression that critical incidents are resolved within 48 hours.\n\nIf a fix is not in place by Friday, we will have to pause new client onboarding, which would have a significant impact on our business.\n\nWe would welcome a call this week to agree on a way forward.\n\nKind regards,\n\n[Name]",
+      "model": "Subject: Escalation – open incident on identity checks (opened 10 days ago)\n\nDear Mr [Surname],\n\nI would like to escalate an incident that has now been open for ten days: around 15% of identity checks are timing out for new clients.\n\nWhile we appreciate the efforts of your support team, the issue remains unresolved. We were under the impression that critical incidents would be resolved within 48 hours.\n\nIf a fix is not in place by Friday, we will have to pause new client onboarding, which would have a significant impact on our business.\n\nWe would welcome a call this week to agree on a way forward.\n\nKind regards,\n\n[Name]",
       "checklist": [
         "Oggetto che indica chiaramente l'escalation",
         "Concessione prima della critica (while / although)",

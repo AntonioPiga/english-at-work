@@ -37,7 +37,7 @@
       "id": "cn-on-the-other-hand",
       "front": "d'altra parte",
       "back": "on the other hand (neutral)",
-      "example": "On the other hand, a managed service reduces our maintenance."
+      "example": "On the other hand, a managed service reduces our maintenance effort."
     },
     {
       "id": "cn-therefore",
@@ -96,7 +96,7 @@
     {
       "id": "cn-in-other-words",
       "front": "in altre parole",
-      "back": "in other words / that is to say (formal)",
+      "back": "in other words / that is (formal, written)",
       "example": "In other words, we need two more weeks of testing."
     },
     {
@@ -121,7 +121,7 @@
       "id": "cn-eventually",
       "front": "alla fine (dopo tempo)",
       "back": "eventually / in the end",
-      "example": "In the end, we rolled back and fixed it the next day."
+      "example": "Eventually, we rolled back and fixed it the next day."
     },
     {
       "id": "cn-in-conclusion",
@@ -186,7 +186,7 @@
     {
       "id": "cn-in-case",
       "front": "nel caso in cui",
-      "back": "in case / in the event that (formal)",
+      "back": "if / in the event that (formal) (NOT 'in case' = per precauzione)",
       "example": "In the event that the job fails, the on-call engineer is paged."
     },
     {

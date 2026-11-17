@@ -43,7 +43,7 @@
   ],
   "gapfill": [
     { "text": "Could you tell me what time the new cut-off ___?", "answers": ["is", "will be"], "hint": "ordine affermativo: il verbo va dopo il soggetto" },
-    { "text": "Sorry to ___, but which environment are we talking about?", "answers": ["interrupt"], "hint": "interrompere" },
+    { "text": "Sorry to ___, but which environment are we talking about?", "answers": ["interrupt", "jump in"], "hint": "interrompere" },
     { "text": "Do you know ___ the vendor has deployed the patch?", "answers": ["if", "whether"], "hint": "domanda sì/no indiretta" }
   ],
   "reorder": [
