@@ -1,0 +1,247 @@
+{
+  "id": "connectors",
+  "title": "Connectors and signposting",
+  "description": "Connettori e segnaletica del discorso",
+  "cards": [
+    {
+      "id": "cn-however",
+      "front": "tuttavia (contrasto formale)",
+      "back": "however (neutral) / nevertheless (formal)",
+      "example": "However, the partner bank has not yet confirmed the format."
+    },
+    {
+      "id": "cn-but-informal",
+      "front": "ma (contrasto, parlato)",
+      "back": "but (neutral) / though, at end of sentence (informal)",
+      "example": "The fix works. It's a bit slow, though."
+    },
+    {
+      "id": "cn-although",
+      "front": "sebbene / anche se",
+      "back": "although / even though (stronger)",
+      "example": "Although the tests passed, we found a bug in staging."
+    },
+    {
+      "id": "cn-despite",
+      "front": "nonostante (+ nome)",
+      "back": "despite / in spite of + noun or -ing",
+      "example": "Despite the outage, all orders were processed by noon."
+    },
+    {
+      "id": "cn-whereas",
+      "front": "mentre (contrapposizione)",
+      "back": "whereas / while (contrast between two facts)",
+      "example": "The backend is stable, whereas the frontend still needs work."
+    },
+    {
+      "id": "cn-on-the-other-hand",
+      "front": "d'altra parte",
+      "back": "on the other hand (neutral)",
+      "example": "On the other hand, a managed service reduces our maintenance."
+    },
+    {
+      "id": "cn-therefore",
+      "front": "quindi / pertanto (conseguenza)",
+      "back": "therefore (formal) / so (neutral)",
+      "example": "The certificate expired; therefore, the connection was refused."
+    },
+    {
+      "id": "cn-as-a-result",
+      "front": "di conseguenza",
+      "back": "as a result / consequently (formal)",
+      "example": "As a result, several clients could not sign their contracts."
+    },
+    {
+      "id": "cn-because-of",
+      "front": "a causa di",
+      "back": "because of / due to (formal)",
+      "example": "The release was delayed due to a regression in onboarding."
+    },
+    {
+      "id": "cn-since-reason",
+      "front": "dato che / poiché",
+      "back": "since / as (neutral, reason already known)",
+      "example": "Since the vendor is down, we'll retry the orders tonight."
+    },
+    {
+      "id": "cn-in-addition",
+      "front": "inoltre",
+      "back": "in addition / moreover (formal) / also (neutral)",
+      "example": "In addition, the new flow reduces manual checks by half."
+    },
+    {
+      "id": "cn-furthermore",
+      "front": "per di più",
+      "back": "furthermore / what's more (spoken)",
+      "example": "What's more, the new cluster costs less to run."
+    },
+    {
+      "id": "cn-as-well-as",
+      "front": "oltre a",
+      "back": "as well as / besides",
+      "example": "As well as fixing the bug, we improved the logging."
+    },
+    {
+      "id": "cn-for-example",
+      "front": "per esempio",
+      "back": "for example / for instance / such as + noun",
+      "example": "Some services, such as onboarding, need extra monitoring."
+    },
+    {
+      "id": "cn-in-particular",
+      "front": "in particolare",
+      "back": "in particular / especially / notably (formal)",
+      "example": "Response times improved, in particular on the order endpoint."
+    },
+    {
+      "id": "cn-in-other-words",
+      "front": "in altre parole",
+      "back": "in other words / that is to say (formal)",
+      "example": "In other words, we need two more weeks of testing."
+    },
+    {
+      "id": "cn-firstly",
+      "front": "innanzitutto",
+      "back": "first of all / firstly (formal)",
+      "example": "First of all, let's look at what happened last night."
+    },
+    {
+      "id": "cn-then-next",
+      "front": "poi / successivamente",
+      "back": "then / next / after that",
+      "example": "Next, the file is validated and loaded into the database."
+    },
+    {
+      "id": "cn-finally",
+      "front": "infine (ultimo punto)",
+      "back": "finally / lastly (NOT 'at last' = finalmente)",
+      "example": "Lastly, we need to agree on the go-live date."
+    },
+    {
+      "id": "cn-eventually",
+      "front": "alla fine (dopo tempo)",
+      "back": "eventually / in the end",
+      "example": "In the end, we rolled back and fixed it the next day."
+    },
+    {
+      "id": "cn-in-conclusion",
+      "front": "in conclusione",
+      "back": "to conclude (formal) / to sum up / all in all",
+      "example": "To sum up, the migration was a success."
+    },
+    {
+      "id": "cn-actually",
+      "front": "in realtà / a dire il vero",
+      "back": "actually / in fact (formal)",
+      "example": "Actually, the issue was on the partner bank's side."
+    },
+    {
+      "id": "cn-as-far-as",
+      "front": "per quanto riguarda",
+      "back": "as far as ... is concerned / regarding / as for",
+      "example": "As far as security is concerned, we follow the bank's policy."
+    },
+    {
+      "id": "cn-in-terms-of",
+      "front": "in termini di",
+      "back": "in terms of",
+      "example": "In terms of cost, the managed option is clearly cheaper."
+    },
+    {
+      "id": "cn-with-regard-to",
+      "front": "in merito a (mail formale)",
+      "back": "with regard to / regarding (formal)",
+      "example": "With regard to your request, we will reply by Friday."
+    },
+    {
+      "id": "cn-by-the-way",
+      "front": "a proposito / tra l'altro",
+      "back": "by the way (informal) / incidentally (formal)",
+      "example": "By the way, the staging database will be down tomorrow."
+    },
+    {
+      "id": "cn-anyway",
+      "front": "comunque (tornando al punto)",
+      "back": "anyway (informal) / in any case",
+      "example": "Anyway, let's get back to the release checklist."
+    },
+    {
+      "id": "cn-otherwise",
+      "front": "altrimenti",
+      "back": "otherwise / or else (informal)",
+      "example": "We need the keys today; otherwise, testing will slip."
+    },
+    {
+      "id": "cn-unless",
+      "front": "a meno che",
+      "back": "unless",
+      "example": "We'll go live on Monday unless the regression tests fail."
+    },
+    {
+      "id": "cn-provided-that",
+      "front": "a patto che",
+      "back": "provided that / as long as (neutral)",
+      "example": "We can deploy tonight, provided that the PM signs off."
+    },
+    {
+      "id": "cn-in-case",
+      "front": "nel caso in cui",
+      "back": "in case / in the event that (formal)",
+      "example": "In the event that the job fails, the on-call engineer is paged."
+    },
+    {
+      "id": "cn-so-that",
+      "front": "affinché / in modo che",
+      "back": "so that / in order to + verb",
+      "example": "We added retries so that transient errors don't block orders."
+    },
+    {
+      "id": "cn-meanwhile",
+      "front": "nel frattempo",
+      "back": "meanwhile / in the meantime",
+      "example": "In the meantime, please use the manual reconciliation process."
+    },
+    {
+      "id": "cn-as-soon-as",
+      "front": "non appena",
+      "back": "as soon as / once",
+      "example": "Once the fix is merged, I'll trigger the pipeline."
+    },
+    {
+      "id": "cn-until",
+      "front": "finché non",
+      "back": "until (NOT 'until it doesn't confirm')",
+      "example": "Keep the feature flag off until the vendor confirms."
+    },
+    {
+      "id": "cn-basically",
+      "front": "in pratica / sostanzialmente",
+      "back": "basically (spoken) / essentially (formal)",
+      "example": "Essentially, the service acts as a gateway to the fund platform."
+    },
+    {
+      "id": "cn-that-said",
+      "front": "detto ciò",
+      "back": "that said / having said that",
+      "example": "That said, the current solution is good enough for now."
+    },
+    {
+      "id": "cn-on-the-contrary",
+      "front": "al contrario",
+      "back": "on the contrary (contradicts) / in contrast (compares)",
+      "example": "In contrast, the old system needed a full day to reconcile."
+    },
+    {
+      "id": "cn-similarly",
+      "front": "allo stesso modo",
+      "back": "similarly / likewise (formal)",
+      "example": "Similarly, the emails module will move to the new queue."
+    },
+    {
+      "id": "cn-to-be-honest",
+      "front": "sinceramente / a dire il vero",
+      "back": "to be honest / frankly (direct)",
+      "example": "To be honest, I don't think the deadline is realistic."
+    }
+  ]
+}

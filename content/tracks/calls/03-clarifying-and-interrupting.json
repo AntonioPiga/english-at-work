@@ -1,0 +1,59 @@
+{
+  "id": "calls-03-clarifying",
+  "track": "calls",
+  "order": 3,
+  "title": "Asking for clarification and interrupting politely",
+  "level": "B2",
+  "minutes": 12,
+  "grammar": {
+    "title": "Domande indirette e softener (Could you tell me what…, I was wondering if…)",
+    "explanation": "Nelle call le domande dirette ('What do you mean?', 'Why did it fail?') possono suonare brusche, soprattutto con un partner esterno. Le domande indirette le ammorbidiscono: si apre con una formula (Could you tell me…, Do you know…, Would you mind explaining…) e poi l'ordine diventa quello di una frase affermativa, cioè soggetto + verbo, senza do/does/did. 'Why did it fail?' diventa 'Could you tell me why it failed?'. Per le domande sì/no si usa if o whether: 'Is the file ready?' diventa 'Do you know if the file is ready?'. Altri softener utili: 'I was wondering if you could…' (richiesta molto cortese), 'Just to make sure I understand…' (verifica), 'Sorry to interrupt, but…' e 'Can I just jump in here?' (interrompere). Dopo 'Would you mind' il verbo va in -ing. Nota: 'I was wondering if…' è un'affermazione, quindi non serve il punto interrogativo.",
+    "examples": [
+      { "en": "Could you tell me why the file was rejected?", "note": "niente 'was' prima del soggetto" },
+      { "en": "Do you know if the custodian has sent the positions?", "note": "domanda sì/no: if" },
+      { "en": "I was wondering if you could resend the file by noon.", "note": "richiesta molto cortese" },
+      { "en": "Sorry to interrupt, but which environment are we talking about?", "note": "interruzione educata" },
+      { "en": "Just to make sure I understand, the API is being deprecated?", "note": "verifica di comprensione" },
+      { "en": "Would you mind explaining what you mean by 'soft limit'?", "note": "mind + -ing" }
+    ],
+    "italianTrap": "L'italiano non cambia l'ordine delle parole ('Mi può dire perché è fallito?'), quindi gli italiani dicono 'Could you tell me why did it fail?' o 'Do you know where is the file?'. Nella domanda indiretta l'ordine è affermativo: 'Could you tell me why it failed?', 'Do you know where the file is?'."
+  },
+  "phrases": [
+    { "en": "Sorry to interrupt, but can I ask a quick question?", "it": "Scusate se interrompo, posso fare una domanda veloce?", "when": "interruzione" },
+    { "en": "Can I just jump in here?", "it": "Posso intervenire un attimo?", "when": "interruzione" },
+    { "en": "Before you move on, could I just add something?", "it": "Prima che passi oltre, posso aggiungere una cosa?", "when": "interruzione" },
+    { "en": "Sorry, I didn't quite catch that. Could you say it again?", "it": "Scusa, non ho capito bene. Puoi ripetere?", "when": "chiarimento" },
+    { "en": "Could you tell me what you mean by 'pending'?", "it": "Mi puoi dire cosa intendi con 'pending'?", "when": "chiarimento" },
+    { "en": "Would you mind going over the last point again?", "it": "Ti dispiace riprendere l'ultimo punto?", "when": "chiarimento" },
+    { "en": "Just to make sure I understand, you need the file by Thursday?", "it": "Per essere sicuro di aver capito: vi serve il file entro giovedì?", "when": "verifica" },
+    { "en": "So, if I've got this right, the issue is on your side?", "it": "Quindi, se ho capito bene, il problema è da voi?", "when": "verifica" },
+    { "en": "I was wondering if you could share the error logs.", "it": "Mi chiedevo se poteste condividere i log degli errori.", "when": "richiesta" },
+    { "en": "Could you slow down a little? The line isn't great.", "it": "Puoi andare un po' più piano? La linea non è buona.", "when": "tecnico" },
+    { "en": "Sorry, go ahead.", "it": "Scusa, vai pure.", "when": "cedere la parola" },
+    { "en": "Coming back to what you said earlier...", "it": "Tornando a quello che dicevi prima...", "when": "ripresa" }
+  ],
+  "quiz": [
+    { "q": "'Could you tell me where ___?'", "options": ["is the file", "the file it is", "is it the file", "the file is"], "answer": 3, "why": "Domanda indiretta: ordine affermativo, soggetto + verbo ('the file is')." },
+    { "q": "The partner bank's tech lead is talking fast and you've lost the thread. What do you say?", "options": ["Stop, I don't understand anything you are saying.", "Sorry to interrupt, but could you go back to the last point?", "Wait, wait, repeat.", "Excuse me, you speak too fast for me."], "answer": 1, "why": "'Sorry to interrupt, but…' + richiesta con 'could' è educato e preciso. Le altre suonano brusche o lamentose." },
+    { "q": "'Do you know ___ the custodian has confirmed the positions?'", "options": ["that", "what", "if", "which"], "answer": 2, "why": "Domanda sì/no indiretta: si introduce con 'if' (o 'whether')." },
+    { "q": "'I was wondering if you ___ resend the corrected file.'", "options": ["could", "can to", "will to", "are able"], "answer": 0, "why": "'I was wondering if you could…' è la formula cortese fissa. 'Can' e 'will' non vogliono 'to'." },
+    { "q": "'Why did the signature provider reject the document?' becomes 'Could you tell me why ___?'", "options": ["did the signature provider reject the document", "the signature provider did reject the document", "the signature provider rejected the document", "rejected the signature provider the document"], "answer": 2, "why": "Nella domanda indiretta sparisce 'did' e il verbo va al passato: 'why the signature provider rejected…'." },
+    { "q": "You want to confirm you understood the new cut-off correctly. Which is best?", "options": ["What exactly did you say before about the cut-off time?", "OK, it's clear, so the cut-off is changing then.", "I don't really understand anything about this cut-off.", "Just to check: the cut-off is now 4 p.m.?"], "answer": 3, "why": "Riformuli quello che hai capito e chiedi conferma: è il modo più rapido per verificare." },
+    { "q": "'Would you mind ___ the error message in the chat?'", "options": ["to paste", "pasting", "paste", "to pasting"], "answer": 1, "why": "Dopo 'Would you mind' il verbo va sempre in -ing." }
+  ],
+  "gapfill": [
+    { "text": "Could you tell me what time the new cut-off ___?", "answers": ["is", "will be"], "hint": "ordine affermativo: il verbo va dopo il soggetto" },
+    { "text": "Sorry to ___, but which environment are we talking about?", "answers": ["interrupt"], "hint": "interrompere" },
+    { "text": "Do you know ___ the vendor has deployed the patch?", "answers": ["if", "whether"], "hint": "domanda sì/no indiretta" }
+  ],
+  "reorder": [
+    { "words": ["Could", "you", "tell", "me", "why", "the", "file", "failed"], "answer": "Could you tell me why the file failed?" },
+    { "words": ["I", "was", "wondering", "if", "you", "could", "share", "the", "logs"], "answer": "I was wondering if you could share the logs." }
+  ],
+  "fluency": [
+    { "prompt": "The partner bank's tech lead says the file 'failed validation on our side'. You don't know which validation. Interrupt politely and ask. 25 seconds.", "seconds": 25, "model": "Sorry to interrupt, but could you tell me which validation failed? Was it the file format or the balances? Just to make sure we look in the right place.", "keyPhrases": ["sorry to interrupt", "could you tell me which", "just to make sure"] },
+    { "prompt": "The vendor's PM is speaking fast on a bad line and mentions a 'soft limit'. Ask them to slow down and explain the term. 30 seconds.", "seconds": 30, "model": "Sorry, I didn't quite catch that. Could you slow down a little? The line isn't great. And would you mind explaining what you mean by 'soft limit'?", "keyPhrases": ["I didn't quite catch that", "could you slow down", "would you mind explaining what you mean"] },
+    { "prompt": "The KYC provider says document checks 'might take longer next week'. Use indirect questions to ask why, and whether it affects onboarding. 40 seconds.", "seconds": 40, "model": "Could you tell me why the checks might take longer? I was wondering if it's related to your new release. And do you know if it will affect clients who are onboarding right now?", "keyPhrases": ["could you tell me why", "I was wondering if", "do you know if"] },
+    { "prompt": "In an internal call, a colleague is about to move on, but you want to add a point about monitoring. Jump in, check what you understood and make a suggestion. 40 seconds.", "seconds": 40, "model": "Before you move on, could I just add something? So, if I've got this right, we're keeping the old endpoint until March. I was wondering if we could add an alert on it, so we know when traffic drops to zero.", "keyPhrases": ["before you move on", "could I just add something", "if I've got this right", "I was wondering if"] }
+  ]
+}

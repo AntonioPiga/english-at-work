@@ -1,0 +1,61 @@
+{
+  "id": "presentations-03-numbers",
+  "track": "presentations",
+  "order": 3,
+  "title": "Numbers and trends",
+  "level": "B2",
+  "minutes": 12,
+  "grammar": {
+    "title": "Comparativi, verbi di cambiamento e approssimazioni",
+    "explanation": "Per presentare KPI servono tre strumenti. 1) Comparativi e superlativi: aggettivi corti + -er / the -est (faster, the highest), aggettivi lunghi con more / the most (more reliable, the most expensive). Per graduare: much / far / significantly faster, slightly lower, twice as fast as. 2) Verbi di cambiamento: rise / increase / grow / go up, fall / drop / decrease / go down, double, halve, peak, plateau / level off, remain stable. Attenzione alle preposizioni: rise BY 10% (la differenza), rise TO 78% (il punto d'arrivo), FROM 62% TO 78%. Con i nomi: a rise OF 10%, an increase IN volume. Avverbi per l'intensità: sharply, significantly, steadily, slightly. 3) Approssimazioni: roughly, around, about, just under, just over, almost, well over. Usale per numeri grandi o imprecisi: il pubblico ricorda 'just under two million' meglio di '1,973,400'. Regola d'oro: un numero, un confronto, un significato (So what?).",
+    "examples": [
+      { "en": "Onboarding completion rose from 62% to 78% in six months.", "note": "from … to" },
+      { "en": "Failed orders fell by roughly a third.", "note": "by = differenza + approssimazione" },
+      { "en": "The new flow is twice as fast as the old one.", "note": "twice as … as" },
+      { "en": "Support tickets peaked in March and then levelled off.", "note": "verbi di andamento" },
+      { "en": "This is the lowest error rate we've ever had.", "note": "superlativo + present perfect" },
+      { "en": "We process just under two thousand orders a day.", "note": "approssimazione per difetto" }
+    ],
+    "italianTrap": "Errori tipici: 'more fast' / 'more big' invece di 'faster' / 'bigger'; 'it increased of 10%' invece di 'it increased by 10%' (o 'an increase of 10%' con il nome); 'the double' invece di 'twice as much' o 'doubled'. Anche 'the 30% of clients' → '30% of clients' (niente articolo) e i decimali: '2,5' si legge 'two point five', e si scrive 2.5."
+  },
+  "phrases": [
+    { "en": "As you can see from this chart…", "it": "Come vedete da questo grafico…", "when": "numeri" },
+    { "en": "Completion rose from 62% to 78% in six months.", "it": "Il completamento è salito dal 62% al 78% in sei mesi.", "when": "trend" },
+    { "en": "That's an increase of sixteen percentage points.", "it": "È un aumento di sedici punti percentuali.", "when": "numeri" },
+    { "en": "Latency dropped sharply after the release.", "it": "La latenza è scesa bruscamente dopo il rilascio.", "when": "trend" },
+    { "en": "Volumes have levelled off since the summer.", "it": "I volumi si sono stabilizzati dall'estate.", "when": "trend" },
+    { "en": "The new process is twice as fast as the old one.", "it": "Il nuovo processo è due volte più veloce del vecchio.", "when": "confronto" },
+    { "en": "We're now significantly cheaper than the previous vendor.", "it": "Ora siamo nettamente più economici del fornitore precedente.", "when": "confronto" },
+    { "en": "We handle roughly 2,000 orders a day.", "it": "Gestiamo circa 2.000 ordini al giorno.", "when": "approssimazione" },
+    { "en": "Just under half of new clients finish on mobile.", "it": "Poco meno della metà dei nuovi clienti completa da mobile.", "when": "approssimazione" },
+    { "en": "What this means for us is fewer manual checks.", "it": "Per noi questo significa meno controlli manuali.", "when": "significato" },
+    { "en": "This is the best result we've had so far.", "it": "È il miglior risultato ottenuto finora.", "when": "confronto" }
+  ],
+  "quiz": [
+    { "q": "'Onboarding completion rose ___ 62% ___ 78% in six months.'", "options": ["of … at", "from … to", "by … to", "since … until"], "answer": 1, "why": "Punto di partenza e punto d'arrivo: 'from … to'." },
+    { "q": "'Failed orders decreased ___ 30% after the fix.' (30% is the size of the change)", "options": ["of", "in", "with", "by"], "answer": 3, "why": "Con il verbo, l'entità della variazione si esprime con 'by'. 'Of' va con il nome: 'a decrease of 30%'." },
+    { "q": "Which comparison is correct?", "options": ["The new flow is more fast than the old one.", "The new flow is faster that the old one.", "The new flow is twice as fast as the old one.", "The new flow is two times faster of the old one."], "answer": 2, "why": "'Twice as fast as' è la struttura corretta; 'fast' è corto, quindi 'faster', mai 'more fast'; 'than', non 'that'." },
+    { "q": "The chart shows ticket volume going up until March, then staying flat. What happened after March?", "options": ["It levelled off.", "It peaked off.", "It doubled up.", "It fell down sharply."], "answer": 0, "why": "'Level off' / 'plateau' = stabilizzarsi dopo una crescita." },
+    { "q": "You process 1,960 orders a day. Which approximation is accurate?", "options": ["Well over two thousand orders a day.", "Just under two thousand orders a day.", "Just over two thousand orders a day.", "Exactly two thousand orders a day."], "answer": 1, "why": "1.960 è poco sotto 2.000: 'just under'." },
+    { "q": "'This is ___ error rate we've had since go-live.'", "options": ["the lower", "the most low", "lowest", "the lowest"], "answer": 3, "why": "Superlativo di aggettivo corto: 'the' + -est." },
+    { "q": "Cloud costs went from €40k to €20k a month. Which verb fits best?", "options": ["Costs have halved.", "Costs have doubled.", "Costs have peaked.", "Costs have plateaued."], "answer": 0, "why": "Da 40 a 20 = dimezzati: 'halve'. 'Double' è il contrario." },
+    { "q": "'The reconciliation now runs ___ faster than before: from four hours to fifty minutes.'", "options": ["slightly", "much", "very", "more"], "answer": 1, "why": "Per rafforzare un comparativo si usa much / far / significantly; 'very' non si usa con i comparativi." }
+  ],
+  "gapfill": [
+    { "text": "Latency dropped ___ 40% after we added the cache.", "answers": ["by"], "hint": "entità della variazione" },
+    { "text": "The new release is far more ___ than the previous one.", "answers": ["reliable", "stable"], "hint": "affidabile (aggettivo lungo)" },
+    { "text": "Daily orders have ___ since last year: from 1,000 to 2,000.", "answers": ["doubled"], "hint": "raddoppiato" }
+  ],
+  "reorder": [
+    { "words": ["Completion", "rose", "from", "62%", "to", "78%"], "answer": "Completion rose from 62% to 78%" },
+    { "words": ["We", "handle", "roughly", "two", "thousand", "orders", "a", "day"], "answer": "We handle roughly two thousand orders a day" }
+  ],
+  "fluency": [
+    { "prompt": "Slide shows onboarding completion up from 62% to 78% in six months. Present the trend and what it means. 45 seconds.", "seconds": 45, "model": "As you can see from this chart, onboarding completion rose from 62% to 78% in six months. That's an increase of sixteen percentage points. Most of the improvement came after we simplified the identity check. What this means for us is roughly two hundred more active clients a month.", "keyPhrases": ["As you can see from this chart", "rose from 62% to 78%", "an increase of", "What this means for us", "roughly"] },
+    { "prompt": "Chart: average order processing time dropped from 4 hours to 50 minutes after the new routing went live, and has been stable since. Present it to the management committee. 45 seconds.", "seconds": 45, "model": "This chart shows the average processing time per order. Before the new routing, it took around four hours. After go-live it dropped sharply to about fifty minutes, so it's now almost five times faster. Since then it has levelled off, which tells us the improvement is stable.", "keyPhrases": ["dropped sharply", "almost five times faster", "has levelled off", "around four hours"] },
+    { "prompt": "Compare two vendors for the KYC check: Vendor A costs €1.90 per check with 92% auto-approval, Vendor B €1.20 with 85%. Present the comparison in 40 seconds.", "seconds": 40, "model": "Let's compare the two options. Vendor B is significantly cheaper, at about one euro twenty per check. However, Vendor A has a much higher auto-approval rate: 92% compared with 85%. So B is the cheapest option, but A is the most efficient.", "keyPhrases": ["significantly cheaper", "a much higher", "compared with", "the cheapest option", "the most efficient"] }
+  ],
+  "write": [
+    { "prompt": "Write the speaker notes (80-120 words) for a KPI slide on quarterly results of the order platform: orders per day went from about 1,200 to 1,950, failed orders fell from 3% to 0.8%, average execution time halved. End with what it means for the business.", "model": "This slide summarises the quarter for the order platform. Let's start with volume. Daily orders rose from around twelve hundred to just under two thousand, an increase of more than 60%. At the same time, quality improved. Failed orders fell from 3% to 0.8%, which is the lowest rate we've had since go-live. And execution is much faster: the average time has halved. So we're handling far more orders with fewer errors. What this means for the business is that we can grow without adding people to the operations team.", "checklist": ["Almeno due verbi di cambiamento con preposizione corretta (from … to, by)", "Un comparativo o superlativo ben formato", "Almeno un'approssimazione (around, just under…)", "Ogni numero ha un confronto", "Chiusura con il significato per il business"], "keyPhrases": ["rose from around", "just under two thousand", "the lowest rate", "has halved", "What this means for the business"] }
+  ]
+}

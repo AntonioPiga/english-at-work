@@ -1,1 +1,244 @@
-{ "questions": [] }
+{
+  "questions": [
+    {
+      "q": "Sorry, I can't talk right now. I ___ the production logs.",
+      "options": [
+        "check",
+        "am checking",
+        "have checked",
+        "checked"
+      ],
+      "answer": 1,
+      "level": "B1",
+      "why": "Azione in corso in questo momento: present continuous ('I'm checking'). Il present simple descrive abitudini, non ciò che stai facendo ora."
+    },
+    {
+      "q": "Could you tell me when ___?",
+      "options": [
+        "will the file arrive",
+        "does the file arrive",
+        "arrives the file",
+        "the file will arrive"
+      ],
+      "answer": 3,
+      "level": "B2",
+      "why": "Nella domanda indiretta ('Could you tell me...') l'ordine torna quello affermativo: soggetto + verbo, senza inversione né ausiliare 'do'."
+    },
+    {
+      "q": "___ we to postpone the release, the regulator would need to be informed.",
+      "options": [
+        "If",
+        "Should",
+        "Were",
+        "Had"
+      ],
+      "answer": 2,
+      "level": "C1",
+      "why": "Condizionale con inversione formale: 'Were we to...' = 'If we were to...'. 'Should' e 'Had' non reggono 'to + infinito', 'If' richiederebbe 'were'."
+    },
+    {
+      "q": "Which is the most appropriate way to ask a senior stakeholder for a report?",
+      "options": [
+        "Send me the report by Friday.",
+        "I want the report by Friday.",
+        "Could you possibly send me the report by Friday?",
+        "You must send me the report by Friday."
+      ],
+      "answer": 2,
+      "level": "B1",
+      "why": "Con un superiore si usa un modale di cortesia ('Could you possibly...?'). Imperativo, 'I want' e 'must' suonano bruschi o maleducati in inglese."
+    },
+    {
+      "q": "The go-live date depends ___ the partner bank's confirmation.",
+      "options": [
+        "on",
+        "of",
+        "from",
+        "to"
+      ],
+      "answer": 0,
+      "level": "B2",
+      "why": "'Depend on' è la collocazione fissa. 'Dipendere da' induce gli italiani a dire 'depend from', che è un errore."
+    },
+    {
+      "q": "Thank you for the ___ report; it covers every aspect of the incident.",
+      "options": [
+        "comprehensive",
+        "comprehensible",
+        "understanding",
+        "consistent"
+      ],
+      "answer": 0,
+      "level": "C1",
+      "why": "'Comprehensive' = completo, esaustivo. 'Comprehensible' = comprensibile; 'understanding' = comprensivo (indulgente); 'consistent' = coerente. Falsi amici classici."
+    },
+    {
+      "q": "We are ___ testing the new release, so it isn't in production yet.",
+      "options": [
+        "actually",
+        "eventually",
+        "possibly",
+        "currently"
+      ],
+      "answer": 3,
+      "level": "B1",
+      "why": "'Attualmente' = 'currently'. 'Actually' significa 'in realtà', 'eventually' significa 'alla fine'."
+    },
+    {
+      "q": "All the tests passed. ___, we found a performance issue in staging.",
+      "options": [
+        "Therefore",
+        "However",
+        "Moreover",
+        "Otherwise"
+      ],
+      "answer": 1,
+      "level": "B2",
+      "why": "Serve un connettore di contrasto: 'However'. 'Therefore' indica conseguenza, 'Moreover' aggiunta, 'Otherwise' alternativa."
+    },
+    {
+      "q": "It ___ have been the certificate, because we renewed it yesterday.",
+      "options": [
+        "mustn't",
+        "shouldn't",
+        "needn't",
+        "can't"
+      ],
+      "answer": 3,
+      "level": "C1",
+      "why": "Per una deduzione negativa sul passato si usa 'can't have + participio' (= è impossibile che). 'Mustn't have' non si usa per deduzioni in inglese britannico standard."
+    },
+    {
+      "q": "If the regression tests ___, we'll deploy tonight.",
+      "options": [
+        "pass",
+        "will pass",
+        "passed",
+        "would pass"
+      ],
+      "answer": 0,
+      "level": "B1",
+      "why": "Primo condizionale: 'if' + present simple, poi 'will'. Mai 'will' dopo 'if' in questo tipo di frase."
+    },
+    {
+      "q": "The error rate spiked, so we had to ___ the release.",
+      "options": [
+        "roll out",
+        "roll up",
+        "roll back",
+        "roll over"
+      ],
+      "answer": 2,
+      "level": "B2",
+      "why": "'Roll back' = tornare alla versione precedente. 'Roll out' è il contrario: rilasciare."
+    },
+    {
+      "q": "The release review is ___ Monday ___ 10 a.m.",
+      "options": [
+        "in / at",
+        "on / at",
+        "at / on",
+        "on / in"
+      ],
+      "answer": 1,
+      "level": "B1",
+      "why": "'On' con i giorni, 'at' con gli orari precisi: 'on Monday at 10 a.m.'."
+    },
+    {
+      "q": "If we had automated the reconciliation last year, we ___ so much manual work now.",
+      "options": [
+        "wouldn't have done",
+        "wouldn't be doing",
+        "won't do",
+        "didn't do"
+      ],
+      "answer": 1,
+      "level": "C1",
+      "why": "Condizionale misto: condizione passata ('had automated') con conseguenza presente ('now') → 'would + infinito' ('wouldn't be doing')."
+    },
+    {
+      "q": "We ___ on the cloud migration since March.",
+      "options": [
+        "work",
+        "are working",
+        "worked",
+        "have been working"
+      ],
+      "answer": 3,
+      "level": "B2",
+      "why": "Con 'since' / 'for' e un'azione iniziata nel passato e ancora in corso si usa il present perfect continuous. L'italiano 'lavoriamo da marzo' porta all'errore 'we work since'."
+    },
+    {
+      "q": "Three people from the partner bank will ___ the workshop.",
+      "options": [
+        "assist",
+        "participate",
+        "attend",
+        "frequent"
+      ],
+      "answer": 2,
+      "level": "B1",
+      "why": "'Assistere a una riunione' = 'attend'. 'Assist' significa aiutare; 'participate' vuole 'in'; 'frequent' è un luogo abituale."
+    },
+    {
+      "q": "Would you mind telling us ___ the incident?",
+      "options": [
+        "what caused",
+        "what did cause",
+        "what it caused",
+        "what was it caused"
+      ],
+      "answer": 0,
+      "level": "C1",
+      "why": "Domanda indiretta sul soggetto: 'what caused the incident', senza ausiliare 'did' e senza inversione."
+    },
+    {
+      "q": "Client IBANs are ___ data, so they must be encrypted.",
+      "options": [
+        "sensible",
+        "sensational",
+        "sensitive",
+        "sensory"
+      ],
+      "answer": 2,
+      "level": "B2",
+      "why": "'Dati sensibili' = 'sensitive data'. 'Sensible' significa assennato, ragionevole: falso amico."
+    },
+    {
+      "q": "Which is the most appropriate closing for a formal email to a new client?",
+      "options": [
+        "Cheers,",
+        "See you,",
+        "Love,",
+        "Kind regards,"
+      ],
+      "answer": 3,
+      "level": "B1",
+      "why": "'Kind regards' è la chiusura standard nelle mail formali. 'Cheers' e 'See you' sono informali; 'Love' è personale."
+    },
+    {
+      "q": "We will only proceed with the migration ___ the partner bank confirms the new cut-off time.",
+      "options": [
+        "unless",
+        "provided that",
+        "in case",
+        "so that"
+      ],
+      "answer": 1,
+      "level": "C1",
+      "why": "'Provided that' = a patto che: introduce una condizione necessaria. 'Unless' = a meno che, 'in case' = nel caso, 'so that' = affinché."
+    },
+    {
+      "q": "The audit isn't finished, so the board wants to ___ the go-live date to next quarter.",
+      "options": [
+        "push back",
+        "bring forward",
+        "put up",
+        "call off"
+      ],
+      "answer": 0,
+      "level": "B2",
+      "why": "'Push back' = posticipare. 'Bring forward' = anticipare; 'call off' = annullare; 'put up' non ha questo senso."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "emails-04-delay",
+  "track": "emails",
+  "order": 4,
+  "title": "Communicating a delay or a problem",
+  "level": "B2",
+  "minutes": 14,
+  "grammar": {
+    "title": "Passivo e hedging: comunicare un problema senza allarmare",
+    "explanation": "Quando comunichi un ritardo o un problema a una banca o al management devi essere onesto ma misurato. Due strumenti aiutano. Il passivo mette al centro il fatto, non il responsabile: 'An issue has been identified in the order routing service', 'The release has been postponed to 21 March'. È utile anche quando la causa non è ancora chiara. L'hedging (attenuazione) evita affermazioni troppo assolute finché non hai certezze: 'It appears that / It seems that' (sembra che), 'We may / might need to…' (potremmo dover…), 'likely / unlikely' (probabile / improbabile), 'slightly later than planned' (un po' più tardi del previsto), 'at this stage' (al momento). Struttura consigliata: 1) cosa è successo, al passivo; 2) impatto, con hedging; 3) cosa state facendo; 4) nuova data o prossimo aggiornamento. Attenzione a non esagerare: troppo hedging sembra evasivo. Quando un fatto è certo, dillo chiaramente.",
+    "examples": [
+      { "en": "An issue has been identified in the order routing service.", "note": "passivo: il fatto, non il colpevole" },
+      { "en": "It appears that some orders were not forwarded to the fund platform.", "note": "hedging: causa non ancora certa" },
+      { "en": "We may need to postpone the go-live by one week.", "note": "'may need to': possibilità" },
+      { "en": "The migration will be completed slightly later than planned.", "note": "ritardo comunicato in modo misurato" },
+      { "en": "At this stage, no client data appears to have been affected.", "note": "'at this stage' + passivo" },
+      { "en": "A fix is being tested and is likely to be deployed tomorrow.", "note": "passivo progressivo + 'likely'" }
+    ],
+    "italianTrap": "Gli italiani traducono 'Sembra che' con 'It seems like that…' o scrivono 'There is a delay of the release'. Forme corrette: 'It seems that…' / 'It appears that…' e 'The release has been delayed' oppure 'There is a delay in the release'. Inoltre 'eventually' non significa 'eventualmente': per una possibilità usa 'possibly' o 'if necessary'."
+  },
+  "phrases": [
+    { "en": "I am writing to let you know about an issue affecting the order routing service.", "it": "Le scrivo per informarLa di un problema che riguarda il servizio di instradamento ordini.", "when": "apertura" },
+    { "en": "An issue has been identified in last night's batch.", "it": "È stato individuato un problema nel batch di questa notte.", "when": "problema" },
+    { "en": "It appears that the file was generated with an incorrect date.", "it": "Sembra che il file sia stato generato con una data errata.", "when": "problema" },
+    { "en": "Unfortunately, the release has been delayed.", "it": "Purtroppo il rilascio è stato posticipato.", "when": "ritardo" },
+    { "en": "The migration will be completed slightly later than planned.", "it": "La migrazione sarà completata un po' più tardi del previsto.", "when": "ritardo" },
+    { "en": "We may need to reschedule the test window.", "it": "Potremmo dover ripianificare la finestra di test.", "when": "impatto" },
+    { "en": "At this stage, we do not expect any impact on clients.", "it": "Al momento non prevediamo alcun impatto sui clienti.", "when": "impatto" },
+    { "en": "A fix is currently being tested.", "it": "Una correzione è attualmente in fase di test.", "when": "azioni" },
+    { "en": "We will send you an update by 3 p.m. today.", "it": "Le invieremo un aggiornamento entro le 15 di oggi.", "when": "prossimi passi" },
+    { "en": "We apologise for any inconvenience this may cause.", "it": "Ci scusiamo per l'eventuale disagio.", "when": "chiusura" },
+    { "en": "The new go-live date is expected to be 21 March.", "it": "La nuova data di go-live dovrebbe essere il 21 marzo.", "when": "prossimi passi" }
+  ],
+  "quiz": [
+    { "q": "Which sentence reports the problem to the partner bank in the most professional way?", "options": ["Our developer broke the batch.", "We made a big mistake with the batch.", "An issue has been identified in last night's batch.", "The batch is totally broken."], "answer": 2, "why": "Il passivo descrive il fatto in modo neutro e professionale, senza colpe né drammi." },
+    { "q": "You are not yet sure of the cause. Choose the best sentence.", "options": ["It appears that the certificate expired overnight.", "The certificate expired, 100%.", "The certificate surely expired.", "It seems like that the certificate expired."], "answer": 0, "why": "'It appears that…' attenua un'ipotesi non ancora confermata. 'It seems like that' è un errore." },
+    { "q": "'A hotfix ___ at the moment and should be deployed tonight.'", "options": ["is testing", "tests", "has tested", "is being tested"], "answer": 3, "why": "La correzione 'viene testata' ora: passivo progressivo 'is being tested'." },
+    { "q": "Which phrase softens the news of a delay?", "options": ["much later than we said", "slightly later than planned", "very late", "too late"], "answer": 1, "why": "'Slightly later than planned' comunica il ritardo in modo misurato." },
+    { "q": "'The go-live ___ to 21 March.'", "options": ["has postponed", "has been postponed", "is postponing", "was postpone"], "answer": 1, "why": "Il go-live 'è stato rimandato': passivo del present perfect." },
+    { "q": "'We ___ need to repeat the onboarding tests with the KYC provider.'", "options": ["may", "must to", "are", "will to"], "answer": 0, "why": "'May need to' esprime una possibilità senza promettere nulla." },
+    { "q": "Which sentence is TOO hedged for a fact you have already confirmed?", "options": ["The service was restored at 09:40.", "The root cause has been confirmed.", "It might possibly perhaps seem that the service could be back.", "No client data was affected."], "answer": 2, "why": "Troppo hedging su un fatto certo suona evasivo: i fatti confermati si dicono chiaramente." },
+    { "q": "Choose the correct translation of 'eventualmente potremmo spostare il test'.", "options": ["Eventually we could move the test.", "If necessary, we could move the test.", "Eventually we move the test.", "Possibly we could moved the test."], "answer": 1, "why": "'Eventually' significa 'alla fine'; per 'eventualmente' usa 'if necessary' o 'possibly'." }
+  ],
+  "gapfill": [
+    { "text": "It ___ that some orders were not sent to the fund platform.", "answers": ["appears", "seems"], "hint": "sembra (hedging)" },
+    { "text": "The migration will be completed ___ later than planned.", "answers": ["slightly", "a little"], "hint": "leggermente" },
+    { "text": "The release has ___ postponed until next Tuesday.", "answers": ["been"], "hint": "passivo del present perfect" }
+  ],
+  "reorder": [
+    { "words": ["We", "may", "need", "to", "reschedule", "the", "test", "window"], "answer": "We may need to reschedule the test window" },
+    { "words": ["A", "fix", "is", "currently", "being", "tested"], "answer": "A fix is currently being tested" }
+  ],
+  "fluency": [
+    { "prompt": "Your manager asks you to summarise aloud the email you'll send to the partner bank: the release is delayed by one week because a bug was found in the reconciliation module. 45 seconds.", "seconds": 45, "model": "I'll explain that an issue has been identified in the reconciliation module during final testing. As a result, the release has been postponed by one week, to 21 March. I'll add that a fix is currently being tested and that we'll send them an update on Friday.", "keyPhrases": ["an issue has been identified", "the release has been postponed", "a fix is currently being tested", "an update"] },
+    { "prompt": "Dictate the core of an email to the fund platform: some orders may not have been forwarded last night, the cause is not yet confirmed. 40 seconds.", "seconds": 40, "model": "It appears that some orders from last night were not forwarded to your platform. At this stage, the cause has not been confirmed, but we are investigating with high priority. We may need to resend the affected orders this morning.", "keyPhrases": ["it appears that", "at this stage", "has not been confirmed", "we may need to"] },
+    { "prompt": "Tell a junior colleague aloud how to structure an email that communicates a problem. 50 seconds.", "seconds": 50, "model": "Start with what happened, using the passive, for example 'an issue has been identified'. Then describe the impact carefully, with phrases like 'at this stage' or 'we may need to'. After that, say what you are doing about it, and always finish with a date for the next update.", "keyPhrases": ["using the passive", "at this stage", "we may need to", "the next update"] }
+  ],
+  "write": [
+    {
+      "prompt": "Write an email to management. The migration of the client onboarding service to the new cluster was planned for 14 March. During testing, an issue was found with the signature provider's callback. The cause is probably a certificate configuration. The migration will now happen around 21 March. No client is affected because the old service is still running. You will send an update on Monday.",
+      "model": "Subject: Onboarding service migration – revised date\n\nDear all,\n\nI am writing to let you know that the migration of the onboarding service, planned for 14 March, has been postponed.\n\nDuring final testing, an issue was identified with the signature provider's callback. It appears that the cause is a certificate configuration, and a fix is currently being tested. The migration is now likely to take place around 21 March, slightly later than planned.\n\nAt this stage, no clients are affected, as the current service remains fully operational. I will send you an update on Monday.\n\nKind regards,\n\n[Name]",
+      "checklist": ["Oggetto chiaro che anticipa la notizia", "Problema descritto al passivo, senza colpe", "Hedging sulle informazioni non ancora certe", "Impatto e azioni in corso spiegati", "Nuova data o data del prossimo aggiornamento"],
+      "keyPhrases": ["has been postponed", "It appears that", "is currently being tested", "slightly later than planned", "At this stage"]
+    }
+  ]
+}

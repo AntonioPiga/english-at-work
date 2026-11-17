@@ -1,0 +1,247 @@
+{
+  "id": "phrases-presentations",
+  "title": "Phrases: presentations",
+  "description": "Frasi pronte per le presentazioni",
+  "cards": [
+    {
+      "id": "pp-welcome",
+      "front": "Dare il benvenuto",
+      "back": "Good morning, everyone, and thanks for being here.",
+      "example": "Good morning, everyone, and thanks for being here so early."
+    },
+    {
+      "id": "pp-introduce-self",
+      "front": "Presentarsi",
+      "back": "For those who don't know me, I'm the lead architect.",
+      "example": "For those who don't know me, I'm the lead architect here."
+    },
+    {
+      "id": "pp-purpose",
+      "front": "Dichiarare lo scopo",
+      "back": "The aim of today's session is to...",
+      "example": "The aim of today's session is to review the cloud roadmap."
+    },
+    {
+      "id": "pp-outline",
+      "front": "Presentare la scaletta",
+      "back": "I've divided my talk into three parts.",
+      "example": "I've divided my talk into three parts: context, solution and costs."
+    },
+    {
+      "id": "pp-first",
+      "front": "Iniziare il primo punto",
+      "back": "Let's start with...",
+      "example": "Let's start with a quick overview of the current architecture."
+    },
+    {
+      "id": "pp-questions-end",
+      "front": "Domande alla fine",
+      "back": "I'll take questions at the end.",
+      "example": "I'll take questions at the end, so please note them down."
+    },
+    {
+      "id": "pp-questions-anytime",
+      "front": "Domande in qualsiasi momento",
+      "back": "Feel free to interrupt if anything's unclear.",
+      "example": "Feel free to interrupt if anything's unclear about the diagrams."
+    },
+    {
+      "id": "pp-next-point",
+      "front": "Passare al punto successivo",
+      "back": "Moving on to...",
+      "example": "Moving on to the second part: our deployment strategy."
+    },
+    {
+      "id": "pp-turn-to",
+      "front": "Passare a un altro argomento",
+      "back": "Now let's turn to...",
+      "example": "Now let's turn to the results of the load tests."
+    },
+    {
+      "id": "pp-back-to",
+      "front": "Tornare a un punto precedente",
+      "back": "Going back to what I said earlier, ...",
+      "example": "Going back to what I said earlier, latency is our main concern."
+    },
+    {
+      "id": "pp-digress",
+      "front": "Fare una breve digressione",
+      "back": "If I could digress for a moment, ...",
+      "example": "If I could digress for a moment, this also affects reporting."
+    },
+    {
+      "id": "pp-expand",
+      "front": "Approfondire",
+      "back": "I'd like to expand on that a little.",
+      "example": "I'd like to expand on that a little, as it's crucial."
+    },
+    {
+      "id": "pp-refer-slide",
+      "front": "Rimandare a una slide",
+      "back": "As you can see on this slide, ...",
+      "example": "As you can see on this slide, errors dropped by forty percent."
+    },
+    {
+      "id": "pp-look-at-graph",
+      "front": "Commentare un grafico",
+      "back": "If you look at this chart, you'll notice...",
+      "example": "If you look at this chart, you'll notice a spike in March."
+    },
+    {
+      "id": "pp-highlight",
+      "front": "Mettere in evidenza",
+      "back": "I'd like to draw your attention to...",
+      "example": "I'd like to draw your attention to the onboarding drop-off rate."
+    },
+    {
+      "id": "pp-key-point",
+      "front": "Sottolineare il punto chiave",
+      "back": "The key point here is that...",
+      "example": "The key point here is that clients complete onboarding faster."
+    },
+    {
+      "id": "pp-trend-rise",
+      "front": "Descrivere una crescita",
+      "back": "...rose steadily / increased sharply",
+      "example": "Order volumes rose steadily throughout the second quarter."
+    },
+    {
+      "id": "pp-trend-fall",
+      "front": "Descrivere un calo",
+      "back": "...fell slightly / dropped significantly",
+      "example": "Failed reconciliations dropped significantly after the new release."
+    },
+    {
+      "id": "pp-trend-stable",
+      "front": "Descrivere stabilità",
+      "back": "...remained stable / levelled off",
+      "example": "Response times remained stable even under peak load."
+    },
+    {
+      "id": "pp-example",
+      "front": "Fare un esempio",
+      "back": "To give you an example, ...",
+      "example": "To give you an example, a typical order takes two seconds."
+    },
+    {
+      "id": "pp-in-other-words",
+      "front": "Riformulare",
+      "back": "In other words, ...",
+      "example": "In other words, we can release every week instead of monthly."
+    },
+    {
+      "id": "pp-compare",
+      "front": "Confrontare",
+      "back": "Compared with last year, ...",
+      "example": "Compared with last year, infrastructure costs are down by a third."
+    },
+    {
+      "id": "pp-problem",
+      "front": "Presentare un problema",
+      "back": "The challenge we're facing is...",
+      "example": "The challenge we're facing is manual reconciliation with the partner bank."
+    },
+    {
+      "id": "pp-solution",
+      "front": "Presentare la soluzione",
+      "back": "What we're proposing is...",
+      "example": "What we're proposing is a fully automated daily reconciliation."
+    },
+    {
+      "id": "pp-benefits",
+      "front": "Elencare i vantaggi",
+      "back": "The main benefits are threefold.",
+      "example": "The main benefits are threefold: speed, cost and auditability."
+    },
+    {
+      "id": "pp-risks",
+      "front": "Riconoscere i rischi",
+      "back": "Of course, there are some risks to consider.",
+      "example": "Of course, there are some risks to consider, mainly vendor lock-in."
+    },
+    {
+      "id": "pp-recommend",
+      "front": "Fare una raccomandazione",
+      "back": "Our recommendation is to...",
+      "example": "Our recommendation is to phase the migration over two quarters."
+    },
+    {
+      "id": "pp-summarise",
+      "front": "Riassumere",
+      "back": "To sum up, ...",
+      "example": "To sum up, the new pipeline is faster, cheaper and safer."
+    },
+    {
+      "id": "pp-conclude",
+      "front": "Concludere",
+      "back": "That brings me to the end of my presentation.",
+      "example": "That brings me to the end of my presentation, thank you."
+    },
+    {
+      "id": "pp-call-to-action",
+      "front": "Chiedere una decisione",
+      "back": "What we need from you today is...",
+      "example": "What we need from you today is approval for the budget."
+    },
+    {
+      "id": "pp-open-floor",
+      "front": "Aprire alle domande",
+      "back": "I'm happy to take any questions.",
+      "example": "I'm happy to take any questions about the roadmap now."
+    },
+    {
+      "id": "pp-good-question",
+      "front": "Prendere tempo su una domanda",
+      "back": "That's a good question.",
+      "example": "That's a good question, and it's one we discussed at length."
+    },
+    {
+      "id": "pp-dont-know",
+      "front": "Non conoscere la risposta",
+      "back": "I don't have that figure to hand, but I'll find out.",
+      "example": "I don't have that figure to hand, but I'll find out today."
+    },
+    {
+      "id": "pp-clarify-question",
+      "front": "Chiarire una domanda",
+      "back": "Just to make sure I understand your question, ...",
+      "example": "Just to make sure I understand your question, you mean production costs?"
+    },
+    {
+      "id": "pp-answered",
+      "front": "Verificare la risposta",
+      "back": "Does that answer your question?",
+      "example": "Does that answer your question about the rollback plan?"
+    },
+    {
+      "id": "pp-outside-scope",
+      "front": "Domanda fuori tema",
+      "back": "That's slightly outside the scope of today's talk.",
+      "example": "That's slightly outside the scope of today's talk, but let's discuss afterwards."
+    },
+    {
+      "id": "pp-time-check",
+      "front": "Gestire il tempo",
+      "back": "I'm conscious of time, so I'll move quickly.",
+      "example": "I'm conscious of time, so I'll move quickly through the appendix."
+    },
+    {
+      "id": "pp-hand-over",
+      "front": "Passare la parola a un collega",
+      "back": "I'll now hand over to my colleague.",
+      "example": "I'll now hand over to my colleague, who'll cover the KPIs."
+    },
+    {
+      "id": "pp-demo",
+      "front": "Introdurre una demo",
+      "back": "Let me show you how it works in practice.",
+      "example": "Let me show you how it works in practice with a live demo."
+    },
+    {
+      "id": "pp-thanks-attention",
+      "front": "Ringraziare per l'attenzione",
+      "back": "Thank you all for your attention.",
+      "example": "Thank you all for your attention and for the great questions."
+    }
+  ]
+}

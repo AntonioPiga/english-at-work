@@ -7,44 +7,51 @@
   "minutes": 12,
   "grammar": {
     "title": "Present simple vs present continuous per gli aggiornamenti di stato",
-    "explanation": "Placeholder: sostituito nel Task 7.",
+    "explanation": "In apertura di call dai quasi sempre un aggiornamento di stato, e servono due presenti diversi. Il present simple (we run, it calls, the job fails) descrive routine, processi stabili e fatti sempre veri: cosa fa un servizio, ogni quanto gira un batch, chi è responsabile di cosa. Parole tipiche: every day, usually, twice a week, always. Il present continuous (we're testing, I'm looking into it) descrive ciò che succede adesso o in questo periodo: lavoro in corso, attività temporanee. Parole tipiche: right now, currently, this week, at the moment. Nella stessa frase li usi spesso insieme: il simple dà il contesto ('The reconciliation runs every morning'), il continuous lo stato attuale ('This week we're moving it to the new cluster'). Attenzione ai verbi di stato (know, need, understand, depend, mean): restano al simple anche quando parli di adesso. Si dice 'I understand', non 'I'm understanding'.",
     "examples": [
-      { "en": "We're currently migrating the batch to the new cluster.", "note": "azione in corso" },
-      { "en": "The job runs every night at two.", "note": "routine" },
-      { "en": "I'm looking into the error right now.", "note": "in corso" },
-      { "en": "The service calls the bank API twice a day.", "note": "fatto abituale" }
+      { "en": "The reconciliation job runs every morning at six.", "note": "routine: present simple" },
+      { "en": "This week we're migrating the batch to the new cluster.", "note": "lavoro temporaneo in corso" },
+      { "en": "I'm looking into the error right now.", "note": "azione in corso adesso" },
+      { "en": "The onboarding service calls the KYC provider for every new client.", "note": "processo stabile" },
+      { "en": "Currently we're testing the fix in staging.", "note": "currently = attualmente (non 'actually')" },
+      { "en": "We need the partner bank's file by nine.", "note": "verbo di stato: niente -ing" }
     ],
-    "italianTrap": "Gli italiani dicono spesso 'I work on it now': in inglese serve il continuous, 'I'm working on it now'."
+    "italianTrap": "In italiano il presente copre tutto ('ci lavoro adesso'), quindi viene spontaneo dire 'I work on it now' o 'Now we test the fix'. Per ciò che accade adesso serve il continuous: 'I'm working on it now', 'We're testing the fix right now'. E 'attualmente' si dice 'currently', non 'actually' (che significa 'in realtà')."
   },
   "phrases": [
     { "en": "Thanks everyone for joining.", "it": "Grazie a tutti per esserci.", "when": "apertura" },
-    { "en": "Shall we get started?", "it": "Possiamo iniziare?", "when": "apertura" },
-    { "en": "The purpose of today's call is to review the incident.", "it": "Lo scopo della call di oggi è rivedere l'incident.", "when": "agenda" },
-    { "en": "There are three points I'd like to cover.", "it": "Ci sono tre punti che vorrei trattare.", "when": "agenda" },
-    { "en": "Let's start with the batch failure.", "it": "Iniziamo dal fallimento del batch.", "when": "agenda" },
     { "en": "Can everyone hear me OK?", "it": "Mi sentite tutti bene?", "when": "tecnico" },
-    { "en": "I'll share my screen in a second.", "it": "Condivido lo schermo tra un secondo.", "when": "tecnico" },
-    { "en": "We have about thirty minutes, so let's keep it focused.", "it": "Abbiamo circa trenta minuti, restiamo concentrati.", "when": "tempo" }
+    { "en": "Let's give it a couple of minutes for the others to join.", "it": "Aspettiamo un paio di minuti che si colleghino gli altri.", "when": "apertura" },
+    { "en": "Shall we get started?", "it": "Iniziamo?", "when": "apertura" },
+    { "en": "The purpose of today's call is to review the reconciliation issue.", "it": "Lo scopo della call di oggi è rivedere il problema di riconciliazione.", "when": "agenda" },
+    { "en": "There are three points I'd like to cover today.", "it": "Ci sono tre punti che vorrei trattare oggi.", "when": "agenda" },
+    { "en": "First, a quick status update. Then, next steps.", "it": "Prima un breve aggiornamento, poi i prossimi passi.", "when": "agenda" },
+    { "en": "Let's start with where we are on the migration.", "it": "Partiamo da dove siamo con la migrazione.", "when": "agenda" },
+    { "en": "Before we start, does anyone want to add anything to the agenda?", "it": "Prima di iniziare, qualcuno vuole aggiungere qualcosa all'agenda?", "when": "agenda" },
+    { "en": "I'll share my screen in a second.", "it": "Condivido lo schermo tra un attimo.", "when": "tecnico" },
+    { "en": "We've got about thirty minutes, so let's keep it focused.", "it": "Abbiamo circa trenta minuti, restiamo sul punto.", "when": "tempo" }
   ],
   "quiz": [
-    { "q": "Choose the natural opening: 'Thanks everyone ___.'", "options": ["for join", "for joining", "to join", "for the joining"], "answer": 1, "why": "Dopo una preposizione il verbo va in -ing: 'for joining'." },
-    { "q": "'The job ___ every night at 2 a.m.'", "options": ["is running", "runs", "run", "is run"], "answer": 1, "why": "Routine ripetuta: present simple, terza persona con -s." },
-    { "q": "'Right now we ___ the root cause.'", "options": ["investigate", "are investigating", "investigates", "investigated"], "answer": 1, "why": "Azione in corso in questo momento: present continuous." },
-    { "q": "Which sentence sets the agenda?", "options": ["How are you?", "There are two points I'd like to cover.", "Can you hear me?", "See you next week."], "answer": 1, "why": "Introduce i punti da trattare." },
-    { "q": "'Shall we ___ started?'", "options": ["get", "be", "make", "do"], "answer": 0, "why": "'Get started' è la collocazione fissa." },
-    { "q": "'The service ___ the bank API twice a day.'", "options": ["is calling", "calls", "call", "called"], "answer": 1, "why": "Frequenza abituale ('twice a day'): present simple." }
+    { "q": "You are opening a call with the partner bank. Which first line sounds most natural?", "options": ["Hello, we can begin the meeting now with everybody.", "Good morning to all the persons connected.", "Thanks everyone for joining.", "I welcome you in this call."], "answer": 2, "why": "'Thanks everyone for joining' è la formula standard, breve e cordiale. Le altre sono calchi dall'italiano o suonano rigide." },
+    { "q": "'The reconciliation job ___ every morning at six.'", "options": ["runs", "is running", "run", "is runned"], "answer": 0, "why": "Routine ripetuta ('every morning'): present simple, con -s alla terza persona." },
+    { "q": "'Right now we ___ the logs with the vendor.'", "options": ["check", "checks", "checked", "are checking"], "answer": 3, "why": "'Right now' indica un'azione in corso: present continuous." },
+    { "q": "'I ___ what you mean, but the file is still missing.'", "options": ["am understanding", "understand", "understanding", "am understand"], "answer": 1, "why": "'Understand' è un verbo di stato: resta al present simple anche quando parli di adesso." },
+    { "q": "Which sentence sets the agenda?", "options": ["There are two points I'd like to cover.", "Can you hear me OK?", "Sorry, I'm a bit late, the previous meeting ran over.", "See you next week."], "answer": 0, "why": "Annuncia i punti da trattare: è la frase tipica per fissare l'agenda." },
+    { "q": "'This week the team ___ the new signature provider into the onboarding flow.'", "options": ["integrates", "integrate", "is integrating", "integrated"], "answer": 2, "why": "'This week' indica un lavoro temporaneo in corso: present continuous." },
+    { "q": "The PM asks: 'What's the status of the migration?' Which answer is correct?", "options": ["We migrate it now.", "We are migrate it.", "Now we migrating it, it's nearly finished.", "We're migrating it right now."], "answer": 3, "why": "Azione in corso: 'be' + verbo in -ing. Le altre mancano di un pezzo o usano il simple." }
   ],
   "gapfill": [
-    { "text": "Could you ___ me through the error?", "answers": ["walk"], "hint": "guidare passo passo" },
-    { "text": "Let's ___ with the incident.", "answers": ["start", "begin"], "hint": "iniziare" }
+    { "text": "Shall we get ___?", "answers": ["started"], "hint": "iniziare: collocazione fissa con 'get'" },
+    { "text": "At the moment we ___ testing the fix in staging.", "answers": ["are", "'re"], "hint": "present continuous: manca il verbo 'essere'" },
+    { "text": "The batch usually ___ at two in the morning.", "answers": ["runs", "starts", "begins"], "hint": "routine, terza persona singolare" }
   ],
   "reorder": [
-    { "words": ["There", "are", "three", "points", "I'd", "like", "to", "cover"], "answer": "There are three points I'd like to cover" },
-    { "words": ["The", "purpose", "of", "today's", "call", "is", "to", "review", "the", "incident"], "answer": "The purpose of today's call is to review the incident" }
+    { "words": ["There", "are", "three", "points", "I'd", "like", "to", "cover"], "answer": "There are three points I'd like to cover." },
+    { "words": ["We're", "currently", "migrating", "the", "batch", "to", "the", "new", "cluster"], "answer": "We're currently migrating the batch to the new cluster." }
   ],
   "fluency": [
-    { "prompt": "You are hosting the call. Greet the partner bank, state the purpose and list two agenda points. 30 seconds.", "seconds": 30, "model": "Thanks everyone for joining. The purpose of today's call is to review yesterday's batch failure. There are two points I'd like to cover: first the root cause, then the plan for tonight's run.", "keyPhrases": ["thanks everyone for joining", "the purpose of today's call", "two points", "root cause"] },
-    { "prompt": "Someone joins late. Welcome them and summarise where you are in one sentence. 20 seconds.", "seconds": 20, "model": "Hi, welcome. We've just started; we're currently going through the root cause of the batch failure.", "keyPhrases": ["welcome", "we have just started", "currently"] },
-    { "prompt": "Say what your team does every day and what you are doing right now about the incident. 40 seconds.", "seconds": 40, "model": "Our team runs the nightly reconciliation and monitors the batch every morning. Right now we're analysing the logs and we're working with the vendor on a fix.", "keyPhrases": ["every morning", "right now", "we are working with"] }
+    { "prompt": "You are hosting the weekly call with the partner bank. Thank them, state the purpose and list two agenda points. 30 seconds.", "seconds": 30, "model": "Thanks everyone for joining. The purpose of today's call is to review last week's reconciliation results. There are two points I'd like to cover: first the missing transactions, then the plan for next week.", "keyPhrases": ["thanks everyone for joining", "the purpose of today's call", "there are two points", "I'd like to cover"] },
+    { "prompt": "Someone from the vendor joins five minutes late. Welcome them and say what you are discussing right now. 20 seconds.", "seconds": 20, "model": "Hi, welcome. We've just started. Right now we're going through the status of the integration.", "keyPhrases": ["welcome", "we've just started", "right now", "we're going through"] },
+    { "prompt": "Your internal team asks for a status update on the order routing service. Say what the service does every day and what you are doing this week. 45 seconds.", "seconds": 45, "model": "The order routing service sends orders to the fund platform every day at noon. It usually processes about two hundred orders. This week we're adding a retry mechanism, and at the moment we're testing it in staging.", "keyPhrases": ["every day", "usually", "this week we're adding", "at the moment"] }
   ]
 }

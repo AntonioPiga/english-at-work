@@ -1,0 +1,60 @@
+{
+  "id": "presentations-02-architecture",
+  "track": "presentations",
+  "order": 2,
+  "title": "Describing architecture and flows",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Present simple, passivo e preposizioni di movimento per descrivere i flussi",
+    "explanation": "Quando descrivi un'architettura o un flusso stai descrivendo come funziona il sistema sempre, non cosa succede in questo momento: usa il present simple (The front end calls the API. The service publishes an event.). Ricorda la -s alla terza persona singolare. Quando conta il dato più di chi agisce, usa il passivo: am/is/are + participio passato (The order is validated, then it is routed to the fund platform. The documents are stored in blob storage.). È perfetto per descrivere i passaggi di un dato tra componenti. Per il movimento usa le preposizioni giuste: from … to (da … a), into (dentro: written into the database), through (attraverso: passes through the gateway), via (tramite: sent via the message bus), out of / back to (in uscita / di ritorno). In presentazione, segui il dato: parti dalla sorgente, nomina ogni componente, chiudi con la destinazione. Frasi brevi, un passaggio per frase.",
+    "examples": [
+      { "en": "The client signs the contract in the app.", "note": "present simple, processo" },
+      { "en": "The order is validated and then routed to the fund platform.", "note": "passivo per il flusso" },
+      { "en": "Every request goes through the API gateway first.", "note": "through = attraverso" },
+      { "en": "The event is sent via the message bus to the documents service.", "note": "via = tramite" },
+      { "en": "The data is written into the reporting database every night.", "note": "into = dentro" },
+      { "en": "The confirmation comes back from the partner bank as a file.", "note": "from = provenienza" }
+    ],
+    "italianTrap": "Errore tipico: usare il continuous per un processo stabile ('The service is calling the bank every night') o dimenticare la -s ('The gateway route the request'). Corretto: 'The service calls the bank every night', 'The gateway routes the request'. Altro calco: 'The order is sent at the platform' → 'The order is sent to the platform'; 'enter in the database' → 'go into the database'."
+  },
+  "phrases": [
+    { "en": "Let me walk you through the flow from start to finish.", "it": "Vi accompagno nel flusso dall'inizio alla fine.", "when": "introduzione" },
+    { "en": "On the left you can see the client apps.", "it": "Sulla sinistra vedete le app client.", "when": "diagramma" },
+    { "en": "Everything starts when the client places an order.", "it": "Tutto parte quando il cliente inserisce un ordine.", "when": "flusso" },
+    { "en": "The request goes through the API gateway.", "it": "La richiesta passa attraverso l'API gateway.", "when": "flusso" },
+    { "en": "The order is then routed to the fund platform.", "it": "L'ordine viene poi instradato verso la piattaforma fondi.", "when": "flusso" },
+    { "en": "The services talk to each other via the message bus.", "it": "I servizi comunicano tra loro tramite il message bus.", "when": "componenti" },
+    { "en": "Each service owns its own database.", "it": "Ogni servizio ha il proprio database.", "when": "componenti" },
+    { "en": "This is where the reconciliation happens.", "it": "È qui che avviene la riconciliazione.", "when": "diagramma" },
+    { "en": "Once the trade is confirmed, the position is updated.", "it": "Una volta confermata l'operazione, la posizione viene aggiornata.", "when": "flusso" },
+    { "en": "The key point here is that the flow is asynchronous.", "it": "Il punto chiave qui è che il flusso è asincrono.", "when": "sintesi" }
+  ],
+  "quiz": [
+    { "q": "Describing the architecture: 'Every night the batch ___ the positions from the custodian.'", "options": ["is downloading", "download", "downloads", "downloading"], "answer": 2, "why": "Processo abituale e stabile: present simple con -s alla terza persona." },
+    { "q": "'Once the order is validated, it ___ to the fund platform.'", "options": ["is routed", "routes", "is routing", "routed"], "answer": 0, "why": "Il soggetto (l'ordine) subisce l'azione: passivo 'is routed'." },
+    { "q": "'All external calls go ___ the API gateway before reaching the services.'", "options": ["across", "over", "by", "through"], "answer": 3, "why": "'Through' = passare attraverso un componente." },
+    { "q": "'The services communicate ___ the message bus, not directly.'", "options": ["via", "into", "at", "from"], "answer": 0, "why": "'Via' = tramite un canale o mezzo." },
+    { "q": "'The signed contract ___ in blob storage and a link is saved in the database.'", "options": ["stores", "is storing", "is stored", "store"], "answer": 2, "why": "Il contratto non si archivia da solo: passivo presente 'is stored'." },
+    { "q": "'The reconciliation file comes ___ the partner bank every morning at six.'", "options": ["to", "from", "into", "through"], "answer": 1, "why": "Provenienza: 'come from'." },
+    { "q": "Which sentence correctly describes a stable process on an architecture slide?", "options": ["The onboarding service is sending the data to the KYC provider.", "The onboarding service send the data to the KYC provider.", "The onboarding service sends the data to the KYC provider.", "The onboarding service sent the data at the KYC provider."], "answer": 2, "why": "Present simple con -s e 'send to'. Il continuous indicherebbe un'azione in corso adesso." },
+    { "q": "'The trades are loaded ___ the reporting database overnight.'", "options": ["at", "on", "into", "inside of"], "answer": 2, "why": "'Load/write into' per indicare l'ingresso di dati in un contenitore." }
+  ],
+  "gapfill": [
+    { "text": "The request is ___ to the right service by the gateway.", "answers": ["routed", "sent", "forwarded"], "hint": "instradata (participio)" },
+    { "text": "Notifications are sent ___ the message bus.", "answers": ["via", "through", "over"], "hint": "tramite" },
+    { "text": "The client ___ the contract with the signature provider.", "answers": ["signs"], "hint": "firmare, present simple" }
+  ],
+  "reorder": [
+    { "words": ["The", "order", "is", "routed", "to", "the", "fund", "platform"], "answer": "The order is routed to the fund platform" },
+    { "words": ["Every", "request", "goes", "through", "the", "API", "gateway"], "answer": "Every request goes through the API gateway" }
+  ],
+  "fluency": [
+    { "prompt": "Slide shows the order flow: app → API gateway → orders service → fund platform. Describe it to the management committee. 45 seconds.", "seconds": 45, "model": "Let me walk you through the order flow. Everything starts when the client places an order in the app. The request goes through the API gateway to the orders service. There, the order is validated and then routed to the fund platform. When the platform confirms the trade, the position is updated.", "keyPhrases": ["Let me walk you through", "goes through the API gateway", "is validated", "routed to the fund platform", "is updated"] },
+    { "prompt": "Diagram of the onboarding: identity check with the KYC provider, e-signature, account opening at the partner bank. Explain the steps to the client. 45 seconds.", "seconds": 45, "model": "The onboarding has three main steps. First, the client's identity is checked by the KYC provider. Then the contract is signed electronically via the signature provider. Finally, the data is sent to the partner bank, which opens the account.", "keyPhrases": ["is checked by", "is signed electronically", "via the signature provider", "is sent to the partner bank"] },
+    { "prompt": "Someone asks how the services talk to each other. Explain the event-driven setup in 30 seconds.", "seconds": 30, "model": "The services don't call each other directly. They talk via the message bus. When something happens, a service publishes an event, and the other services subscribe to it. Each service owns its own database.", "keyPhrases": ["via the message bus", "publishes an event", "owns its own database"] }
+  ],
+  "write": [
+    { "prompt": "Write the speaker notes (80-120 words) for an architecture slide showing the daily reconciliation with the partner bank: the bank sends a file, a function loads it, the data is compared with internal positions, and differences are flagged on a dashboard.", "model": "This slide shows the daily reconciliation with the partner bank. Let me walk you through it from left to right. Every morning, the bank sends us a file with all the positions and cash movements. The file is picked up by a cloud function and loaded into a staging database. Then the data is compared with our internal positions, account by account. If the two sides match, nothing happens. If they don't, the difference is flagged and shown on the operations dashboard. The key point here is that the whole process is automatic, so the team only works on the exceptions.", "checklist": ["Present simple per i passaggi abituali", "Almeno due frasi al passivo (is loaded, is flagged…)", "Preposizioni di movimento corrette (from, into, to…)", "Il flusso segue un ordine chiaro (left to right / then)", "Chiusura con il messaggio chiave"], "keyPhrases": ["Let me walk you through it", "loaded into a staging database", "is compared with", "is flagged", "The key point here is"] }
+  ]
+}

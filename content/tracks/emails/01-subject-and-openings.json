@@ -1,0 +1,64 @@
+{
+  "id": "emails-01-openings",
+  "track": "emails",
+  "order": 1,
+  "title": "Subject lines and openings",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Registro formale vs neutro e aperture fisse",
+    "explanation": "In un'email di lavoro il registro dipende dal destinatario. Con una banca, un fornitore nuovo o il management esterno usa il registro formale: 'Dear Mr [Surname]', frasi complete, niente contrazioni (I am, we have). Con colleghi o controparti che conosci bene va bene il neutro: 'Hi [Name]', contrazioni ammesse (I'm, we've). Scegli un registro e mantienilo per tutta l'email. Le prime righe usano formule fisse: 'I hope this email finds you well' (cortesia, solo formale, una volta sola), 'I am writing to + verbo' (dichiara subito lo scopo), 'Further to our call / your email of 12 March,' (collega a un contatto precedente), 'Thank you for your email regarding…' (risposta). Dopo 'I am writing to' serve l'infinito: 'to confirm', 'to request', 'to inform you'. L'oggetto deve essere breve e specifico: argomento + azione + eventuale data, per esempio 'Reconciliation file 14 March – missing records'. Evita oggetti vaghi come 'Question' o 'Urgent!!!'.",
+    "examples": [
+      { "en": "I am writing to confirm the go-live date for the new order routing service.", "note": "scopo dichiarato subito, registro formale" },
+      { "en": "Further to our call this morning, please find attached the updated test plan.", "note": "collega l'email a una call precedente" },
+      { "en": "Thank you for your email regarding the daily reconciliation file.", "note": "apertura di una risposta" },
+      { "en": "I hope this email finds you well.", "note": "cortesia formale, da usare una volta sola" },
+      { "en": "Hi, just a quick note to say the release went fine.", "note": "registro neutro, tra colleghi" },
+      { "en": "Subject: KYC provider integration – test credentials request", "note": "oggetto specifico: argomento + azione" }
+    ],
+    "italianTrap": "Calco da 'Le scrivo per...': gli italiani scrivono 'I write you for…' o 'I am writing you to…'. La forma corretta britannica è 'I am writing to…' (senza 'you') seguito dall'infinito: 'I am writing to request access'. Attenzione anche a 'Dear Sir' con un destinatario di cui conosci il nome: usa 'Dear Ms [Surname]'."
+  },
+  "phrases": [
+    { "en": "I hope this email finds you well.", "it": "Spero che stia bene.", "when": "apertura" },
+    { "en": "I am writing to confirm the details of the migration.", "it": "Le scrivo per confermare i dettagli della migrazione.", "when": "apertura" },
+    { "en": "I am writing to inform you that the service will be unavailable on Saturday.", "it": "Le scrivo per informarLa che il servizio non sarà disponibile sabato.", "when": "apertura" },
+    { "en": "Further to our call this morning, …", "it": "Facendo seguito alla nostra call di stamattina, …", "when": "collegamento" },
+    { "en": "Further to your email of 12 March, …", "it": "In riferimento alla Sua email del 12 marzo, …", "when": "collegamento" },
+    { "en": "Thank you for your email regarding the test environment.", "it": "Grazie per la Sua email riguardo all'ambiente di test.", "when": "risposta" },
+    { "en": "Thank you for getting back to me so quickly.", "it": "Grazie per la rapida risposta.", "when": "risposta" },
+    { "en": "Please find attached the technical specification.", "it": "In allegato trova la specifica tecnica.", "when": "allegato" },
+    { "en": "I would like to introduce myself: I am the software architect responsible for the integration.", "it": "Mi permetta di presentarmi: sono l'architetto software responsabile dell'integrazione.", "when": "presentazione" },
+    { "en": "Kind regards,", "it": "Cordiali saluti,", "when": "chiusura" }
+  ],
+  "quiz": [
+    { "q": "You are emailing the partner bank for the first time. Which greeting is most appropriate?", "options": ["Hey team!", "Dear Ms [Surname],", "Hi dear,", "Good morning to all of you,"], "answer": 1, "why": "Primo contatto con una banca: registro formale, 'Dear' + titolo + cognome." },
+    { "q": "'I am writing ___ the go-live date of the new service.'", "options": ["for confirming", "you to confirm", "to confirm", "for confirm"], "answer": 2, "why": "La formula fissa è 'I am writing to' + infinito, senza 'you'." },
+    { "q": "Which subject line is the best for an email to the custodian?", "options": ["Question", "URGENT!!! Please read", "Hello from the IT team", "Daily position file 14 March – missing ISIN codes"], "answer": 3, "why": "L'oggetto deve essere specifico: argomento, data e problema." },
+    { "q": "You had a call with the vendor yesterday. How do you open your email?", "options": ["Further to our call yesterday,", "As I told you in the call,", "Following the call of yesterday that we did,", "About the call,"], "answer": 0, "why": "'Further to our call…' è la formula standard per collegarsi a un contatto precedente." },
+    { "q": "Which sentence is in a neutral (not formal) register?", "options": ["I would be grateful if you could confirm.", "Thanks, I'll check and get back to you.", "I am writing to inform you of the change.", "Please do not hesitate to contact me."], "answer": 1, "why": "Contrazioni ('I'll') e 'Thanks' sono tipiche del registro neutro, adatto ai colleghi." },
+    { "q": "You are replying to the KYC provider. Choose the best opening.", "options": ["I received your email.", "Your email arrived.", "Thank you for your email regarding the document checks.", "Regarding to your email,"], "answer": 2, "why": "'Thank you for your email regarding…' apre una risposta in modo cortese e specifico. 'Regarding to' è un errore." },
+    { "q": "Which sentence mixes registers and should be avoided in a formal email to management?", "options": ["I am writing to share the Q3 KPIs.", "Please find attached the roadmap.", "I hope this email finds you well.", "Dear Board, here's the stuff you wanted, cheers!"], "answer": 3, "why": "'Dear Board' è formale, ma 'here's the stuff' e 'cheers' sono informali: il registro va mantenuto costante." }
+  ],
+  "gapfill": [
+    { "text": "I am writing ___ request access to the sandbox environment.", "answers": ["to"], "hint": "dopo 'I am writing' serve l'infinito" },
+    { "text": "___ to our call this morning, I am sending you the test results.", "answers": ["Further", "Following"], "hint": "facendo seguito a" },
+    { "text": "Please find ___ the updated API specification.", "answers": ["attached"], "hint": "in allegato" }
+  ],
+  "reorder": [
+    { "words": ["I", "hope", "this", "email", "finds", "you", "well"], "answer": "I hope this email finds you well" },
+    { "words": ["Thank", "you", "for", "your", "email", "regarding", "the", "release"], "answer": "Thank you for your email regarding the release" }
+  ],
+  "fluency": [
+    { "prompt": "Dictate aloud the first two lines of a formal email to the partner bank: greeting and purpose (confirming the date of the next reconciliation test). 30 seconds.", "seconds": 30, "model": "Dear Mr [Surname], I hope this email finds you well. I am writing to confirm the date of the next reconciliation test, which is scheduled for Thursday 14 March.", "keyPhrases": ["Dear Mr [Surname]", "I hope this email finds you well", "I am writing to confirm"] },
+    { "prompt": "You had a call with the vendor this morning. Dictate the opening of your follow-up email and mention the attachment. 30 seconds.", "seconds": 30, "model": "Dear Ms [Surname], further to our call this morning, please find attached the updated integration plan. I have included the changes we discussed regarding the test environment.", "keyPhrases": ["further to our call", "please find attached", "we discussed"] },
+    { "prompt": "Your manager asks you which subject line you would use for an email to the custodian about missing records in yesterday's file, and why. Answer aloud. 40 seconds.", "seconds": 40, "model": "I would use 'Daily position file 14 March – missing records'. It is short and specific, so the custodian knows immediately which file and which problem we are talking about. A vague subject like 'Question' could easily get lost in their inbox.", "keyPhrases": ["short and specific", "which file", "a vague subject"] }
+  ],
+  "write": [
+    {
+      "prompt": "Write a short first-contact email to the signature provider. Introduce yourself as the software architect responsible for the integration, explain that you are writing to request access to their sandbox environment, and mention that you attach the list of developers who need access. Use a clear subject line and a formal register.",
+      "model": "Subject: Sandbox access request – digital signature integration\n\nDear Ms [Surname],\n\nI hope this email finds you well. I am the software architect responsible for the integration of your signature service into our client onboarding platform.\n\nI am writing to request access to your sandbox environment so that our team can start development next week. Please find attached the list of developers who will need credentials.\n\nThank you in advance for your help. Please do not hesitate to contact me if you need any further information.\n\nKind regards,\n\n[Name]\nSoftware Architect",
+      "checklist": ["Oggetto chiaro e specifico (argomento + azione)", "Saluto formale con titolo e cognome", "Scopo dichiarato subito con 'I am writing to…'", "Registro formale costante, senza contrazioni", "Chiusura appropriata ('Kind regards')"],
+      "keyPhrases": ["I hope this email finds you well", "I am writing to request", "Please find attached", "Kind regards"]
+    }
+  ]
+}

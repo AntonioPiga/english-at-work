@@ -5,14 +5,48 @@
       "title": "Tech calls",
       "subtitle": "Call tecniche con banche, fornitori e team esterni",
       "modules": [
-        { "id": "calls-01-opening", "file": "tracks/calls/01-opening-a-call.json", "title": "Opening a call and setting the agenda", "level": "B1", "minutes": 12 }
+        { "id": "calls-01-opening", "file": "tracks/calls/01-opening-a-call.json", "title": "Opening a call and setting the agenda", "level": "B1", "minutes": 12 },
+        { "id": "calls-02-incident", "file": "tracks/calls/02-explaining-an-incident.json", "title": "Explaining an incident", "level": "B1", "minutes": 12 },
+        { "id": "calls-03-clarifying", "file": "tracks/calls/03-clarifying-and-interrupting.json", "title": "Asking for clarification and interrupting politely", "level": "B2", "minutes": 12 },
+        { "id": "calls-04-negotiating", "file": "tracks/calls/04-negotiating-dates.json", "title": "Negotiating dates and scope", "level": "B2", "minutes": 14 },
+        { "id": "calls-05-fast-questions", "file": "tracks/calls/05-fast-questions.json", "title": "Handling fast questions and buying time", "level": "B2", "minutes": 12 },
+        { "id": "calls-06-closing", "file": "tracks/calls/06-closing-and-actions.json", "title": "Closing, actions and follow-up", "level": "C1", "minutes": 14 }
       ]
     },
-    { "id": "emails", "title": "Formal emails", "subtitle": "Mail formali verso banche, fornitori e management", "modules": [] },
-    { "id": "presentations", "title": "Presentations", "subtitle": "Presentazioni al management e al cliente", "modules": [] }
+    {
+      "id": "emails",
+      "title": "Formal emails",
+      "subtitle": "Mail formali verso banche, fornitori e management",
+      "modules": [
+        { "id": "emails-01-openings", "file": "tracks/emails/01-subject-and-openings.json", "title": "Subject lines and openings", "level": "B1", "minutes": 12 },
+        { "id": "emails-02-request", "file": "tracks/emails/02-formal-request.json", "title": "Making a formal request", "level": "B1", "minutes": 12 },
+        { "id": "emails-03-follow-up", "file": "tracks/emails/03-following-up.json", "title": "Following up and chasing", "level": "B2", "minutes": 12 },
+        { "id": "emails-04-delay", "file": "tracks/emails/04-communicating-a-delay.json", "title": "Communicating a delay or a problem", "level": "B2", "minutes": 14 },
+        { "id": "emails-05-escalation", "file": "tracks/emails/05-escalating-politely.json", "title": "Escalating and pushing back politely", "level": "C1", "minutes": 14 },
+        { "id": "emails-06-complaints", "file": "tracks/emails/06-replying-to-complaints.json", "title": "Replying to complaints and closing", "level": "C1", "minutes": 14 }
+      ]
+    },
+    {
+      "id": "presentations",
+      "title": "Presentations",
+      "subtitle": "Presentazioni al management e al cliente",
+      "modules": [
+        { "id": "presentations-01-opening", "file": "tracks/presentations/01-opening-and-signposting.json", "title": "Opening and signposting", "level": "B1", "minutes": 12 },
+        { "id": "presentations-02-architecture", "file": "tracks/presentations/02-describing-architecture.json", "title": "Describing architecture and flows", "level": "B1", "minutes": 12 },
+        { "id": "presentations-03-numbers", "file": "tracks/presentations/03-numbers-and-trends.json", "title": "Numbers and trends", "level": "B2", "minutes": 12 },
+        { "id": "presentations-04-roadmap", "file": "tracks/presentations/04-roadmap-and-timelines.json", "title": "Roadmap and timelines", "level": "B2", "minutes": 14 },
+        { "id": "presentations-05-risks", "file": "tracks/presentations/05-risks-and-recommendations.json", "title": "Risks, trade-offs and recommendations", "level": "C1", "minutes": 14 },
+        { "id": "presentations-06-qa", "file": "tracks/presentations/06-handling-qa.json", "title": "Handling Q&A", "level": "C1", "minutes": 14 }
+      ]
+    }
   ],
   "decks": [
-    { "id": "false-friends", "file": "decks/false-friends.json", "title": "False friends", "description": "Falsi amici e calchi dall'italiano" }
+    { "id": "phrases-calls", "file": "decks/phrases-calls.json", "title": "Phrases: tech calls", "description": "Frasi pronte per le call tecniche" },
+    { "id": "phrases-emails", "file": "decks/phrases-emails.json", "title": "Phrases: formal emails", "description": "Frasi pronte per le mail formali" },
+    { "id": "phrases-presentations", "file": "decks/phrases-presentations.json", "title": "Phrases: presentations", "description": "Frasi pronte per le presentazioni" },
+    { "id": "false-friends", "file": "decks/false-friends.json", "title": "False friends", "description": "Falsi amici e calchi dall'italiano" },
+    { "id": "connectors", "file": "decks/connectors.json", "title": "Connectors and signposting", "description": "Connettori e segnaletica del discorso" },
+    { "id": "verbs-at-work", "file": "decks/verbs-at-work.json", "title": "Verbs and collocations at work", "description": "Verbi e collocazioni del lavoro tech/finance" }
   ],
   "placement": "placement.json"
 }

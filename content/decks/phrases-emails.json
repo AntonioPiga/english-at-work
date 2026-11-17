@@ -1,0 +1,247 @@
+{
+  "id": "phrases-emails",
+  "title": "Phrases: formal emails",
+  "description": "Frasi pronte per le mail formali",
+  "cards": [
+    {
+      "id": "pe-dear-sir-madam",
+      "front": "Gentili Signori (destinatario sconosciuto)",
+      "back": "Dear Sir or Madam,",
+      "example": "Dear Sir or Madam, I am writing regarding our integration request."
+    },
+    {
+      "id": "pe-writing-regarding",
+      "front": "Vi scrivo in merito a...",
+      "back": "I am writing regarding...",
+      "example": "I am writing regarding the reconciliation discrepancies from last week."
+    },
+    {
+      "id": "pe-following-call",
+      "front": "Facendo seguito alla nostra telefonata",
+      "back": "Following our call earlier today, ...",
+      "example": "Following our call earlier today, please find the summary below."
+    },
+    {
+      "id": "pe-thank-reply",
+      "front": "Grazie per la sua risposta",
+      "back": "Thank you for your reply.",
+      "example": "Thank you for your reply and for the updated file specification."
+    },
+    {
+      "id": "pe-thank-prompt-reply",
+      "front": "Grazie per la rapida risposta",
+      "back": "Thank you for getting back to me so quickly.",
+      "example": "Thank you for getting back to me so quickly on the incident."
+    },
+    {
+      "id": "pe-please-find-attached",
+      "front": "In allegato trova...",
+      "back": "Please find attached...",
+      "example": "Please find attached the signed data processing agreement."
+    },
+    {
+      "id": "pe-as-requested",
+      "front": "Come da sua richiesta",
+      "back": "As requested, ...",
+      "example": "As requested, I have included the API logs for Monday."
+    },
+    {
+      "id": "pe-as-discussed",
+      "front": "Come concordato",
+      "back": "As agreed, ...",
+      "example": "As agreed, we will deploy the fix on Thursday evening."
+    },
+    {
+      "id": "pe-would-be-grateful",
+      "front": "Le sarei grato se potesse...",
+      "back": "I would be grateful if you could...",
+      "example": "I would be grateful if you could confirm the new cut-off time."
+    },
+    {
+      "id": "pe-could-you-confirm",
+      "front": "Potrebbe confermare...?",
+      "back": "Could you please confirm...?",
+      "example": "Could you please confirm whether the file was received?"
+    },
+    {
+      "id": "pe-let-me-know",
+      "front": "Mi faccia sapere se...",
+      "back": "Please let me know if...",
+      "example": "Please let me know if you need any further information."
+    },
+    {
+      "id": "pe-further-questions",
+      "front": "Resto a disposizione per chiarimenti",
+      "back": "Please do not hesitate to contact me with any questions.",
+      "example": "Please do not hesitate to contact me with any questions about the release."
+    },
+    {
+      "id": "pe-look-forward",
+      "front": "In attesa di un suo riscontro",
+      "back": "I look forward to hearing from you.",
+      "example": "I look forward to hearing from you regarding the test schedule."
+    },
+    {
+      "id": "pe-apologise-delay",
+      "front": "Mi scuso per il ritardo nella risposta",
+      "back": "Apologies for the delay in getting back to you.",
+      "example": "Apologies for the delay in getting back to you on the audit."
+    },
+    {
+      "id": "pe-apologise-inconvenience",
+      "front": "Ci scusiamo per il disagio",
+      "back": "We apologise for any inconvenience caused.",
+      "example": "We apologise for any inconvenience caused by yesterday's outage."
+    },
+    {
+      "id": "pe-regret-inform",
+      "front": "Siamo spiacenti di comunicarvi che...",
+      "back": "We regret to inform you that...",
+      "example": "We regret to inform you that the release has been postponed."
+    },
+    {
+      "id": "pe-pleased-inform",
+      "front": "Siamo lieti di comunicarvi che...",
+      "back": "We are pleased to inform you that...",
+      "example": "We are pleased to inform you that the migration is complete."
+    },
+    {
+      "id": "pe-gentle-reminder",
+      "front": "Le ricordo gentilmente che...",
+      "back": "Just a gentle reminder that...",
+      "example": "Just a gentle reminder that the certificate expires on Friday."
+    },
+    {
+      "id": "pe-chase-reply",
+      "front": "Sollecito: non ho ancora ricevuto risposta",
+      "back": "I am following up on my email of 3 March.",
+      "example": "I am following up on my email of 3 March about the API keys."
+    },
+    {
+      "id": "pe-urgent-attention",
+      "front": "La questione è urgente",
+      "back": "I would appreciate your urgent attention to this matter.",
+      "example": "I would appreciate your urgent attention to this matter, as clients are affected."
+    },
+    {
+      "id": "pe-cc-colleague",
+      "front": "Metto in copia il collega",
+      "back": "I've copied in my colleague, who leads the project.",
+      "example": "I've copied in my colleague, who leads the onboarding project."
+    },
+    {
+      "id": "pe-loop-in",
+      "front": "Aggiungo alla conversazione",
+      "back": "Adding the PM to this thread.",
+      "example": "Adding the PM to this thread for visibility on the timeline."
+    },
+    {
+      "id": "pe-forward",
+      "front": "Le inoltro la mail di...",
+      "back": "I'm forwarding you the email from...",
+      "example": "I'm forwarding you the email from the vendor about pricing."
+    },
+    {
+      "id": "pe-clarify-point",
+      "front": "Vorrei chiarire un punto",
+      "back": "I would like to clarify one point.",
+      "example": "I would like to clarify one point regarding the data retention policy."
+    },
+    {
+      "id": "pe-unclear-request",
+      "front": "Non mi è chiaro se...",
+      "back": "Could you clarify whether...?",
+      "example": "Could you clarify whether the change also affects existing contracts?"
+    },
+    {
+      "id": "pe-propose-meeting",
+      "front": "Propongo una call per discuterne",
+      "back": "I'd suggest a short call to discuss this.",
+      "example": "I'd suggest a short call to discuss this before the deadline."
+    },
+    {
+      "id": "pe-availability",
+      "front": "Quando sarebbe disponibile?",
+      "back": "When would suit you?",
+      "example": "When would suit you for a thirty-minute technical review?"
+    },
+    {
+      "id": "pe-works-for-me",
+      "front": "Per me va bene",
+      "back": "That works for me.",
+      "example": "That works for me, I'll send an invitation for Tuesday."
+    },
+    {
+      "id": "pe-reschedule",
+      "front": "Possiamo spostare la riunione?",
+      "back": "Would it be possible to reschedule the meeting?",
+      "example": "Would it be possible to reschedule the meeting to Thursday morning?"
+    },
+    {
+      "id": "pe-next-steps",
+      "front": "Di seguito i prossimi passi",
+      "back": "Please see the next steps below.",
+      "example": "Please see the next steps below and let me know of any concerns."
+    },
+    {
+      "id": "pe-in-summary",
+      "front": "In sintesi",
+      "back": "To summarise, ...",
+      "example": "To summarise, the issue was caused by an expired certificate."
+    },
+    {
+      "id": "pe-unfortunately-unable",
+      "front": "Purtroppo non siamo in grado di...",
+      "back": "Unfortunately, we are unable to...",
+      "example": "Unfortunately, we are unable to meet the original deadline."
+    },
+    {
+      "id": "pe-bad-news-soften",
+      "front": "Temo che...",
+      "back": "I'm afraid that...",
+      "example": "I'm afraid that the fix will not be ready this week."
+    },
+    {
+      "id": "pe-we-have-identified",
+      "front": "Abbiamo individuato la causa",
+      "back": "We have identified the root cause.",
+      "example": "We have identified the root cause and a fix is in progress."
+    },
+    {
+      "id": "pe-keep-you-updated",
+      "front": "La terremo aggiornata",
+      "back": "We will keep you updated on progress.",
+      "example": "We will keep you updated on progress throughout the day."
+    },
+    {
+      "id": "pe-note-that",
+      "front": "Si prega di notare che...",
+      "back": "Please note that...",
+      "example": "Please note that the service will be unavailable on Sunday."
+    },
+    {
+      "id": "pe-on-behalf",
+      "front": "Scrivo per conto di...",
+      "back": "I am writing on behalf of...",
+      "example": "I am writing on behalf of the architecture team."
+    },
+    {
+      "id": "pe-thanks-in-advance",
+      "front": "Grazie in anticipo",
+      "back": "Many thanks in advance for your help.",
+      "example": "Many thanks in advance for your help with the test data."
+    },
+    {
+      "id": "pe-kind-regards",
+      "front": "Cordiali saluti",
+      "back": "Kind regards,",
+      "example": "Kind regards, and thank you again for your support."
+    },
+    {
+      "id": "pe-best-wishes-informal",
+      "front": "Un caro saluto (collega che conosci)",
+      "back": "Best wishes, / Best,",
+      "example": "Best wishes, and have a good weekend ahead of the release."
+    }
+  ]
+}

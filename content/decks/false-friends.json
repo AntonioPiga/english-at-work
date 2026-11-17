@@ -3,8 +3,245 @@
   "title": "False friends",
   "description": "Falsi amici e calchi dall'italiano",
   "cards": [
-    { "id": "ff-actually", "front": "attualmente", "back": "currently / at the moment (NOT 'actually' = in realtà)", "example": "We're currently testing the new release." },
-    { "id": "ff-eventually", "front": "eventualmente", "back": "if necessary / possibly (NOT 'eventually' = alla fine)", "example": "We can add a second environment if necessary." },
-    { "id": "ff-control", "front": "controllare (verificare)", "back": "to check (NOT 'to control' = comandare)", "example": "Could you check the logs before the call?" }
+    {
+      "id": "ff-actually",
+      "front": "attualmente",
+      "back": "currently / at the moment (NOT 'actually' = in realtà)",
+      "example": "We're currently testing the new release."
+    },
+    {
+      "id": "ff-eventually",
+      "front": "eventualmente",
+      "back": "if necessary / possibly (NOT 'eventually' = alla fine)",
+      "example": "We can add a second environment if necessary."
+    },
+    {
+      "id": "ff-control",
+      "front": "controllare (verificare)",
+      "back": "to check (NOT 'to control' = comandare)",
+      "example": "Could you check the logs before the call?"
+    },
+    {
+      "id": "ff-sensible",
+      "front": "sensibile (dati, persona)",
+      "back": "sensitive (NOT 'sensible' = assennato)",
+      "example": "Client IBANs are sensitive data and must be encrypted."
+    },
+    {
+      "id": "ff-argument",
+      "front": "argomento",
+      "back": "topic / subject (NOT 'argument' = litigio)",
+      "example": "The main topic of today's call is the release plan."
+    },
+    {
+      "id": "ff-assist",
+      "front": "assistere (a una riunione)",
+      "back": "to attend (NOT 'to assist' = aiutare)",
+      "example": "Three people from the partner bank will attend the workshop."
+    },
+    {
+      "id": "ff-library",
+      "front": "libreria (negozio)",
+      "back": "bookshop (NOT 'library' = biblioteca; ok per librerie software)",
+      "example": "There's a good bookshop near the office with tech titles."
+    },
+    {
+      "id": "ff-pretend",
+      "front": "pretendere",
+      "back": "to expect / to demand (NOT 'to pretend' = fingere)",
+      "example": "The regulator expects a full audit trail for every order."
+    },
+    {
+      "id": "ff-realise",
+      "front": "realizzare (costruire)",
+      "back": "to build / to implement (NOT 'to realise' = rendersi conto)",
+      "example": "We implemented the new KYC flow in three sprints."
+    },
+    {
+      "id": "ff-morbid",
+      "front": "morbido",
+      "back": "soft (NOT 'morbid' = macabro)",
+      "example": "We plan a soft launch with a small group of clients."
+    },
+    {
+      "id": "ff-factory",
+      "front": "fabbrica",
+      "back": "factory (NOT 'fabric' = tessuto)",
+      "example": "Our hardware vendor builds the card readers in a factory abroad."
+    },
+    {
+      "id": "ff-formation",
+      "front": "formazione (corso)",
+      "back": "training (NOT 'formation')",
+      "example": "The new developers need some training on the order routing."
+    },
+    {
+      "id": "ff-stage",
+      "front": "stage / tirocinio",
+      "back": "internship (NOT 'stage' = fase)",
+      "example": "She joined the team after a six-month internship."
+    },
+    {
+      "id": "ff-occurrence",
+      "front": "occorrenza (all'occorrenza)",
+      "back": "if needed (NOT 'occurrence' = evento, caso)",
+      "example": "We can scale up the cluster if needed."
+    },
+    {
+      "id": "ff-consistent",
+      "front": "consistente (quantità)",
+      "back": "substantial / significant (NOT 'consistent' = coerente)",
+      "example": "We saw a significant increase in failed logins this week."
+    },
+    {
+      "id": "ff-discussion",
+      "front": "discussione (litigio)",
+      "back": "argument / disagreement (NOT 'discussion' = confronto)",
+      "example": "There was a disagreement about the deadline, but we settled it."
+    },
+    {
+      "id": "ff-agenda-personal",
+      "front": "agenda (diario)",
+      "back": "diary / planner (NOT 'agenda' = ordine del giorno)",
+      "example": "Let me check my diary and propose a slot."
+    },
+    {
+      "id": "ff-prove",
+      "front": "provare (tentare)",
+      "back": "to try (NOT 'to prove' = dimostrare)",
+      "example": "Let's try restarting the pod before we escalate."
+    },
+    {
+      "id": "ff-sympathetic",
+      "front": "simpatico",
+      "back": "nice / friendly (NOT 'sympathetic' = comprensivo)",
+      "example": "The new PM is really nice and easy to work with."
+    },
+    {
+      "id": "ff-annoy",
+      "front": "annoiare",
+      "back": "to bore (NOT 'to annoy' = infastidire)",
+      "example": "Long status meetings bore the whole team."
+    },
+    {
+      "id": "ff-caution",
+      "front": "cauzione",
+      "back": "deposit (NOT 'caution' = cautela)",
+      "example": "Clients pay no deposit when opening the account."
+    },
+    {
+      "id": "ff-room",
+      "front": "camera (stanza)",
+      "back": "room (NOT 'camera' = macchina fotografica)",
+      "example": "Let's book a meeting room for the architecture workshop."
+    },
+    {
+      "id": "ff-lecture",
+      "front": "lettura",
+      "back": "reading (NOT 'lecture' = lezione)",
+      "example": "The reading list for new joiners includes the architecture docs."
+    },
+    {
+      "id": "ff-comprehensive",
+      "front": "comprensivo (indulgente)",
+      "back": "understanding (NOT 'comprehensive' = completo)",
+      "example": "The client was very understanding about the delay."
+    },
+    {
+      "id": "ff-delusion",
+      "front": "delusione",
+      "back": "disappointment (NOT 'delusion' = illusione)",
+      "example": "The postponed release was a disappointment for the business team."
+    },
+    {
+      "id": "ff-education",
+      "front": "educazione (buone maniere)",
+      "back": "manners / politeness (NOT 'education' = istruzione)",
+      "example": "Good manners matter, even in heated incident calls."
+    },
+    {
+      "id": "ff-firm",
+      "front": "firma",
+      "back": "signature (NOT 'firm' = azienda)",
+      "example": "The contract needs the client's digital signature before activation."
+    },
+    {
+      "id": "ff-resume",
+      "front": "riassumere",
+      "back": "to summarise (NOT 'to resume' = riprendere)",
+      "example": "Could you summarise the incident in two sentences?"
+    },
+    {
+      "id": "ff-attend-wait",
+      "front": "attendere",
+      "back": "to wait (NOT 'to attend' = partecipare)",
+      "example": "Please wait for the pipeline to finish before merging."
+    },
+    {
+      "id": "ff-possibly-maybe",
+      "front": "possibilmente (preferibilmente)",
+      "back": "ideally / preferably (NOT 'possibly' = forse)",
+      "example": "Ideally, we should deploy before Thursday's market close."
+    },
+    {
+      "id": "ff-inform-information",
+      "front": "informazioni (plurale)",
+      "back": "information, uncountable (NOT 'informations')",
+      "example": "We need more information about the failed orders."
+    },
+    {
+      "id": "ff-advise",
+      "front": "avvisare",
+      "back": "to notify / to let know (NOT 'to advise' = consigliare)",
+      "example": "Please notify the operations team before the maintenance window."
+    },
+    {
+      "id": "ff-commodity",
+      "front": "comodità",
+      "back": "convenience (NOT 'commodity' = materia prima)",
+      "example": "For convenience, the report is also available as a CSV."
+    },
+    {
+      "id": "ff-terrific",
+      "front": "terrificante",
+      "back": "terrifying (NOT 'terrific' = fantastico)",
+      "example": "The production error logs looked terrifying at first."
+    },
+    {
+      "id": "ff-rumour",
+      "front": "rumore",
+      "back": "noise (NOT 'rumour' = voce, diceria)",
+      "example": "There's too much noise in the alerts, we need better thresholds."
+    },
+    {
+      "id": "ff-parent",
+      "front": "parenti",
+      "back": "relatives (NOT 'parents' = genitori)",
+      "example": "He's visiting relatives in the south over the holidays."
+    },
+    {
+      "id": "ff-magazine",
+      "front": "magazzino",
+      "back": "warehouse / storage (NOT 'magazine' = rivista)",
+      "example": "Old statements are archived in cold storage after a year."
+    },
+    {
+      "id": "ff-domain-expert",
+      "front": "esperto (sostantivo, 'un esperto')",
+      "back": "an expert (NOT 'an expertise'; expertise = competenza)",
+      "example": "We need an expert in payments regulation for this review."
+    },
+    {
+      "id": "ff-punctual",
+      "front": "puntuale (analisi dettagliata)",
+      "back": "detailed / precise (NOT 'punctual' = in orario)",
+      "example": "Thanks for the detailed analysis of the failed orders."
+    },
+    {
+      "id": "ff-planning",
+      "front": "planning (calendario lavori)",
+      "back": "schedule / plan (NOT 'a planning')",
+      "example": "The project schedule shows the go-live in March."
+    }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "id": "presentations-05-risks",
+  "track": "presentations",
+  "order": 5,
+  "title": "Risks, trade-offs and recommendations",
+  "level": "C1",
+  "minutes": 14,
+  "grammar": {
+    "title": "Raccomandare, concedere ed enfatizzare: should / ought to, although / that said, frasi scisse",
+    "explanation": "Per una raccomandazione credibile servono tre mosse. 1) Raccomandare: should / ought to + verbo base (ought to è più formale e suona come un dovere logico); we'd recommend + -ing o + that + soggetto + verbo base (We'd recommend moving… / We'd recommend that the committee approve…); our recommendation is to… Per ammorbidire: I'd suggest, it might be worth… 2) Concedere il punto debole prima di difendere la scelta: although / even though + frase (Even though it costs more, it removes the single point of failure), while / whereas per il contrasto, that said / having said that a inizio frase per ribaltare, despite / in spite of + nome o -ing. 3) Enfatizzare con le frasi scisse (cleft sentences): What we need is… / What concerns me is… / The main risk is that… / It's the reconciliation that worries us, not the latency. Mettono il messaggio chiave in fondo, dove il pubblico lo sente. Schema vincente: opzioni → trade-off concesso → What we'd recommend is…",
+    "examples": [
+      { "en": "We should move the reconciliation to an event-driven model.", "note": "raccomandazione diretta" },
+      { "en": "We'd recommend keeping the current vendor for another year.", "note": "we'd recommend + -ing" },
+      { "en": "Even though option B is cheaper, it creates a single point of failure.", "note": "concessione forte" },
+      { "en": "Option A is slower to deliver. That said, it's far easier to maintain.", "note": "that said = detto ciò" },
+      { "en": "What we need is a fallback if the partner bank's file is late.", "note": "cleft sentence con What" },
+      { "en": "It's the manual step that creates most of the risk, not the code.", "note": "cleft sentence con It's … that" }
+    ],
+    "italianTrap": "Calchi tipici: 'We recommend to migrate' → 'We recommend migrating' o 'We recommend that we migrate'; 'Although it's expensive, but it's safer' → niente 'but' dopo 'although'; 'Despite it is expensive' → 'Despite the cost' / 'Even though it's expensive'; 'The thing what we need' → 'What we need is…'. E attenzione: 'eventually' significa 'alla fine', non 'eventualmente' (= 'possibly, if needed')."
+  },
+  "phrases": [
+    { "en": "We've looked at three options.", "it": "Abbiamo valutato tre opzioni.", "when": "opzioni" },
+    { "en": "Each option comes with a trade-off.", "it": "Ogni opzione comporta un compromesso.", "when": "trade-off" },
+    { "en": "The main risk here is that we depend on a single vendor.", "it": "Il rischio principale è che dipendiamo da un solo fornitore.", "when": "rischi" },
+    { "en": "What concerns me most is the manual step in the reconciliation.", "it": "Ciò che mi preoccupa di più è il passaggio manuale nella riconciliazione.", "when": "rischi" },
+    { "en": "Even though it's the more expensive option, it's the safest.", "it": "Anche se è l'opzione più costosa, è la più sicura.", "when": "concessione" },
+    { "en": "That said, the cost difference is relatively small.", "it": "Detto ciò, la differenza di costo è relativamente piccola.", "when": "concessione" },
+    { "en": "We'd mitigate that by adding automatic retries.", "it": "Lo mitigheremmo aggiungendo retry automatici.", "when": "mitigazione" },
+    { "en": "On balance, we'd recommend option B.", "it": "Tutto considerato, raccomandiamo l'opzione B.", "when": "raccomandazione" },
+    { "en": "What we need from you today is a decision on the budget.", "it": "Ciò che ci serve da voi oggi è una decisione sul budget.", "when": "richiesta" },
+    { "en": "If we do nothing, the risk will only grow.", "it": "Se non facciamo nulla, il rischio non farà che crescere.", "when": "urgenza" },
+    { "en": "We ought to address this before the volumes double.", "it": "Dovremmo affrontarlo prima che i volumi raddoppino.", "when": "raccomandazione" }
+  ],
+  "quiz": [
+    { "q": "'We'd recommend ___ the batch to an event-driven model before Q3.'", "options": ["to move", "moving", "move", "that moving"], "answer": 1, "why": "'Recommend' + -ing (o + that + soggetto + verbo base), mai + to-infinito." },
+    { "q": "'___ option B is cheaper, it creates a single point of failure.'", "options": ["Despite", "However", "Even though", "In spite"], "answer": 2, "why": "Davanti a una frase completa (soggetto + verbo) serve 'even though / although'. 'Despite' vuole un nome o -ing." },
+    { "q": "Which sentence uses a cleft structure to stress the key need?", "options": ["We need a fallback for the bank file.", "A fallback is needed for the bank file.", "We need, as a fallback, the bank file.", "What we need is a fallback for the bank file."], "answer": 3, "why": "'What we need is…' sposta l'informazione chiave alla fine e le dà enfasi." },
+    { "q": "'Option A takes two months longer. ___, it's much easier to maintain.'", "options": ["That said", "Although", "Even though", "Despite"], "answer": 0, "why": "'That said' apre una nuova frase e introduce il contrappeso; although/even though/despite non possono stare da soli così." },
+    { "q": "Which is the most natural way to present a recommendation to the management committee?", "options": ["Our recommendation is that we should to keep the vendor.", "We recommend to keep the current vendor.", "On balance, we'd recommend keeping the current vendor.", "We are recommending you keep the vendor, eventually."], "answer": 2, "why": "'On balance, we'd recommend + -ing' è formale e misurato. 'Eventually' significa 'alla fine', non 'eventualmente'." },
+    { "q": "'It's the manual upload ___ creates most of the risk, not the code.'", "options": ["what", "that", "which it", "who"], "answer": 1, "why": "Cleft con 'It is / It's … that…'." },
+    { "q": "'Given the regulatory deadline, we really ___ start the migration this quarter.'", "options": ["ought to", "ought", "should to", "must to"], "answer": 0, "why": "'Ought to' + verbo base; 'should' e 'must' non vogliono 'to'." },
+    { "q": "'___ the higher licence cost, we still think the managed service is the right choice.'", "options": ["Although", "Even though", "Despite", "Whereas"], "answer": 2, "why": "'Despite' + nome ('the higher licence cost'). Although / even though vogliono una frase con verbo." }
+  ],
+  "gapfill": [
+    { "text": "___ we need is a clear owner for the reconciliation process.", "answers": ["What"], "hint": "frase scissa: ciò che" },
+    { "text": "We'd recommend ___ a second custodian feed as a fallback.", "answers": ["adding", "using", "setting up"], "hint": "verbo in -ing dopo recommend" },
+    { "text": "___ it costs more, the managed service removes most of the operational risk.", "answers": ["Although", "Even though", "Though", "While"], "hint": "concessione + frase" }
+  ],
+  "reorder": [
+    { "words": ["What", "concerns", "me", "most", "is", "the", "manual", "step"], "answer": "What concerns me most is the manual step" },
+    { "words": ["On", "balance,", "we'd", "recommend", "the", "second", "option"], "answer": "On balance, we'd recommend the second option" }
+  ],
+  "fluency": [
+    { "prompt": "Slide compares two options for the order router: build in-house (6 months, full control) vs. buy from a vendor (2 months, licence cost, vendor lock-in). Present the trade-off and your recommendation. 60 seconds.", "seconds": 60, "model": "We've looked at two options for the order router. Building it in-house would take about six months, but we'd have full control. Buying it from the vendor would take two months, even though it means a licence cost and some lock-in. That said, time to market is critical this year. On balance, we'd recommend buying, and what we need from you today is approval for the licence budget.", "keyPhrases": ["We've looked at two options", "even though", "That said", "On balance, we'd recommend", "what we need from you today"] },
+    { "prompt": "The daily file from the partner bank sometimes arrives late and the reconciliation is done by hand. Explain the risk to the management committee and what you recommend. 50 seconds.", "seconds": 50, "model": "What concerns me most is the reconciliation with the partner bank. When their file arrives late, the team reconciles by hand, and it's that manual step that creates most of the risk. We should automate the fallback and add an alert if the file hasn't arrived by eight. If we do nothing, the risk will only grow as volumes increase.", "keyPhrases": ["What concerns me most is", "it's that manual step that", "We should automate", "If we do nothing"] },
+    { "prompt": "The client asks why you are not recommending the cheapest KYC provider. Concede the cost point and defend your choice. 45 seconds.", "seconds": 45, "model": "You're right that the other provider is cheaper per check. Although the price is higher, our choice approves far more clients automatically, so we need fewer manual reviews. What really matters for us is the end-to-end cost, not the unit price. So we ought to stay with the current provider, at least for now.", "keyPhrases": ["Although the price is higher", "What really matters for us is", "we ought to stay with"] }
+  ],
+  "write": [
+    { "prompt": "Write the speaker notes (80-120 words) for a recommendation slide: the signature provider's API is unstable (three outages this quarter). Options: keep it and add retries, or switch to a new provider (three months of work). Concede a trade-off, use one cleft sentence and end with a clear recommendation.", "model": "This slide is about the e-signature flow. The signature provider has had three outages this quarter, and each one blocked new clients from onboarding. We've looked at two options. The first is to keep the provider and add retries and a queue. The second is to switch, which would take about three months. Even though switching is the cleaner long-term solution, it would delay the mobile release. That said, retries alone won't fix the root cause. What we'd recommend is a two-step approach: add retries now, and run a selection for a new provider in parallel. We should have a decision by the end of Q1.", "checklist": ["Rischio presentato con un dato concreto", "Opzioni presentate in modo neutro", "Concessione esplicita (even though / that said)", "Una frase scissa per il messaggio chiave (What we'd recommend is…)", "Raccomandazione finale chiara con prossimo passo"], "keyPhrases": ["We've looked at two options", "Even though switching is", "That said", "What we'd recommend is", "We should have a decision"] }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "emails-03-follow-up",
+  "track": "emails",
+  "order": 3,
+  "title": "Following up and chasing",
+  "level": "B2",
+  "minutes": 12,
+  "grammar": {
+    "title": "Present perfect con yet / still / already e passivo per il tatto",
+    "explanation": "Per sollecitare qualcosa parli di un'azione passata con effetto sul presente: usa il present perfect (have/has + participio), non il past simple, perché non indichi un momento preciso. 'Yet' va a fine frase, nelle negative e nelle domande: 'We have not received the file yet'. 'Still' si mette prima dell'ausiliare negativo e sottolinea che la situazione dura più del previsto, con un tono un po' più insistente: 'We still have not received the file' (in inglese britannico è corretto anche 'We have still not received…'). 'Already' indica che qualcosa è avvenuto prima del previsto, utile per mostrare ciò che hai fatto tu: 'We have already checked our firewall'. Per non sembrare accusatorio, usa il passivo: 'The file has not been received' invece di 'You have not sent the file'. Il passivo sposta l'attenzione dal colpevole al problema e permette all'interlocutore di salvare la faccia. Nei solleciti alterna: primo promemoria morbido ('Just a gentle reminder…'), secondo più deciso ('We still have not…'), sempre con una nuova scadenza.",
+    "examples": [
+      {
+        "en": "We have not received the reconciliation file yet.",
+        "note": "'yet' a fine frase nelle negative"
+      },
+      {
+        "en": "We still have not received the signed contract.",
+        "note": "'still' prima di 'have not': più insistente"
+      },
+      {
+        "en": "We have already checked our SFTP logs on our side.",
+        "note": "'already': azione già fatta da noi"
+      },
+      {
+        "en": "Has the ticket been assigned yet?",
+        "note": "domanda al passivo con 'yet'"
+      },
+      {
+        "en": "The credentials have not been sent to our team.",
+        "note": "passivo: nessuna accusa diretta"
+      },
+      {
+        "en": "I am just following up on my email of 4 March.",
+        "note": "formula di follow-up morbida"
+      }
+    ],
+    "italianTrap": "Gli italiani usano il passato prossimo e lo traducono col past simple: 'We didn't receive the file yet' (corretto: 'We haven't received the file yet'). Altro errore: 'You didn't send the file' suona come un'accusa; meglio 'The file has not been received'."
+  },
+  "phrases": [
+    {
+      "en": "I am just following up on my email of 4 March.",
+      "it": "Riprendo la mia email del 4 marzo.",
+      "when": "sollecito"
+    },
+    {
+      "en": "Just a gentle reminder about the test credentials.",
+      "it": "Solo un gentile promemoria sulle credenziali di test.",
+      "when": "sollecito"
+    },
+    {
+      "en": "I wanted to check whether you have had a chance to look at this.",
+      "it": "Volevo verificare se ha avuto modo di guardarlo.",
+      "when": "sollecito"
+    },
+    {
+      "en": "We have not received the file yet.",
+      "it": "Non abbiamo ancora ricevuto il file.",
+      "when": "stato"
+    },
+    {
+      "en": "We still have not had a response regarding the incident.",
+      "it": "Non abbiamo ancora avuto una risposta riguardo all'incident.",
+      "when": "stato"
+    },
+    {
+      "en": "We have already checked everything on our side.",
+      "it": "Abbiamo già verificato tutto dal nostro lato.",
+      "when": "stato"
+    },
+    {
+      "en": "The signed documents have not been returned to us.",
+      "it": "I documenti firmati non ci sono stati restituiti.",
+      "when": "stato"
+    },
+    {
+      "en": "Could you give us an update on the status of the ticket?",
+      "it": "Potrebbe aggiornarci sullo stato del ticket?",
+      "when": "richiesta"
+    },
+    {
+      "en": "As this is blocking our release, we would need it by Thursday.",
+      "it": "Poiché blocca il nostro rilascio, ci servirebbe entro giovedì.",
+      "when": "urgenza"
+    },
+    {
+      "en": "I would appreciate a quick update when you have a moment.",
+      "it": "Gradirei un breve aggiornamento quando ha un momento.",
+      "when": "chiusura"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "'We ___ the position file from the custodian yet.'",
+      "options": [
+        "didn't receive",
+        "haven't received",
+        "don't receive",
+        "weren't received"
+      ],
+      "answer": 1,
+      "why": "Con 'yet' e senza un momento preciso nel passato si usa il present perfect."
+    },
+    {
+      "q": "Where does 'still' go? Choose the correct sentence.",
+      "options": [
+        "We have not still received the contract.",
+        "We have not received still the contract.",
+        "We still have not received the contract.",
+        "We have not received the contract still."
+      ],
+      "answer": 2,
+      "why": "'Still' nelle negative va prima dell'ausiliare: 'We still have not…'."
+    },
+    {
+      "q": "Which sentence chases the vendor most tactfully?",
+      "options": [
+        "You haven't sent the patch.",
+        "The patch has not been delivered yet.",
+        "Why didn't you send the patch?",
+        "You forgot the patch again."
+      ],
+      "answer": 1,
+      "why": "Il passivo ('has not been delivered') descrive il problema senza accusare."
+    },
+    {
+      "q": "'We have ___ restarted the service on our side, but the error persists.'",
+      "options": [
+        "already",
+        "yet",
+        "still",
+        "ever"
+      ],
+      "answer": 0,
+      "why": "'Already' indica un'azione già compiuta, qui per mostrare cosa hai fatto."
+    },
+    {
+      "q": "'Has the incident ticket ___ yet?'",
+      "options": [
+        "assigned",
+        "be assigned",
+        "being assigned",
+        "been assigned"
+      ],
+      "answer": 3,
+      "why": "Present perfect passivo: has + been + participio."
+    },
+    {
+      "q": "This is your FIRST follow-up to the signature provider. Which opening is best?",
+      "options": [
+        "This is unacceptable.",
+        "I am just following up on my email of 4 March.",
+        "I have told you many times.",
+        "Answer my email, please."
+      ],
+      "answer": 1,
+      "why": "Il primo sollecito deve essere morbido: 'I am just following up on…'."
+    },
+    {
+      "q": "'The signed forms ___ to us so far.'",
+      "options": [
+        "have not been returned",
+        "did not return",
+        "has not been returned",
+        "were not return"
+      ],
+      "answer": 0,
+      "why": "'So far' richiede il present perfect; i moduli 'vengono restituiti', quindi serve il passivo, al plurale ('have', perché 'forms' è plurale)."
+    },
+    {
+      "q": "Which sentence correctly uses 'yet' in a question to the partner bank?",
+      "options": [
+        "Have you yet had a chance to review it?",
+        "Yet have you reviewed it?",
+        "Have you reviewed it already yet?",
+        "Have you had a chance to review it yet?"
+      ],
+      "answer": 3,
+      "why": "Nelle domande 'yet' va a fine frase."
+    }
+  ],
+  "gapfill": [
+    {
+      "text": "We have not received the reconciliation report ___.",
+      "answers": [
+        "yet"
+      ],
+      "hint": "ancora (a fine frase negativa)"
+    },
+    {
+      "text": "The credentials have not ___ sent to our developers.",
+      "answers": [
+        "been"
+      ],
+      "hint": "passivo del present perfect"
+    },
+    {
+      "text": "We ___ have not had a reply, and the release is on Thursday.",
+      "answers": [
+        "still"
+      ],
+      "hint": "ancora (insistente, prima dell'ausiliare)"
+    }
+  ],
+  "reorder": [
+    {
+      "words": [
+        "I",
+        "am",
+        "just",
+        "following",
+        "up",
+        "on",
+        "my",
+        "email"
+      ],
+      "answer": "I am just following up on my email"
+    },
+    {
+      "words": [
+        "We",
+        "have",
+        "already",
+        "checked",
+        "the",
+        "logs",
+        "on",
+        "our",
+        "side"
+      ],
+      "answer": "We have already checked the logs on our side"
+    }
+  ],
+  "fluency": [
+    {
+      "prompt": "Dictate aloud a short, polite first follow-up to the custodian about yesterday's position file, which has not arrived. 30 seconds.",
+      "seconds": 30,
+      "model": "I am just following up on my email of yesterday. We have not received the position file yet, and we have already checked our SFTP folder. Could you give us an update when you have a moment?",
+      "keyPhrases": [
+        "I am just following up",
+        "we have not received",
+        "yet",
+        "we have already checked"
+      ]
+    },
+    {
+      "prompt": "It is the third day without the signed documents from the signature provider. Your manager asks you to summarise aloud what your second, firmer reminder will say. 40 seconds.",
+      "seconds": 40,
+      "model": "I'll write that we still haven't received the signed documents, even though we sent the request on Monday. I'll explain that this is blocking the onboarding of new clients, and I'll ask them to send the documents by Thursday.",
+      "keyPhrases": [
+        "we still haven't received",
+        "this is blocking",
+        "by Thursday"
+      ]
+    },
+    {
+      "prompt": "Explain to a colleague, using the passive, how to rewrite 'You didn't send us the patch' in a more tactful way. 30 seconds.",
+      "seconds": 30,
+      "model": "Instead of 'You didn't send us the patch', I'd write 'The patch has not been delivered yet'. The passive focuses on the problem, not on the person, so it sounds less like an accusation.",
+      "keyPhrases": [
+        "has not been delivered yet",
+        "focuses on the problem",
+        "less like an accusation"
+      ]
+    }
+  ],
+  "write": [
+    {
+      "prompt": "Write a second follow-up email to the partner bank. On 4 March you asked for the new file format specification for the daily reconciliation. You have had no reply. Your team has already prepared the parser, but it cannot be tested without the specification. You need it by Friday 15 March. Use the present perfect with yet/still/already and at least one passive.",
+      "model": "Subject: Follow-up: reconciliation file format specification\n\nDear Ms [Surname],\n\nI am following up on my email of 4 March regarding the new file format specification for the daily reconciliation.\n\nWe still have not received the document, and our team has already prepared the new parser. Unfortunately, it cannot be tested until the specification has been shared with us.\n\nCould you send it to us by Friday 15 March? If it is not available yet, a short update on the expected date would be very helpful.\n\nThank you for your help.\n\nKind regards,\n\n[Name]",
+      "checklist": [
+        "Oggetto che indica chiaramente il follow-up",
+        "Riferimento all'email precedente con data",
+        "Present perfect corretto con yet / still / already",
+        "Almeno un passivo per evitare toni accusatori",
+        "Richiesta esplicita con nuova scadenza"
+      ],
+      "keyPhrases": [
+        "I am following up on my email",
+        "We still have not received",
+        "has already prepared",
+        "has been shared"
+      ]
+    }
+  ]
+}

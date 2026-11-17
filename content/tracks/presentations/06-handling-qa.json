@@ -1,0 +1,63 @@
+{
+  "id": "presentations-06-qa",
+  "track": "presentations",
+  "order": 6,
+  "title": "Handling Q&A",
+  "level": "C1",
+  "minutes": 14,
+  "grammar": {
+    "title": "Domande indirette, riformulare, rimandare e frasi scisse nel Q&A",
+    "explanation": "Nel Q&A la lingua ti fa guadagnare tempo e controllo. 1) Domande indirette: dopo Could you tell me… / I was wondering… / Do you know… l'ordine torna quello affermativo, senza do/does/did: Could you tell me when the file arrives? (non 'when does the file arrive'). Si usano per chiarire con cortesia: Could you clarify which report you mean? Con domande sì/no si usa if / whether: I'm not sure whether that's in scope. 2) Riformulare la domanda: If I understand correctly, you're asking whether… / So your question is really about… Verifichi di aver capito, guadagni secondi e la riformuli a tuo favore. 3) Rimandare con garbo: I'll come back to that in a minute. / Can I take that offline? / I'd rather not guess, let me check and get back to you by Friday. 4) Frasi scisse per mettere a fuoco la risposta: What I can tell you is… / What we haven't decided yet is… / It's the bank's cut-off that drives the timing, not our system. Schema: ascolta, riformula, rispondi in breve, verifica (Does that answer your question?).",
+    "examples": [
+      { "en": "If I understand correctly, you're asking whether the new flow affects existing clients.", "note": "riformulare" },
+      { "en": "Could you tell me which figures you're referring to?", "note": "domanda indiretta, ordine affermativo" },
+      { "en": "I'm not sure whether the partner bank has confirmed that date.", "note": "whether per sì/no" },
+      { "en": "That's a good point. I'll come back to it when we get to the roadmap.", "note": "rimandare" },
+      { "en": "What I can tell you is that no client data was lost.", "note": "cleft per focalizzare" },
+      { "en": "It's the custodian's cut-off time that limits us, not our platform.", "note": "cleft per correggere" }
+    ],
+    "italianTrap": "L'errore più comune è mantenere l'inversione nelle domande indirette: 'Could you tell me what is the cut-off?' o 'Do you know when does the file arrive?'. Corretto: 'Could you tell me what the cut-off is?', 'Do you know when the file arrives?'. Anche 'I don't know if is possible' → 'I'm not sure whether that's possible' (serve il soggetto). E 'Can you repeat the question?' è corretto ma brusco: meglio 'Sorry, could you repeat that?'."
+  },
+  "phrases": [
+    { "en": "That's a good question, thank you.", "it": "Ottima domanda, grazie.", "when": "Q&A" },
+    { "en": "If I understand correctly, you're asking about the cost.", "it": "Se ho capito bene, la domanda riguarda il costo.", "when": "riformulare" },
+    { "en": "So your question is really about the timeline.", "it": "Quindi la domanda riguarda in realtà la timeline.", "when": "riformulare" },
+    { "en": "Could you clarify what you mean by 'real time'?", "it": "Può chiarire cosa intende per 'tempo reale'?", "when": "chiarire" },
+    { "en": "I'll come back to that in a minute.", "it": "Ci torno tra un minuto.", "when": "rimandare" },
+    { "en": "Can I take that offline?", "it": "Possiamo approfondirlo a parte?", "when": "rimandare" },
+    { "en": "I don't have the exact figure, but I'll get back to you by Friday.", "it": "Non ho il dato esatto, ma vi rispondo entro venerdì.", "when": "non so" },
+    { "en": "What I can tell you is that the data is safe.", "it": "Quello che posso dirvi è che i dati sono al sicuro.", "when": "focalizzare" },
+    { "en": "That's slightly outside the scope of today, but briefly…", "it": "È un po' fuori dal perimetro di oggi, ma in breve…", "when": "perimetro" },
+    { "en": "Does that answer your question?", "it": "Risponde alla sua domanda?", "when": "verifica" },
+    { "en": "We've got time for one more question.", "it": "Abbiamo tempo per un'altra domanda.", "when": "chiusura" },
+    { "en": "Thanks for all the questions. I'll share the slides after the meeting.", "it": "Grazie per tutte le domande. Condivido le slide dopo la riunione.", "when": "chiusura" }
+  ],
+  "quiz": [
+    { "q": "Which indirect question is correct?", "options": ["Could you tell me what is the cut-off time?", "Could you tell me what the cut-off time is?", "Could you tell me what does the cut-off time be?", "Could you tell me the cut-off time what is?"], "answer": 1, "why": "Nelle domande indirette si usa l'ordine affermativo: soggetto + verbo ('what the cut-off time is')." },
+    { "q": "A board member asks a long, unclear question about costs and timing. What's the best first move?", "options": ["Sorry, I don't understand you.", "Repeat your question, please.", "If I understand correctly, you're asking whether the delay affects the budget.", "This is not a good question."], "answer": 2, "why": "Riformulare con 'If I understand correctly, you're asking whether…' verifica la comprensione e fa guadagnare tempo con cortesia." },
+    { "q": "'I'm not sure ___ the partner bank has signed off the test plan.'", "options": ["that if", "what", "whether", "does"], "answer": 2, "why": "Per una domanda indiretta sì/no si usa 'whether' (o 'if')." },
+    { "q": "Someone asks a detailed question about a slide you'll show later. What do you say?", "options": ["Good point. I'll come back to that when we get to the roadmap.", "We are not talking about that now.", "I come back on that after.", "Wait the roadmap, please."], "answer": 0, "why": "'I'll come back to that' è il modo naturale e cortese di rimandare." },
+    { "q": "'Do you know when ___?'", "options": ["does the vendor deliver the API", "the vendor will deliver the API", "will the vendor deliver the API", "delivers the vendor the API"], "answer": 1, "why": "Ordine affermativo dopo 'Do you know when…': soggetto + verbo, senza inversione." },
+    { "q": "You want to correct a wrong assumption: the delay was caused by the custodian's cut-off, not your platform. Which cleft sentence fits?", "options": ["The custodian's cut-off caused the delay, it was.", "What caused the delay it was the custodian's cut-off.", "It was caused the delay by the custodian's cut-off.", "It was the custodian's cut-off that caused the delay, not our platform."], "answer": 3, "why": "'It was X that…' mette in risalto la vera causa e corregge l'assunto." },
+    { "q": "You don't know the exact figure. What's the most professional answer?", "options": ["I don't know.", "I'd rather not guess. Let me check and get back to you by Friday.", "Maybe it's around ten, I think, more or less.", "Ask the operations team."], "answer": 1, "why": "Non inventare: dichiara che verificherai e dai una scadenza precisa." },
+    { "q": "'What I can tell you ___ that no client data was affected.'", "options": ["is", "it's", "was it", "are"], "answer": 0, "why": "Nella cleft 'What I can tell you is…' il verbo è 'is', senza ripetere il soggetto 'it'." }
+  ],
+  "gapfill": [
+    { "text": "If I understand ___, you're asking about the migration cost.", "answers": ["correctly", "rightly"], "hint": "correttamente" },
+    { "text": "Could you tell me which report you're ___ to?", "answers": ["referring"], "hint": "riferirsi" },
+    { "text": "That's a fair point. I'll come ___ to it in a minute.", "answers": ["back"], "hint": "tornare su" }
+  ],
+  "reorder": [
+    { "words": ["Could", "you", "tell", "me", "when", "the", "file", "arrives"], "answer": "Could you tell me when the file arrives" },
+    { "words": ["What", "I", "can", "tell", "you", "is", "this"], "answer": "What I can tell you is this" }
+  ],
+  "fluency": [
+    { "prompt": "After your roadmap presentation, a committee member asks: 'So are we going to be late again, and what will it cost us?' Paraphrase, answer briefly, check. 45 seconds.", "seconds": 45, "model": "That's a fair question. If I understand correctly, you're asking whether the go-live date is at risk, and what the impact on the budget would be. What I can tell you is that we're on track for July. The only dependency is the partner bank's test environment, and it's that dependency that we're watching closely. Does that answer your question?", "keyPhrases": ["If I understand correctly, you're asking whether", "What I can tell you is", "it's that dependency that", "Does that answer your question"] },
+    { "prompt": "The client asks a detailed question about data retention that is outside today's scope, and you don't have the exact figures. Defer politely and commit to a follow-up. 40 seconds.", "seconds": 40, "model": "That's a good question, but it's slightly outside the scope of today. I'd rather not guess on the exact retention periods. Can I take that offline? I'll check with our compliance team and get back to you by Friday.", "keyPhrases": ["slightly outside the scope of today", "I'd rather not guess", "Can I take that offline", "get back to you by Friday"] },
+    { "prompt": "Someone says: 'Your platform is too slow, orders take hours.' The delay is actually the fund platform's daily cut-off. Clarify with an indirect question, then correct with a cleft sentence. 50 seconds.", "seconds": 50, "model": "Thanks for raising that. Could you tell me which orders you're referring to? If they're the ones placed after two o'clock, it's the fund platform's cut-off that causes the delay, not our system. Our part takes less than a minute. What we can do is show the client the expected execution date when they place the order.", "keyPhrases": ["Could you tell me which orders you're referring to", "it's the fund platform's cut-off that", "What we can do is"] },
+    { "prompt": "Two people are asking questions at the same time and you are running out of time. Manage the Q&A and close the session. 30 seconds.", "seconds": 30, "model": "Let me take one question at a time. I'll answer the question on costs first, and I'll come back to the security point right after. We've got time for one more question, and then I'll share the slides after the meeting.", "keyPhrases": ["one question at a time", "I'll come back to", "time for one more question", "share the slides"] }
+  ],
+  "write": [
+    { "prompt": "Write the notes (80-120 words) for how you will answer this expected question from the management committee: 'Why did last month's incident with the partner bank happen, and can you guarantee it won't happen again?' Paraphrase, answer with a cleft sentence, be honest about what you can't guarantee, and close by checking.", "model": "If I understand correctly, you're asking two things: what caused the incident, and whether it could happen again. On the first point, it wasn't our platform that failed. It was the partner bank's file that arrived six hours late, and our reconciliation had no fallback. What we've done since is add an alert and an automatic retry, so the team knows within minutes. I can't promise that the bank will never be late again. What I can tell you is that, if it happens, no client will see wrong balances. Does that answer your question?", "checklist": ["Riformulazione della domanda in apertura", "Almeno una frase scissa (It was … that / What I can tell you is…)", "Onestà su ciò che non si può garantire", "Risposta concreta con un'azione già fatta", "Verifica finale (Does that answer your question?)"], "keyPhrases": ["If I understand correctly, you're asking", "It was the partner bank's file that", "What we've done since is", "What I can tell you is", "Does that answer your question"] }
+  ]
+}

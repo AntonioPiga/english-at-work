@@ -1,0 +1,66 @@
+{
+  "id": "emails-06-complaints",
+  "track": "emails",
+  "order": 6,
+  "title": "Replying to complaints and closing",
+  "level": "C1",
+  "minutes": 14,
+  "grammar": {
+    "title": "Frasi relative, nominalizzazione e formule di chiusura",
+    "explanation": "Rispondere a un reclamo richiede uno stile compatto e oggettivo. La nominalizzazione trasforma un verbo in un nome: 'we processed the orders late' diventa 'the delay in processing the orders'. Il testo suona più formale e sposta l'attenzione dalle persone ai fatti, utile per scusarsi senza drammatizzare: 'We apologise for the delay in processing your request'. Esempi frequenti: delay in, failure of, disruption to, resolution of, implementation of. Le frasi relative collegano le informazioni senza ripetere il soggetto. 'Which' e 'who' senza virgole definiscono di quale cosa parli ('the orders which were affected'); con le virgole aggiungono un'informazione extra ('The fix, which was deployed last night, resolves the issue'). Nelle relative con virgole non si usa mai 'that'. 'Whose' indica possesso: 'clients whose orders were delayed'. In chiusura evita formule datate come 'Kindly revert'. Usa: 'Please do not hesitate to contact me…', 'I trust this clarifies the situation', 'Thank you for your patience and understanding', poi 'Kind regards' o 'Yours sincerely' (molto formale, con un nome noto).",
+    "examples": [
+      { "en": "We sincerely apologise for the delay in processing your redemption request.", "note": "nominalizzazione: 'the delay in processing'" },
+      { "en": "The disruption to the service was caused by a configuration error.", "note": "'disruption to' al posto di 'the service stopped'" },
+      { "en": "The fix, which was deployed last night, prevents the issue from recurring.", "note": "relativa non restrittiva, tra virgole" },
+      { "en": "All clients whose orders were affected have been contacted.", "note": "'whose' = il cui / i cui" },
+      { "en": "The orders that failed on Monday were resubmitted on Tuesday.", "note": "relativa restrittiva, senza virgole" },
+      { "en": "I trust this clarifies the situation.", "note": "formula di chiusura formale" }
+    ],
+    "italianTrap": "Errori tipici: 'the clients which orders were delayed' (corretto: 'the clients whose orders were delayed'), 'The fix, that was deployed yesterday, …' (con le virgole serve 'which') e 'We apologise for the delay of the processing' (corretto: 'the delay in processing'). Evita anche 'Kindly revert', calco poco naturale: usa 'Please let me know'."
+  },
+  "phrases": [
+    { "en": "Thank you for bringing this matter to our attention.", "it": "Grazie per averci segnalato la questione.", "when": "apertura" },
+    { "en": "We sincerely apologise for the delay in processing your request.", "it": "Ci scusiamo sinceramente per il ritardo nell'elaborazione della Sua richiesta.", "when": "scuse" },
+    { "en": "We fully understand your frustration.", "it": "Comprendiamo pienamente la Sua frustrazione.", "when": "empatia" },
+    { "en": "Following a thorough investigation, we have identified the cause.", "it": "A seguito di un'indagine approfondita, abbiamo individuato la causa.", "when": "spiegazione" },
+    { "en": "The disruption was caused by a configuration change, which has since been reverted.", "it": "Il disservizio è stato causato da una modifica di configurazione, che è stata poi annullata.", "when": "spiegazione" },
+    { "en": "All clients whose orders were affected have been notified.", "it": "Tutti i clienti i cui ordini sono stati coinvolti sono stati avvisati.", "when": "azioni" },
+    { "en": "We have taken steps to prevent this from happening again.", "it": "Abbiamo adottato misure per evitare che si ripeta.", "when": "azioni" },
+    { "en": "I trust this clarifies the situation.", "it": "Confido che questo chiarisca la situazione.", "when": "chiusura" },
+    { "en": "Thank you for your patience and understanding.", "it": "Grazie per la pazienza e la comprensione.", "when": "chiusura" },
+    { "en": "Please do not hesitate to contact me should you have any further questions.", "it": "Non esiti a contattarmi qualora avesse ulteriori domande.", "when": "chiusura" },
+    { "en": "Yours sincerely,", "it": "Distinti saluti,", "when": "chiusura" }
+  ],
+  "quiz": [
+    { "q": "Choose the best nominalised apology to the partner bank.", "options": ["We are sorry that we processed late.", "We apologise for the delay in processing the transfer instructions.", "Sorry for being late with processing.", "We apologise for the delay of the processing."], "answer": 1, "why": "Nominalizzazione corretta: 'the delay in processing' + oggetto. 'Delay of the processing' non è naturale." },
+    { "q": "'All clients ___ onboarding was blocked have been contacted.'", "options": ["which", "who", "that", "whose"], "answer": 3, "why": "'Whose' esprime possesso: i clienti il cui onboarding era bloccato." },
+    { "q": "'The hotfix, ___ was deployed at 22:00, resolved the issue.'", "options": ["which", "that", "what", "who"], "answer": 0, "why": "Relativa non restrittiva (tra virgole) riferita a una cosa: solo 'which', mai 'that'." },
+    { "q": "Which closing is NOT appropriate in modern formal British English?", "options": ["Kind regards,", "Thank you for your patience and understanding.", "Kindly revert at the earliest.", "Please do not hesitate to contact me."], "answer": 2, "why": "'Kindly revert' è un calco datato e innaturale nell'inglese britannico moderno." },
+    { "q": "Which sentence turns 'The service stopped for two hours' into a nominalised form?", "options": ["The service was stopping for two hours.", "Two hours the service stopped.", "Stopping the service was two hours.", "The two-hour disruption to the service was caused by a network issue."], "answer": 3, "why": "'The disruption to the service' trasforma il verbo in un nome e rende il testo più formale e oggettivo." },
+    { "q": "'The orders ___ failed on Monday were resubmitted automatically.'", "options": ["what", "that", "whose", "who"], "answer": 1, "why": "Relativa restrittiva (senza virgole) riferita a cose: 'that' o 'which'." },
+    { "q": "The client complaint was forwarded by the custodian. Which opening is best?", "options": ["Thank you for bringing this matter to our attention.", "We received your complaint, which is wrong.", "This is not our fault.", "Ok, we saw the problem."], "answer": 0, "why": "Si apre ringraziando per la segnalazione: tono professionale e non difensivo." },
+    { "q": "Which sentence uses a relative clause correctly to give extra information?", "options": ["The incident, that started at 9:00, lasted one hour.", "The incident which started at 9:00, lasted one hour.", "The incident, which started at 9:00, lasted one hour.", "The incident, who started at 9:00, lasted one hour."], "answer": 2, "why": "Informazione aggiuntiva: virgole su entrambi i lati e 'which'." }
+  ],
+  "gapfill": [
+    { "text": "We apologise for the delay ___ processing your request.", "answers": ["in"], "hint": "preposizione dopo 'delay'" },
+    { "text": "Clients ___ orders were affected will receive a full report.", "answers": ["whose"], "hint": "i cui" },
+    { "text": "The configuration change, ___ caused the outage, has been reverted.", "answers": ["which"], "hint": "pronome relativo tra virgole" }
+  ],
+  "reorder": [
+    { "words": ["Thank", "you", "for", "your", "patience", "and", "understanding"], "answer": "Thank you for your patience and understanding" },
+    { "words": ["We", "have", "taken", "steps", "to", "prevent", "this", "recurring"], "answer": "We have taken steps to prevent this recurring" }
+  ],
+  "fluency": [
+    { "prompt": "The partner bank complains that transfer instructions were processed a day late. Your manager asks you to summarise aloud your reply. 50 seconds.", "seconds": 50, "model": "I'll start by thanking them for bringing the matter to our attention and apologising for the delay in processing the instructions. I'll explain that the disruption was caused by a scheduling error, which has since been corrected. Finally, I'll confirm that all clients whose transfers were affected have been informed.", "keyPhrases": ["bringing the matter to our attention", "the delay in processing", "which has since been corrected", "whose transfers were affected"] },
+    { "prompt": "Dictate the closing paragraph of a reply to a complaint from the fund platform. 30 seconds.", "seconds": 30, "model": "We have taken steps to prevent this from happening again. I trust this clarifies the situation. Thank you for your patience and understanding, and please do not hesitate to contact me should you have any further questions.", "keyPhrases": ["we have taken steps", "I trust this clarifies the situation", "thank you for your patience", "please do not hesitate to contact me"] },
+    { "prompt": "Rephrase aloud, in a more formal and nominalised style: 'We fixed the bug late, so the reports failed and the client was angry.' 40 seconds.", "seconds": 40, "model": "The late resolution of the bug led to the failure of the daily reports, which understandably caused frustration for the client. We apologise for the inconvenience this has caused.", "keyPhrases": ["the late resolution of the bug", "the failure of the daily reports", "which understandably caused"] }
+  ],
+  "write": [
+    {
+      "prompt": "The custodian forwards a complaint: on Tuesday, 37 client orders were sent to the fund platform four hours late. Reply formally. Thank them, apologise using a nominalised form, explain that the cause was an expired certificate on the routing service (renewed the same day), confirm that the affected clients have been informed, describe one preventive measure (automatic certificate expiry alerts), and close appropriately. Use at least two relative clauses.",
+      "model": "Subject: Re: Delayed orders on Tuesday – root cause and actions\n\nDear Ms [Surname],\n\nThank you for bringing this matter to our attention, and please accept our apologies for the delay in transmitting the 37 orders on Tuesday.\n\nThe disruption was caused by an expired certificate on our routing service, which was renewed the same afternoon. All clients whose orders were affected have been informed.\n\nTo prevent a recurrence, we have introduced automatic alerts that notify our team well before any certificate expires.\n\nI trust this clarifies the situation. Please do not hesitate to contact me should you have any further questions.\n\nYours sincerely,\n\n[Name]",
+      "checklist": ["Apertura che ringrazia per la segnalazione", "Scuse con nominalizzazione (the delay in…)", "Almeno due frasi relative corrette (which / whose / that)", "Causa, azioni correttive e prevenzione spiegate", "Chiusura formale moderna (niente 'Kindly revert')"],
+      "keyPhrases": ["Thank you for bringing this matter to our attention", "the delay in transmitting", "whose orders were affected", "I trust this clarifies the situation"]
+    }
+  ]
+}

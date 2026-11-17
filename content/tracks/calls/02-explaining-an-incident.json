@@ -1,0 +1,57 @@
+{
+  "id": "calls-02-incident",
+  "track": "calls",
+  "order": 2,
+  "title": "Explaining an incident",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Past simple vs present perfect: cosa è successo vs com'è la situazione adesso",
+    "explanation": "Quando spieghi un incident devi separare due cose: la storia (cosa è successo) e il risultato (com'è la situazione adesso). Il past simple (failed, rolled back, noticed) racconta eventi finiti in un momento preciso, spesso con un riferimento temporale: yesterday, last night, at 3 a.m., on Monday, when. Il present perfect (have/has + participio: we've fixed, it has stopped) dà la notizia o il risultato attuale senza dire quando, oppure copre un periodo che arriva fino a ora: since, so far, already, yet, just. Lo schema tipico di un aggiornamento: apri con il present perfect (la notizia: 'We've had an issue with the nightly batch'), racconta con il past simple (i fatti: 'It failed at 2:15 because the file was empty'), chiudi di nuovo con il present perfect o il presente (lo stato: 'Since then, the service has been stable'). Regola d'oro: se dici quando, usa il past simple.",
+    "examples": [
+      { "en": "We've had an issue with the nightly batch.", "note": "la notizia, senza data" },
+      { "en": "It failed at 2:15 because the partner bank sent an empty file.", "note": "fatto con orario: past simple" },
+      { "en": "We rolled back the release at nine o'clock.", "note": "azione finita, momento preciso" },
+      { "en": "Since then, the service has been stable.", "note": "periodo fino ad adesso" },
+      { "en": "We haven't found the root cause yet.", "note": "risultato ancora aperto" },
+      { "en": "When did you first notice the problem?", "note": "domanda su un momento: past simple" }
+    ],
+    "italianTrap": "In italiano diciamo 'abbiamo fatto il rollback ieri', quindi viene spontaneo 'We have rolled back yesterday'. Con un tempo finito (yesterday, last night, at nine) serve il past simple: 'We rolled back yesterday'. Il present perfect solo senza data: 'We've rolled back, so the service is stable now'."
+  },
+  "phrases": [
+    { "en": "We've had an incident on the order routing service.", "it": "Abbiamo avuto un incident sul servizio di routing degli ordini.", "when": "apertura incident" },
+    { "en": "Let me walk you through what happened.", "it": "Vi spiego passo passo cosa è successo.", "when": "racconto" },
+    { "en": "At around 2 a.m. the batch started failing.", "it": "Verso le 2 il batch ha iniziato a fallire.", "when": "cronologia" },
+    { "en": "The root cause was a certificate that expired overnight.", "it": "La causa era un certificato scaduto durante la notte.", "when": "causa" },
+    { "en": "As soon as we noticed, we rolled back the release.", "it": "Appena ce ne siamo accorti, abbiamo fatto rollback del rilascio.", "when": "azione" },
+    { "en": "The impact was limited to about forty orders.", "it": "L'impatto è stato limitato a circa quaranta ordini.", "when": "impatto" },
+    { "en": "No client data was lost.", "it": "Nessun dato cliente è andato perso.", "when": "rassicurazione" },
+    { "en": "Since then, the service has been stable.", "it": "Da allora il servizio è stabile.", "when": "stato attuale" },
+    { "en": "We've applied a temporary fix and we're monitoring it closely.", "it": "Abbiamo applicato una soluzione temporanea e la stiamo monitorando da vicino.", "when": "stato attuale" },
+    { "en": "We're still investigating why the alert didn't fire.", "it": "Stiamo ancora indagando sul perché l'alert non è scattato.", "when": "trasparenza" },
+    { "en": "We'll share a full post-mortem by Friday.", "it": "Condivideremo un post-mortem completo entro venerdì.", "when": "follow-up" }
+  ],
+  "quiz": [
+    { "q": "'Yesterday at 3 a.m. the batch ___.'", "options": ["has failed", "failed", "has been failing", "fails"], "answer": 1, "why": "C'è un momento preciso nel passato ('yesterday at 3 a.m.'): past simple." },
+    { "q": "'We ___ the root cause, so now we can plan the fix.'", "options": ["had found", "find", "were finding", "have found"], "answer": 3, "why": "Conta il risultato attuale ('so now we can…'), senza data: present perfect." },
+    { "q": "'Since the rollback, the service ___ stable.'", "options": ["has been", "was", "is being", "were"], "answer": 0, "why": "'Since' indica un periodo che arriva fino ad adesso: present perfect." },
+    { "q": "The partner bank asks: 'Is it fixed?' You haven't finished yet. Which answer is best?", "options": ["No, we didn't fix it still, but we are working on it.", "No, we don't fix it already.", "Not yet. We've applied a workaround.", "Not still, we are fixing since this morning."], "answer": 2, "why": "'Not yet' + present perfect per il risultato attuale. 'Still' non si usa così e 'since this morning' richiede il present perfect continuous." },
+    { "q": "'When ___ you first notice the problem?'", "options": ["have", "has", "do", "did"], "answer": 3, "why": "'When' chiede un momento preciso nel passato: past simple, quindi 'did'." },
+    { "q": "Which sentence opens an incident update most naturally?", "options": ["Yesterday we have had a problem.", "We've had an issue with the nightly reconciliation.", "We had have an issue.", "There has been a problem yesterday night."], "answer": 1, "why": "Notizia senza data: present perfect. 'Yesterday' con il present perfect è sempre un errore." },
+    { "q": "'The KYC provider ___ the timeout on their side last night.'", "options": ["fixed", "has fixed", "have fixed", "was fixed"], "answer": 0, "why": "'Last night' è un tempo finito: past simple. 'Was fixed' è passivo e non regge l'oggetto." }
+  ],
+  "gapfill": [
+    { "text": "We ___ the release at nine o'clock and the errors stopped.", "answers": ["rolled back"], "hint": "fare rollback; c'è l'orario, quindi past simple" },
+    { "text": "We haven't identified the root cause ___.", "answers": ["yet"], "hint": "'non ancora', a fine frase" },
+    { "text": "So far, the service ___ been stable.", "answers": ["has"], "hint": "present perfect, terza persona singolare" }
+  ],
+  "reorder": [
+    { "words": ["Let", "me", "walk", "you", "through", "what", "happened"], "answer": "Let me walk you through what happened." },
+    { "words": ["Since", "then", "the", "service", "has", "been", "stable"], "answer": "Since then, the service has been stable." }
+  ],
+  "fluency": [
+    { "prompt": "The partner bank asks why yesterday's reconciliation file was rejected. Explain what happened and the current status. 45 seconds.", "seconds": 45, "model": "Yesterday morning our job rejected the file because the date format changed without notice. We noticed it at around nine and contacted your operations team straight away. Since then, we've updated the parser and we've reprocessed the file. Everything has been reconciled now.", "keyPhrases": ["yesterday morning", "we noticed it", "since then", "we've updated", "has been reconciled"] },
+    { "prompt": "Your PM asks for a quick summary of last night's outage on the onboarding service. 30 seconds.", "seconds": 30, "model": "We've had an outage on the onboarding service. It started at around eleven last night, when the KYC provider's API began to time out. We switched to the retry queue at midnight, and no client data was lost.", "keyPhrases": ["we've had an outage", "it started", "last night", "no client data was lost"] },
+    { "prompt": "The vendor asks if you have deployed their patch. You haven't yet: explain why and what you have done so far. 40 seconds.", "seconds": 40, "model": "Not yet, I'm afraid. We received the patch on Tuesday, but the tests failed in staging. So far we've fixed two of the three issues, but we haven't found the cause of the last one yet.", "keyPhrases": ["not yet", "we received the patch", "so far we've fixed", "we haven't found"] }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "presentations-01-opening",
+  "track": "presentations",
+  "order": 1,
+  "title": "Opening and signposting",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Signposting: sequencer e 'I'd like to / Let's'",
+    "explanation": "Il signposting è la 'segnaletica' della presentazione: frasi brevi che dicono al pubblico dove siete e dove state andando. In inglese una presentazione chiara annuncia la struttura all'inizio e segnala ogni passaggio. Usa i sequencer per l'ordine: First / First of all, Then / After that, Finally. Per cambiare argomento: Moving on to + nome o -ing (Moving on to the timeline…), That brings me to + nome (That brings me to the next slide). Per annunciare cosa farai usa I'd like to + verbo base (I'd like to show you…, I'd like to start with…): è cortese e professionale. Per coinvolgere il pubblico usa Let's + verbo base (Let's look at the numbers, Let's move on). Attenzione: dopo 'to' di moving on to / that brings me to / I'd like to start with serve un nome o una forma in -ing, mai l'infinito. Tieni le frasi corte: una frase di segnaletica, una pausa, poi il contenuto.",
+    "examples": [
+      { "en": "I'd like to start with a quick overview of the platform.", "note": "annunciare il primo punto" },
+      { "en": "First, I'll cover the onboarding flow. Then we'll look at the results.", "note": "struttura in due tempi" },
+      { "en": "Moving on to the second point: the integration with the partner bank.", "note": "transizione con nome" },
+      { "en": "That brings me to the next slide.", "note": "transizione naturale" },
+      { "en": "Let's take a closer look at this diagram.", "note": "coinvolgere il pubblico" },
+      { "en": "Finally, I'll leave some time for questions.", "note": "ultimo punto" }
+    ],
+    "italianTrap": "Gli italiani dicono 'Now I would like to speak about…' o 'Moving on to explain…'. Meglio: 'I'd like to talk about…' (contrazione, 'talk about' più naturale di 'speak about') e 'Moving on to the next point' / 'Moving on to the timeline' (nome dopo 'to'). Evita anche 'Let's we start': si dice 'Let's start'."
+  },
+  "phrases": [
+    { "en": "Good morning, everyone, and thanks for having me.", "it": "Buongiorno a tutti e grazie per l'invito.", "when": "apertura" },
+    { "en": "Today I'd like to give you an update on the onboarding project.", "it": "Oggi vorrei darvi un aggiornamento sul progetto di onboarding.", "when": "apertura" },
+    { "en": "I've divided my presentation into three parts.", "it": "Ho diviso la presentazione in tre parti.", "when": "struttura" },
+    { "en": "First, I'll give you some background.", "it": "Prima di tutto, vi do un po' di contesto.", "when": "struttura" },
+    { "en": "Then I'll walk you through the architecture.", "it": "Poi vi illustro l'architettura.", "when": "struttura" },
+    { "en": "Let's start with where we are today.", "it": "Partiamo da dove siamo oggi.", "when": "transizione" },
+    { "en": "Moving on to the next point.", "it": "Passiamo al punto successivo.", "when": "transizione" },
+    { "en": "That brings me to the timeline.", "it": "Questo mi porta alla timeline.", "when": "transizione" },
+    { "en": "I'll take questions at the end, if that's OK.", "it": "Prendo le domande alla fine, se va bene.", "when": "domande" },
+    { "en": "To sum up, the new flow is faster and simpler.", "it": "Per riassumere, il nuovo flusso è più veloce e più semplice.", "when": "chiusura" }
+  ],
+  "quiz": [
+    { "q": "You are opening a status update for the management committee. Which is the most natural?", "options": ["Today I will speak you about the project.", "Today I'd like to give you an update on the project.", "Today I would like that I update you on the project.", "Today I like to give you an update about the project."], "answer": 1, "why": "'I'd like to' + verbo base è la formula cortese standard. 'Speak you' è sbagliato (manca 'to'), 'would like that I' è un calco dall'italiano." },
+    { "q": "'Moving on ___ the second point: the integration with the custodian.'", "options": ["at", "for", "with", "to"], "answer": 3, "why": "La forma fissa è 'Moving on to' + nome." },
+    { "q": "You have just finished the architecture slide. What do you say before the timeline slide?", "options": ["That brings me to the timeline.", "That brings me at the timeline.", "This brings to me the timeline.", "That brings me the timeline to."], "answer": 0, "why": "'That brings me to' + nome è una transizione naturale tra due sezioni." },
+    { "q": "'___ look at the numbers for the last quarter.'", "options": ["Let's we", "Let us to", "Let's", "Let we"], "answer": 2, "why": "Let's + verbo base, senza altro soggetto e senza 'to'." },
+    { "q": "Which sentence correctly announces the structure of your talk?", "options": ["First I'll show the problem, after I show you the solution.", "First, I'll show you the problem. Then I'll show you the solution.", "Firstly the problem, then after the solution.", "At first I'll show the problem, then the solution."], "answer": 1, "why": "'First… Then…' sono i sequencer naturali. 'At first' significa 'all'inizio (poi cambiò)', non 'per prima cosa'." },
+    { "q": "'I'd like to start ___ a quick overview of the onboarding flow.'", "options": ["with", "from", "by", "on"], "answer": 0, "why": "'Start with' + nome per indicare il primo argomento. 'Start by' vuole un verbo in -ing (start by showing…)." },
+    { "q": "You want to close the last section and announce Q&A. Which works best?", "options": ["Finally, I'll leave some time for questions.", "At last, I leave some time to questions.", "In the end I'm leaving the questions.", "Lastly time for questions we have."], "answer": 0, "why": "'Finally' introduce l'ultimo punto della sequenza; 'at last' esprime sollievo dopo un'attesa." }
+  ],
+  "gapfill": [
+    { "text": "I've divided my presentation ___ three parts.", "answers": ["into"], "hint": "dividere in" },
+    { "text": "___ on to the next point: the timeline.", "answers": ["Moving"], "hint": "passando a…" },
+    { "text": "That ___ me to the last slide.", "answers": ["brings"], "hint": "mi porta a" }
+  ],
+  "reorder": [
+    { "words": ["I'd", "like", "to", "start", "with", "the", "background"], "answer": "I'd like to start with the background" },
+    { "words": ["Let's", "take", "a", "look", "at", "the", "diagram"], "answer": "Let's take a look at the diagram" }
+  ],
+  "fluency": [
+    { "prompt": "First slide of a project update for the management committee. Greet the audience, state the purpose and list three parts. 45 seconds.", "seconds": 45, "model": "Good morning, everyone, and thanks for having me. Today I'd like to give you an update on the new onboarding flow. I've divided my presentation into three parts. First, I'll give you some background. Then I'll walk you through the results, and finally I'll talk about next steps.", "keyPhrases": ["I'd like to give you an update", "divided my presentation into three parts", "First", "Then I'll walk you through", "finally"] },
+    { "prompt": "You have just finished the slide on the current architecture. Make a transition to the slide on the partner bank integration. 30 seconds.", "seconds": 30, "model": "So that's the current architecture. That brings me to the second part: the integration with the partner bank. Let's take a look at how the data flows between our systems.", "keyPhrases": ["That brings me to", "the second part", "Let's take a look at"] },
+    { "prompt": "You are halfway through a demo for the client. Close the demo section, move on to the roadmap and say when you will take questions. 40 seconds.", "seconds": 40, "model": "OK, that's the end of the demo. Moving on to the roadmap. I'd like to show you what's coming in the next two quarters. I'll take questions at the end, if that's OK.", "keyPhrases": ["Moving on to the roadmap", "I'd like to show you", "I'll take questions at the end"] }
+  ],
+  "write": [
+    { "prompt": "Write the opening speaker notes (80-120 words) for the first slide of a 20-minute presentation to the client about the new digital onboarding (identity check with the KYC provider, e-signature with the signature provider). Greet, state the purpose, announce the structure and say when you'll take questions.", "model": "Good morning, everyone, and thanks for having me. Today I'd like to give you an overview of our new digital onboarding. The goal is simple: to show you how a new client can open an account in under ten minutes, entirely online. I've divided my presentation into three parts. First, I'll give you some background on the old process. Then I'll walk you through the new flow, from the identity check to the electronic signature. Finally, I'll share the first results and our next steps. The whole thing should take about twenty minutes, and I'll take questions at the end. So, let's start with the background.", "checklist": ["Saluto e ringraziamento in apertura", "Scopo dichiarato in una frase ('I'd like to…')", "Struttura annunciata con First / Then / Finally", "Momento delle domande indicato", "Transizione finale verso il primo punto ('Let's start with…')"], "keyPhrases": ["I'd like to give you an overview", "I've divided my presentation into three parts", "First", "Then I'll walk you through", "let's start with"] }
+  ]
+}

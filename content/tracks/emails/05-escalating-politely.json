@@ -1,0 +1,289 @@
+{
+  "id": "emails-05-escalation",
+  "track": "emails",
+  "order": 5,
+  "title": "Escalating and pushing back politely",
+  "level": "C1",
+  "minutes": 14,
+  "grammar": {
+    "title": "Condizionali per le conseguenze, concessione e distanziamento",
+    "explanation": "Per fare escalation o dire di no senza rompere la relazione servono tre strumenti. 1) Condizionali per le conseguenze: il primo condizionale (If + presente, will) indica un rischio reale: 'If the file is not delivered by 10 a.m., the reconciliation will fail'. 'Unless' equivale a 'if… not': 'Unless we receive the fix by Friday, we will have to roll back'. Il secondo condizionale (If + past, would) è più ipotetico e diplomatico: 'If we accepted this change now, we would put the release at risk'. Il terzo (If + had + participio, would have) descrive conseguenze passate, utile per spiegare un incidente senza attaccare: 'If we had been informed earlier, we could have adjusted the plan'. 2) Concessione: riconosci il punto dell'altro prima di opporti: 'While we understand the constraints, …', 'Although the change is small, …'. 3) Distanziamento: 'We were under the impression that…', 'Our understanding was that…', 'It was our understanding that…' segnalano un disaccordo sui fatti senza dire 'you are wrong'.",
+    "examples": [
+      {
+        "en": "If the file is not delivered by 10 a.m., the daily reconciliation will fail.",
+        "note": "primo condizionale: rischio reale"
+      },
+      {
+        "en": "Unless we receive a fix by Friday, we will have to roll back the release.",
+        "note": "'unless' = 'if… not'"
+      },
+      {
+        "en": "If we accepted the change at this stage, we would put the go-live at risk.",
+        "note": "secondo condizionale: rifiuto diplomatico"
+      },
+      {
+        "en": "If we had been informed earlier, we could have adjusted the test plan.",
+        "note": "terzo condizionale: conseguenza passata"
+      },
+      {
+        "en": "While we understand the time constraints, we cannot skip the security review.",
+        "note": "concessione + rifiuto"
+      },
+      {
+        "en": "We were under the impression that the new API version was backward compatible.",
+        "note": "distanziamento: disaccordo sui fatti"
+      }
+    ],
+    "italianTrap": "Gli italiani portano il futuro di 'se + futuro' nella frase con 'if': 'If the file will not arrive by 10 a.m., the reconciliation will fail' (corretto: 'If the file does not arrive by 10 a.m., …'). Nel terzo condizionale scrivono 'If we would have been informed earlier…' (corretto: 'If we had been informed earlier…'). Inoltre traducono 'Avevamo capito che…' con 'We understood that you said…', che suona accusatorio: meglio 'We were under the impression that…' o 'Our understanding was that…'."
+  },
+  "phrases": [
+    {
+      "en": "I would like to escalate this issue, as it is now affecting our clients.",
+      "it": "Vorrei fare escalation su questo problema, poiché ora sta impattando i nostri clienti.",
+      "when": "escalation"
+    },
+    {
+      "en": "I am copying in [Name], who is responsible for the account on your side.",
+      "it": "Metto in copia [Name], responsabile dell'account per voi.",
+      "when": "escalation"
+    },
+    {
+      "en": "If this is not resolved by Friday, we will have to suspend the integration.",
+      "it": "Se non viene risolto entro venerdì, dovremo sospendere l'integrazione.",
+      "when": "conseguenze"
+    },
+    {
+      "en": "Unless we receive the corrected file today, the reconciliation will not be completed.",
+      "it": "Se non riceviamo oggi il file corretto, la riconciliazione non sarà completata.",
+      "when": "conseguenze"
+    },
+    {
+      "en": "While we appreciate your efforts, the issue remains unresolved.",
+      "it": "Pur apprezzando il vostro impegno, il problema resta irrisolto.",
+      "when": "concessione"
+    },
+    {
+      "en": "Although we understand the urgency, we are unable to deploy without testing.",
+      "it": "Pur comprendendo l'urgenza, non possiamo rilasciare senza test.",
+      "when": "rifiuto"
+    },
+    {
+      "en": "We were under the impression that this was included in the agreed scope.",
+      "it": "Avevamo inteso che fosse incluso nel perimetro concordato.",
+      "when": "disaccordo"
+    },
+    {
+      "en": "Our understanding was that the change would be communicated in advance.",
+      "it": "Avevamo capito che il cambiamento sarebbe stato comunicato in anticipo.",
+      "when": "disaccordo"
+    },
+    {
+      "en": "I am afraid we are not in a position to accept this change at this stage.",
+      "it": "Temo che al momento non siamo in grado di accettare questa modifica.",
+      "when": "rifiuto"
+    },
+    {
+      "en": "We would welcome a call this week to agree on a way forward.",
+      "it": "Gradiremmo una call questa settimana per concordare come procedere.",
+      "when": "chiusura"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "'If the vendor ___ the patch by Thursday, we will roll back.'",
+      "options": [
+        "will not deliver",
+        "would not deliver",
+        "does not deliver",
+        "had not delivered"
+      ],
+      "answer": 2,
+      "why": "Primo condizionale: nella frase con 'if' si usa il presente, non 'will'."
+    },
+    {
+      "q": "'___ we receive the corrected file today, the reconciliation will fail.'",
+      "options": [
+        "Unless",
+        "If",
+        "Although",
+        "While"
+      ],
+      "answer": 0,
+      "why": "'Unless' = 'if… not': se NON riceviamo il file, la riconciliazione fallirà."
+    },
+    {
+      "q": "You want to refuse a late scope change diplomatically. Which sentence is best?",
+      "options": [
+        "We refuse this change.",
+        "If we accepted this change now, we would put the go-live at risk.",
+        "If we will accept this change, the go-live is at risk.",
+        "This change is a bad idea."
+      ],
+      "answer": 1,
+      "why": "Il secondo condizionale presenta il rifiuto come ipotesi e conseguenza, in modo diplomatico."
+    },
+    {
+      "q": "'If we ___ about the API change earlier, we could have updated our client in time.'",
+      "options": [
+        "were told",
+        "would be told",
+        "have been told",
+        "had been told"
+      ],
+      "answer": 3,
+      "why": "Terzo condizionale (conseguenza passata): If + had + participio."
+    },
+    {
+      "q": "You think the vendor promised something they now deny. Which sentence disagrees most politely?",
+      "options": [
+        "You said the opposite last week.",
+        "You are wrong about the scope.",
+        "We were under the impression that this was included in the scope.",
+        "This is not what you promised."
+      ],
+      "answer": 2,
+      "why": "'We were under the impression that…' segnala il disaccordo senza accusare."
+    },
+    {
+      "q": "'___ we understand the time pressure, we cannot skip the penetration test.'",
+      "options": [
+        "Despite",
+        "However",
+        "Unless",
+        "While"
+      ],
+      "answer": 3,
+      "why": "'While' introduce una concessione seguita da una frase completa; 'despite' vorrebbe un nome o un -ing."
+    },
+    {
+      "q": "Which sentence contains a grammar mistake typical of Italian speakers?",
+      "options": [
+        "If the file will not arrive by 10 a.m., the reconciliation will fail.",
+        "If you sent us the logs, we would analyse them.",
+        "If you send us the logs, we will analyse them.",
+        "Unless you send us the logs, we cannot analyse them."
+      ],
+      "answer": 0,
+      "why": "Nella frase con 'if' non si usa il futuro 'will': corretto 'If the file does not arrive by 10 a.m., the reconciliation will fail'."
+    },
+    {
+      "q": "Which is the best opening line for an escalation email to the vendor's account manager?",
+      "options": [
+        "Your team is useless.",
+        "I would like to escalate the open incident, as it is now affecting our clients.",
+        "Please fix this now or else.",
+        "I am very angry about the incident."
+      ],
+      "answer": 1,
+      "why": "Un'escalation efficace è ferma ma professionale e spiega perché serve l'intervento."
+    }
+  ],
+  "gapfill": [
+    {
+      "text": "___ the fix is deployed by Friday, we will have to suspend the integration.",
+      "answers": [
+        "Unless"
+      ],
+      "hint": "a meno che"
+    },
+    {
+      "text": "We were under the ___ that the cut-off time had not changed.",
+      "answers": [
+        "impression"
+      ],
+      "hint": "avevamo l'impressione"
+    },
+    {
+      "text": "If we had been informed earlier, we ___ have adjusted the plan.",
+      "answers": [
+        "could",
+        "would",
+        "might"
+      ],
+      "hint": "terzo condizionale: modale + have + participio"
+    }
+  ],
+  "reorder": [
+    {
+      "words": [
+        "While",
+        "we",
+        "understand",
+        "the",
+        "urgency",
+        "we",
+        "cannot",
+        "skip",
+        "testing"
+      ],
+      "answer": "While we understand the urgency, we cannot skip testing"
+    },
+    {
+      "words": [
+        "Our",
+        "understanding",
+        "was",
+        "that",
+        "this",
+        "was",
+        "in",
+        "scope"
+      ],
+      "answer": "Our understanding was that this was in scope"
+    }
+  ],
+  "fluency": [
+    {
+      "prompt": "Your manager asks you to summarise aloud the escalation email you'll send to the custodian: the daily file has been late three times this week and the reconciliation keeps failing. 50 seconds.",
+      "seconds": 50,
+      "model": "I'll say that we'd like to escalate the issue, as the daily file has been late three times this week. I'll explain that if the file isn't delivered by 10 a.m., the reconciliation will fail and our clients will see incorrect positions. I'll also ask for a call this week to agree on a way forward.",
+      "keyPhrases": [
+        "we'd like to escalate",
+        "if the file isn't delivered",
+        "the reconciliation will fail",
+        "a way forward"
+      ]
+    },
+    {
+      "prompt": "The vendor asks you to deploy their new version tomorrow without testing. Dictate a polite push-back. 40 seconds.",
+      "seconds": 40,
+      "model": "While we understand the urgency, we are not in a position to deploy without testing. If we released the new version tomorrow, we would put our order routing at risk. We could, however, complete the tests by Thursday.",
+      "keyPhrases": [
+        "while we understand the urgency",
+        "we are not in a position to",
+        "we would put",
+        "at risk"
+      ]
+    },
+    {
+      "prompt": "Dictate two sentences to the fund platform: you thought the API change was backward compatible, but it broke your integration, and you were not warned. 40 seconds.",
+      "seconds": 40,
+      "model": "We were under the impression that the new API version was backward compatible. If we had been informed of the change earlier, we could have updated our integration before the release.",
+      "keyPhrases": [
+        "we were under the impression that",
+        "if we had been informed",
+        "we could have updated"
+      ]
+    }
+  ],
+  "write": [
+    {
+      "prompt": "Write an escalation email to the KYC provider's account manager. An incident (ticket opened 10 days ago) is still open: identity checks time out for about 15% of new clients. Your understanding was that critical incidents are resolved within 48 hours. If it is not fixed by Friday, you will have to pause new client onboarding. Acknowledge their support team's effort and ask for a call.",
+      "model": "Subject: Escalation – open incident on identity checks (opened 10 days ago)\n\nDear Mr [Surname],\n\nI would like to escalate an incident that has now been open for ten days: around 15% of identity checks are timing out for new clients.\n\nWhile we appreciate the efforts of your support team, the issue remains unresolved. We were under the impression that critical incidents are resolved within 48 hours.\n\nIf a fix is not in place by Friday, we will have to pause new client onboarding, which would have a significant impact on our business.\n\nWe would welcome a call this week to agree on a way forward.\n\nKind regards,\n\n[Name]",
+      "checklist": [
+        "Oggetto che indica chiaramente l'escalation",
+        "Concessione prima della critica (while / although)",
+        "Distanziamento sui fatti contestati",
+        "Conseguenza chiara espressa con un condizionale",
+        "Proposta concreta per i prossimi passi"
+      ],
+      "keyPhrases": [
+        "I would like to escalate",
+        "While we appreciate",
+        "We were under the impression that",
+        "If a fix is not in place",
+        "a way forward"
+      ]
+    }
+  ]
+}

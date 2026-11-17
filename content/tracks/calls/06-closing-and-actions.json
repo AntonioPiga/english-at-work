@@ -1,0 +1,60 @@
+{
+  "id": "calls-06-closing",
+  "track": "calls",
+  "order": 6,
+  "title": "Closing, actions and follow-up",
+  "level": "C1",
+  "minutes": 14,
+  "grammar": {
+    "title": "Forme di futuro (going to / will / present continuous) e reported speech per le minute",
+    "explanation": "In chiusura di call devi fare due cose: fissare le azioni e, dopo, scrivere le minute. Per le azioni scegli la forma di futuro giusta. Going to = intenzione già decisa prima della call ('We're going to retire the old batch in Q2'). Present continuous = accordo già fissato, con data o persone coinvolte ('We're deploying on Tuesday'). Will = decisione presa lì per lì, promessa o offerta ('I'll send the minutes today'). Per le minute si usa il reported speech, in cui il tempo arretra di un passo: will → would, am/is going to → was going to, presente → passato, present perfect → past perfect. 'We'll fix it by Friday' → 'The vendor said they would fix it by Friday.' 'We've already deployed' → 'They said they had already deployed.' Se il fatto è ancora futuro puoi tenere il tempo originale, ma nelle minute formali il backshift è più sicuro. Oltre a 'said' usa verbi più precisi: confirmed, agreed to, committed to, pointed out, flagged.",
+    "examples": [
+      { "en": "I'll send the minutes by end of day.", "note": "will: offerta decisa adesso" },
+      { "en": "We're deploying the fix on Tuesday at seven.", "note": "present continuous: accordo fissato" },
+      { "en": "The partner bank is going to change the file format in Q2.", "note": "going to: intenzione già nota" },
+      { "en": "Their tech lead said they would share the new specs by Friday.", "note": "will → would" },
+      { "en": "The vendor confirmed that they had already applied the patch.", "note": "present perfect → past perfect" },
+      { "en": "The PM pointed out that the budget wasn't approved yet.", "note": "presente → passato" }
+    ],
+    "italianTrap": "Gli italiani usano spesso il presente per il futuro ('Domani mando le minute' → 'Tomorrow I send the minutes') e nel reported speech lasciano il tempo com'era ('He said they will send it' sempre). Corretto: 'I'll send the minutes tomorrow' e, nelle minute, 'Their tech lead said they would send it by Friday'."
+  },
+  "phrases": [
+    { "en": "We're almost out of time, so let's wrap up.", "it": "Siamo quasi al limite di tempo, chiudiamo.", "when": "chiusura" },
+    { "en": "Let me quickly recap the action points.", "it": "Riassumo velocemente le azioni.", "when": "riepilogo" },
+    { "en": "So, who's going to own this?", "it": "Allora, chi se ne prende carico?", "when": "responsabilità" },
+    { "en": "I'll take that one.", "it": "Questa me la prendo io.", "when": "presa in carico" },
+    { "en": "Just to confirm, you're sending the specs by Friday?", "it": "Solo per conferma: ci mandate le specifiche entro venerdì?", "when": "conferma" },
+    { "en": "Shall we park that and pick it up next time?", "it": "Lo mettiamo da parte e lo riprendiamo la prossima volta?", "when": "rinvio" },
+    { "en": "We're meeting again on the 3rd to review progress.", "it": "Ci rivediamo il 3 per fare il punto.", "when": "follow-up" },
+    { "en": "I'll circulate the minutes this afternoon.", "it": "Faccio girare le minute oggi pomeriggio.", "when": "follow-up" },
+    { "en": "If I've missed anything, just flag it in reply to the minutes.", "it": "Se ho dimenticato qualcosa, segnalatelo rispondendo alle minute.", "when": "chiusura" },
+    { "en": "Thanks, everyone. That was really productive.", "it": "Grazie a tutti, è stata una call molto produttiva.", "when": "chiusura" },
+    { "en": "The partner bank confirmed that they would resend the file.", "it": "La banca partner ha confermato che avrebbe rimandato il file.", "when": "minute" },
+    { "en": "The vendor agreed to share a revised plan by Monday.", "it": "Il vendor ha accettato di condividere un piano rivisto entro lunedì.", "when": "minute" }
+  ],
+  "quiz": [
+    { "q": "The PM asks who can update the runbook. You volunteer on the spot: '___ do it.'", "options": ["I'm going to", "I'll", "I do", "I'm doing"], "answer": 1, "why": "Decisione presa in quel momento, come offerta: 'will'. 'Going to' presuppone che fosse già deciso." },
+    { "q": "'It's in the release calendar: we ___ on Tuesday at 7 a.m.'", "options": ["would deploy", "deployed", "were deploying", "are deploying"], "answer": 3, "why": "Accordo già fissato con data e ora: present continuous con valore di futuro." },
+    { "q": "Their tech lead said: 'We'll send the new specs by Friday.' How do you report it in the minutes?", "options": ["Their tech lead said they would send the new specs by Friday.", "Their tech lead said they send the new specs by Friday.", "Their tech lead said we will send the new specs by Friday.", "Their tech lead said they sent the new specs by Friday."], "answer": 0, "why": "Nel reported speech 'will' diventa 'would' e 'we' diventa 'they'." },
+    { "q": "The vendor said: 'We have already applied the patch.' Which version suits formal minutes?", "options": ["The vendor said they have applied already the patch.", "The vendor said they applied the patch already yesterday.", "The vendor confirmed they had already applied the patch.", "The vendor confirmed to have applied already the patch."], "answer": 2, "why": "Present perfect → past perfect ('had applied'), con 'already' prima del participio. 'Confirmed' è più preciso di 'said'." },
+    { "q": "Which sentence describes an intention decided BEFORE the call?", "options": ["OK, fine, I'll have a look at it straight after this call, then.", "Shall I check it?", "I check it later.", "We're going to retire the old batch in Q2."], "answer": 3, "why": "'Going to' esprime un piano già deciso. 'I'll have a look' è una decisione presa sul momento." },
+    { "q": "The PM said: 'The budget isn't approved yet.' Which is the best reported version?", "options": ["The PM said the budget isn't approve yet.", "The PM pointed out that the budget wasn't approved yet.", "The PM said that the budget hadn't been approve by the board yet.", "The PM told the budget was not approved yet."], "answer": 1, "why": "Presente → passato ('wasn't approved'). 'Told' vuole un complemento di persona ('told us that…')." },
+    { "q": "A side topic is taking over the last five minutes. How do you postpone it politely?", "options": ["We don't talk about this now, it's not on today's agenda.", "Not now, please, we have no time for this.", "Shall we park that and pick it up next time?", "This is for another meeting, no?"], "answer": 2, "why": "'Park' un argomento = metterlo da parte; la domanda con 'shall we' lo rende una proposta, non un ordine." },
+    { "q": "The bank's PM asked: 'Can you share the logs?' How does it go in the minutes?", "options": ["The bank's PM asked if we could share the logs.", "The bank's PM asked could we share the logs.", "The bank's PM asked if can we share the logs.", "The bank's PM asked that we can share all the logs."], "answer": 0, "why": "Domanda sì/no riportata: 'asked if' + ordine affermativo, con 'can' che arretra a 'could'." }
+  ],
+  "gapfill": [
+    { "text": "Their tech lead said they ___ send the revised plan by Monday.", "answers": ["would"], "hint": "'will' nel reported speech" },
+    { "text": "The custodian confirmed that they ___ already fixed the mapping.", "answers": ["had"], "hint": "present perfect → past perfect" },
+    { "text": "We ___ meeting again on the 3rd to review progress.", "answers": ["are", "'re"], "hint": "accordo già fissato: present continuous" }
+  ],
+  "reorder": [
+    { "words": ["Let", "me", "quickly", "recap", "the", "action", "points"], "answer": "Let me quickly recap the action points." },
+    { "words": ["The", "vendor", "agreed", "to", "share", "a", "revised", "plan"], "answer": "The vendor agreed to share a revised plan." }
+  ],
+  "fluency": [
+    { "prompt": "Wrap up a call with the partner bank: recap three actions with owners and dates. 50 seconds.", "seconds": 50, "model": "We're almost out of time, so let me quickly recap the action points. Your team is going to resend the corrected file by Thursday. We're deploying the new parser on Tuesday evening, and I'll circulate the minutes this afternoon. If I've missed anything, just flag it in reply to the minutes.", "keyPhrases": ["let me quickly recap the action points", "is going to resend", "we're deploying", "I'll circulate the minutes", "just flag it"] },
+    { "prompt": "Your manager missed the call with the vendor. Report what their PM and tech lead said, using reported speech. 45 seconds.", "seconds": 45, "model": "Their PM said they would deliver the reporting API by the end of the month. Their tech lead admitted that they had underestimated the migration and pointed out that the sandbox was still unstable. In the end, they agreed to send a revised plan by Monday.", "keyPhrases": ["their PM said they would", "admitted that they had underestimated", "pointed out that", "agreed to send"] },
+    { "prompt": "At the end of an internal call, nobody has taken ownership of the KYC provider's certificate renewal. Push for an owner, then offer to take it with conditions. 35 seconds.", "seconds": 35, "model": "Before we close, there's one thing nobody has picked up: the certificate renewal for the KYC provider. Who's going to own this? If nobody can, I'll take it, but I'd need someone from operations to help with the access request.", "keyPhrases": ["before we close", "who's going to own this", "I'll take it", "I'd need someone"] },
+    { "prompt": "The custodian asks you to confirm the next steps before hanging up. Summarise what you're doing, what they said they would do, and when you're meeting again. 60 seconds.", "seconds": 60, "model": "Sure, so on our side, we're switching to the new position file from Monday, and I'll send you the test results by Wednesday. On your side, you said you would extend the cut-off to six p.m. during the transition and that you would confirm it in writing. We're meeting again on the 3rd to review how it's going. Thanks, everyone, that was really productive.", "keyPhrases": ["we're switching", "I'll send you", "you said you would", "we're meeting again", "that was really productive"] }
+  ]
+}

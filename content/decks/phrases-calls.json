@@ -1,0 +1,247 @@
+{
+  "id": "phrases-calls",
+  "title": "Phrases: tech calls",
+  "description": "Frasi pronte per le call tecniche",
+  "cards": [
+    {
+      "id": "pc-interrupt-politely",
+      "front": "Interrompere con cortesia",
+      "back": "Sorry to jump in, but could I just add something?",
+      "example": "Sorry to jump in, but the partner bank changed the file format."
+    },
+    {
+      "id": "pc-repeat-last-part",
+      "front": "Scusa, puoi ripetere l'ultima parte?",
+      "back": "Sorry, could you repeat the last part?",
+      "example": "Sorry, could you repeat the last part about the rollback?"
+    },
+    {
+      "id": "pc-you-broke-up",
+      "front": "Si è interrotto l'audio",
+      "back": "Sorry, you broke up there. Could you say that again?",
+      "example": "Sorry, you broke up there. Which environment did you mean?"
+    },
+    {
+      "id": "pc-you-are-muted",
+      "front": "Sei in muto",
+      "back": "I think you're on mute.",
+      "example": "I think you're on mute, we can't hear you at all."
+    },
+    {
+      "id": "pc-can-everyone-hear",
+      "front": "Mi sentite tutti?",
+      "back": "Can everyone hear me OK?",
+      "example": "Can everyone hear me OK before we start the review?"
+    },
+    {
+      "id": "pc-share-screen",
+      "front": "Condivido lo schermo",
+      "back": "Let me share my screen.",
+      "example": "Let me share my screen and walk you through the logs."
+    },
+    {
+      "id": "pc-see-my-screen",
+      "front": "Vedete il mio schermo?",
+      "back": "Can you see my screen?",
+      "example": "Can you see my screen with the deployment pipeline?"
+    },
+    {
+      "id": "pc-wait-for-others",
+      "front": "Aspettiamo ancora un paio di minuti",
+      "back": "Let's give it a couple more minutes for others to join.",
+      "example": "Let's give it a couple more minutes for the PM to join."
+    },
+    {
+      "id": "pc-set-agenda",
+      "front": "Oggi vorrei coprire tre punti",
+      "back": "There are three things I'd like to cover today.",
+      "example": "There are three things I'd like to cover today, starting with the incident."
+    },
+    {
+      "id": "pc-time-limit",
+      "front": "Abbiamo solo mezz'ora",
+      "back": "We've only got half an hour, so let's keep it focused.",
+      "example": "We've only got half an hour, so let's keep it focused on the release."
+    },
+    {
+      "id": "pc-clarify-meaning",
+      "front": "Cosa intendi esattamente con...?",
+      "back": "What exactly do you mean by...?",
+      "example": "What exactly do you mean by a partial reconciliation?"
+    },
+    {
+      "id": "pc-check-understanding",
+      "front": "Quindi, se ho capito bene...",
+      "back": "So, if I understand correctly, ...",
+      "example": "So, if I understand correctly, the batch failed after midnight?"
+    },
+    {
+      "id": "pc-let-me-finish",
+      "front": "Fammi finire un attimo",
+      "back": "If I could just finish my point...",
+      "example": "If I could just finish my point, then I'll hand over to you."
+    },
+    {
+      "id": "pc-go-ahead",
+      "front": "Prego, vai tu",
+      "back": "Go ahead, please.",
+      "example": "Go ahead, please, you were about to mention the timeout."
+    },
+    {
+      "id": "pc-both-spoke",
+      "front": "Abbiamo parlato insieme, scusa",
+      "back": "Sorry, we spoke over each other. You go first.",
+      "example": "Sorry, we spoke over each other. You go first this time."
+    },
+    {
+      "id": "pc-good-point",
+      "front": "Ottima osservazione",
+      "back": "That's a good point.",
+      "example": "That's a good point, we hadn't considered the retry logic."
+    },
+    {
+      "id": "pc-polite-disagree",
+      "front": "Non sono del tutto d'accordo",
+      "back": "I'm not sure I entirely agree.",
+      "example": "I'm not sure I entirely agree with moving the release forward."
+    },
+    {
+      "id": "pc-see-your-point",
+      "front": "Capisco il tuo punto di vista, però...",
+      "back": "I see where you're coming from, but...",
+      "example": "I see where you're coming from, but the risk is too high."
+    },
+    {
+      "id": "pc-check-and-get-back",
+      "front": "Verifico e ti faccio sapere",
+      "back": "Let me check and get back to you.",
+      "example": "Let me check with the vendor and get back to you."
+    },
+    {
+      "id": "pc-dont-know-offhand",
+      "front": "Non lo so su due piedi",
+      "back": "I don't know off the top of my head.",
+      "example": "I don't know off the top of my head how many orders failed."
+    },
+    {
+      "id": "pc-take-offline",
+      "front": "Ne parliamo a parte",
+      "back": "Shall we take this offline?",
+      "example": "Shall we take this offline and focus on the release plan?"
+    },
+    {
+      "id": "pc-park-it",
+      "front": "Mettiamolo da parte per ora",
+      "back": "Let's park that for now.",
+      "example": "Let's park that for now and come back to it on Friday."
+    },
+    {
+      "id": "pc-back-on-track",
+      "front": "Torniamo al punto",
+      "back": "Let's get back on track.",
+      "example": "Let's get back on track and look at the open tickets."
+    },
+    {
+      "id": "pc-current-status",
+      "front": "A che punto siamo con...?",
+      "back": "Where are we with...?",
+      "example": "Where are we with the signature integration?"
+    },
+    {
+      "id": "pc-on-track",
+      "front": "Siamo nei tempi",
+      "back": "We're on track.",
+      "example": "We're on track to deliver the onboarding changes by Friday."
+    },
+    {
+      "id": "pc-behind-schedule",
+      "front": "Siamo in ritardo",
+      "back": "We're running behind schedule.",
+      "example": "We're running behind schedule because the test environment was down."
+    },
+    {
+      "id": "pc-blocker",
+      "front": "Siamo bloccati su...",
+      "back": "We're blocked on...",
+      "example": "We're blocked on the partner bank's new certificate."
+    },
+    {
+      "id": "pc-ask-for-input",
+      "front": "Tu cosa ne pensi?",
+      "back": "What's your take on this?",
+      "example": "What's your take on splitting the service in two?"
+    },
+    {
+      "id": "pc-anyone-else",
+      "front": "Qualcun altro vuole aggiungere qualcosa?",
+      "back": "Does anyone else have anything to add?",
+      "example": "Does anyone else have anything to add before we move on?"
+    },
+    {
+      "id": "pc-move-on",
+      "front": "Passiamo al punto successivo",
+      "back": "Let's move on to the next item.",
+      "example": "Let's move on to the next item: the KPI dashboard."
+    },
+    {
+      "id": "pc-summarise-actions",
+      "front": "Riassumo le azioni",
+      "back": "Let me just recap the action points.",
+      "example": "Let me just recap the action points before we wrap up."
+    },
+    {
+      "id": "pc-who-owns",
+      "front": "Chi se ne occupa?",
+      "back": "Who's going to take this on?",
+      "example": "Who's going to take this on while the lead is away?"
+    },
+    {
+      "id": "pc-i-will-take-it",
+      "front": "Me ne occupo io",
+      "back": "I'll take care of it.",
+      "example": "I'll take care of it and update the ticket tonight."
+    },
+    {
+      "id": "pc-follow-up-email",
+      "front": "Mando un riepilogo via mail",
+      "back": "I'll send a follow-up email with the next steps.",
+      "example": "I'll send a follow-up email with the next steps after lunch."
+    },
+    {
+      "id": "pc-wrap-up",
+      "front": "Chiudiamo qui",
+      "back": "Let's wrap it up there.",
+      "example": "Let's wrap it up there, thanks for your time, everyone."
+    },
+    {
+      "id": "pc-drop-off",
+      "front": "Devo scappare, scusate",
+      "back": "Sorry, I have to drop off now.",
+      "example": "Sorry, I have to drop off now for another call."
+    },
+    {
+      "id": "pc-thanks-for-joining",
+      "front": "Grazie a tutti per esserci",
+      "back": "Thanks, everyone, for joining.",
+      "example": "Thanks, everyone, for joining at such short notice."
+    },
+    {
+      "id": "pc-speak-slowly",
+      "front": "Puoi parlare un po' più lentamente?",
+      "back": "Could you speak a bit more slowly, please?",
+      "example": "Could you speak a bit more slowly, please? The line isn't great."
+    },
+    {
+      "id": "pc-spell-that",
+      "front": "Puoi fare lo spelling?",
+      "back": "Could you spell that for me?",
+      "example": "Could you spell that for me? I want the exact error code."
+    },
+    {
+      "id": "pc-quick-question",
+      "front": "Una domanda veloce",
+      "back": "Just a quick question before we move on.",
+      "example": "Just a quick question before we move on: is this in production?"
+    }
+  ]
+}

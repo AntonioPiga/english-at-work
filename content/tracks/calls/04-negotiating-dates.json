@@ -1,0 +1,59 @@
+{
+  "id": "calls-04-negotiating",
+  "track": "calls",
+  "order": 4,
+  "title": "Negotiating dates and scope",
+  "level": "B2",
+  "minutes": 14,
+  "grammar": {
+    "title": "First e second conditional; modali di impegno (will / would / could / might)",
+    "explanation": "Nelle trattative su date e scope il condizionale è lo strumento principale. Il first conditional (if + presente, will + verbo) serve per proposte realistiche e impegni concreti: 'If you send the specs by Friday, we'll deliver on the 15th.' Il second conditional (if + past simple, would/could + verbo) serve per ipotesi meno probabili o per proporre un'opzione con tatto, senza impegnarsi: 'If we dropped the reporting module, we could go live in March.' È più morbido, quindi è ottimo per esplorare alternative. I modali segnalano quanto ti stai impegnando: will = promessa ferma; would = disponibilità a certe condizioni; could = possibilità o proposta; might = incertezza, nessuna promessa. Scegli con cura: un 'will' detto in call diventa una data nel piano del partner. Altre strutture utili per porre condizioni: 'as long as', 'provided that' e 'unless' (= if not).",
+    "examples": [
+      { "en": "If you confirm the scope today, we'll start the sprint on Monday.", "note": "first conditional: impegno realistico" },
+      { "en": "If we moved the go-live to April, we could include the second custodian.", "note": "second conditional: ipotesi morbida" },
+      { "en": "We could deliver the API first and the UI later.", "note": "could: proposta" },
+      { "en": "We might need an extra week for the security review.", "note": "might: nessuna promessa" },
+      { "en": "We'd be happy to do that, provided that the test environment is ready.", "note": "would + condizione" },
+      { "en": "Unless the partner bank changes the format again, we'll be ready by the 20th.", "note": "unless = if not" }
+    ],
+    "italianTrap": "Calcando l'italiano ('se ci manderete le specifiche, consegneremo'), gli italiani mettono will o would dopo if: 'If you will send the specs…', 'If we would drop the module…'. Dopo if niente will/would: 'If you send the specs, we'll deliver' e 'If we dropped the module, we could go live earlier'."
+  },
+  "phrases": [
+    { "en": "What would work for you in terms of timing?", "it": "Che tempistiche andrebbero bene per voi?", "when": "apertura trattativa" },
+    { "en": "Realistically, we're looking at the end of March.", "it": "Realisticamente parliamo di fine marzo.", "when": "stima" },
+    { "en": "That's a bit tight for us.", "it": "Per noi è un po' stretto.", "when": "obiezione" },
+    { "en": "If we can agree on the scope today, we'll start on Monday.", "it": "Se oggi ci accordiamo sullo scope, partiamo lunedì.", "when": "proposta" },
+    { "en": "Would you be open to a phased approach?", "it": "Sareste disposti a un approccio per fasi?", "when": "alternativa" },
+    { "en": "What if we delivered the core features first and the reports later?", "it": "E se consegnassimo prima le funzionalità principali e i report dopo?", "when": "alternativa" },
+    { "en": "We could probably do that, as long as the test environment is ready.", "it": "Probabilmente possiamo farlo, purché l'ambiente di test sia pronto.", "when": "condizione" },
+    { "en": "I can't commit to that date today, but I'll check with the team.", "it": "Oggi non posso impegnarmi su quella data, ma verifico con il team.", "when": "evitare impegni" },
+    { "en": "Something would have to give: either the date or the scope.", "it": "Qualcosa dovrà cedere: o la data o lo scope.", "when": "trade-off" },
+    { "en": "Let's meet halfway: we'll move the date by one week.", "it": "Veniamoci incontro: spostiamo la data di una settimana.", "when": "compromesso" },
+    { "en": "So, to confirm, we're agreeing on the 15th for phase one.", "it": "Quindi, per conferma, siamo d'accordo sul 15 per la fase uno.", "when": "conferma" }
+  ],
+  "quiz": [
+    { "q": "'If the partner bank ___ the specs by Friday, we'll start on Monday.'", "options": ["sends", "will send", "would send", "sent"], "answer": 0, "why": "First conditional: dopo 'if' il presente, nella frase principale 'will'." },
+    { "q": "'If we dropped the reporting module, we ___ go live in March.'", "options": ["will", "can", "could", "are going to"], "answer": 2, "why": "Second conditional (if + past simple): nella principale 'would' o 'could'." },
+    { "q": "The fund platform asks for a date and you're not sure yet. Which answer keeps you safe?", "options": ["Don't worry, we will definitely deliver everything on the 10th.", "We might be able to make the 10th, but I need to check.", "We deliver the 10th.", "We would deliver the 10th surely."], "answer": 1, "why": "'Might' + 'I need to check' non crea un impegno. 'Will definitely' è una promessa che poi devi mantenere." },
+    { "q": "'We'll be ready by the 20th ___ the format changes again.'", "options": ["if", "as long as", "provided", "unless"], "answer": 3, "why": "'Unless' = 'if not': saremo pronti, a meno che il formato non cambi di nuovo." },
+    { "q": "Which sentence proposes an alternative most diplomatically?", "options": ["You must accept a phased delivery.", "We do phase one now, phase two later.", "What if we delivered phase one in March and phase two in April?", "Phase one March, phase two April, OK?"], "answer": 2, "why": "'What if we + past simple' propone un'ipotesi senza imporla: è il second conditional usato per negoziare." },
+    { "q": "Which sentence contains a grammar mistake?", "options": ["If we would have more developers, we could finish earlier.", "If you confirm today, we'll start on Monday.", "If we had more developers, we could finish earlier.", "We could start earlier if the environment were ready."], "answer": 0, "why": "Dopo 'if' non si usa 'would': 'If we had more developers…'." },
+    { "q": "Your manager hasn't approved extra budget. You say: 'If we ___ two more developers, we could finish in February.'", "options": ["have", "will have", "would have", "had"], "answer": 3, "why": "Ipotesi poco probabile: second conditional, past simple dopo 'if'." },
+    { "q": "'I can't ___ to that date today, but I'll check with the team.'", "options": ["promise", "commit", "engage", "oblige"], "answer": 1, "why": "'Commit to a date' = impegnarsi su una data. 'Engage' è un falso amico in questo senso." }
+  ],
+  "gapfill": [
+    { "text": "If you confirm the scope today, we ___ start on Monday.", "answers": ["will", "'ll", "can"], "hint": "impegno concreto: first conditional" },
+    { "text": "If we ___ the go-live to April, we could include the second custodian.", "answers": ["moved", "pushed", "postponed", "shifted"], "hint": "second conditional: past simple dopo 'if'" },
+    { "text": "We could do that, as ___ as the test environment is ready.", "answers": ["long"], "hint": "'a condizione che'" }
+  ],
+  "reorder": [
+    { "words": ["Would", "you", "be", "open", "to", "a", "phased", "approach"], "answer": "Would you be open to a phased approach?" },
+    { "words": ["We", "might", "need", "an", "extra", "week", "for", "testing"], "answer": "We might need an extra week for testing." }
+  ],
+  "fluency": [
+    { "prompt": "The partner bank wants the new reconciliation format live by the 1st. Your team needs three more weeks. Push back and offer a conditional deal. 45 seconds.", "seconds": 45, "model": "I understand the 1st is important for you, but realistically that's a bit tight for us. If you can send us the final specs this week, we'll go live on the 22nd. And if we skipped the historical data migration, we could probably bring it forward to the 15th.", "keyPhrases": ["that's a bit tight for us", "if you can send us", "we'll go live", "if we skipped", "we could probably"] },
+    { "prompt": "The vendor offers to deliver the full scope two months late. Suggest a phased approach. 40 seconds.", "seconds": 40, "model": "Would you be open to a phased approach? What if you delivered the order API in March and the reporting part in May? That way we could start testing earlier, and you wouldn't have to rush the whole thing.", "keyPhrases": ["would you be open to a phased approach", "what if you delivered", "that way we could"] },
+    { "prompt": "In a call with the fund platform, your PM pushes you to commit to a date you are not sure about. Avoid a firm promise without sounding negative. 30 seconds.", "seconds": 30, "model": "I can't commit to that date today, but I'll check with the team and come back to you by Thursday. We might be able to make it, as long as the test environment is available next week.", "keyPhrases": ["I can't commit to that date today", "I'll check with the team", "we might be able to", "as long as"] },
+    { "prompt": "Close the negotiation with the signature provider: summarise what you agreed on dates and scope. 30 seconds.", "seconds": 30, "model": "So, to confirm, we're agreeing on the 15th for phase one, with the embedded signing flow only. Bulk signing moves to phase two. If anything changes on your side, you'll let us know by Friday.", "keyPhrases": ["so to confirm", "we're agreeing on", "phase two", "you'll let us know"] }
+  ]
+}

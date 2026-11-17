@@ -1,0 +1,247 @@
+{
+  "id": "verbs-at-work",
+  "title": "Verbs and collocations at work",
+  "description": "Verbi e collocazioni del lavoro tech/finance",
+  "cards": [
+    {
+      "id": "vw-roll-out",
+      "front": "rilasciare in produzione",
+      "back": "roll out (to production) / deploy",
+      "example": "We'll roll out the new onboarding flow to production on Tuesday."
+    },
+    {
+      "id": "vw-roll-back",
+      "front": "fare rollback",
+      "back": "roll back (a release)",
+      "example": "We rolled back the release after the error rate spiked."
+    },
+    {
+      "id": "vw-escalate",
+      "front": "fare escalation",
+      "back": "escalate (an issue to someone)",
+      "example": "If the vendor doesn't reply by noon, I'll escalate it."
+    },
+    {
+      "id": "vw-push-back-decision",
+      "front": "rimandare una decisione",
+      "back": "push back / postpone a decision",
+      "example": "Let's push back the decision until we have the cost figures."
+    },
+    {
+      "id": "vw-push-back-disagree",
+      "front": "opporsi / fare resistenza (a una richiesta)",
+      "back": "push back on (a request)",
+      "example": "We pushed back on the deadline because testing wasn't complete."
+    },
+    {
+      "id": "vw-sign-off",
+      "front": "approvare formalmente",
+      "back": "sign off on (something)",
+      "example": "The compliance team needs to sign off on the new KYC flow."
+    },
+    {
+      "id": "vw-follow-up",
+      "front": "dare seguito / ricontattare",
+      "back": "follow up on (something) / with (someone)",
+      "example": "I'll follow up with the partner bank about the missing file."
+    },
+    {
+      "id": "vw-look-into",
+      "front": "verificare / indagare",
+      "back": "look into (an issue)",
+      "example": "We're looking into why some orders stayed pending."
+    },
+    {
+      "id": "vw-figure-out",
+      "front": "capire / trovare la soluzione",
+      "back": "figure out",
+      "example": "We still need to figure out why the job times out."
+    },
+    {
+      "id": "vw-sort-out",
+      "front": "sistemare / risolvere",
+      "back": "sort out (informal) / resolve (formal)",
+      "example": "Can you sort out the access rights for the new developer?"
+    },
+    {
+      "id": "vw-set-up",
+      "front": "configurare / predisporre",
+      "back": "set up (an environment, a meeting)",
+      "example": "I'll set up a test environment for the vendor by Friday."
+    },
+    {
+      "id": "vw-carry-out",
+      "front": "effettuare / svolgere",
+      "back": "carry out (a test, an audit, a review)",
+      "example": "The auditors will carry out a penetration test next month."
+    },
+    {
+      "id": "vw-run-test",
+      "front": "lanciare i test",
+      "back": "run the tests",
+      "example": "Please run the tests again after rebasing your branch."
+    },
+    {
+      "id": "vw-raise-issue",
+      "front": "sollevare un problema",
+      "back": "raise an issue / a concern",
+      "example": "I'd like to raise a concern about the data retention policy."
+    },
+    {
+      "id": "vw-address-issue",
+      "front": "affrontare / gestire un problema",
+      "back": "address an issue",
+      "example": "The next release addresses the reconciliation mismatch."
+    },
+    {
+      "id": "vw-meet-deadline",
+      "front": "rispettare una scadenza",
+      "back": "meet a deadline (NOT 'respect')",
+      "example": "We can meet the deadline if we reduce the scope."
+    },
+    {
+      "id": "vw-miss-deadline",
+      "front": "mancare una scadenza",
+      "back": "miss a deadline",
+      "example": "We missed the deadline because of the certificate problem."
+    },
+    {
+      "id": "vw-make-decision",
+      "front": "prendere una decisione",
+      "back": "make a decision ('take a decision' is more formal BrE)",
+      "example": "We need to make a decision on the cloud region today."
+    },
+    {
+      "id": "vw-take-into-account",
+      "front": "tenere conto di",
+      "back": "take into account",
+      "example": "We need to take regulatory requirements into account."
+    },
+    {
+      "id": "vw-hand-over",
+      "front": "passare le consegne",
+      "back": "hand over (to someone)",
+      "example": "I'll hand over the incident to the night shift at eight."
+    },
+    {
+      "id": "vw-take-over",
+      "front": "subentrare / prendere in carico",
+      "back": "take over (a task, a project)",
+      "example": "Can you take over the payment integration while I'm away?"
+    },
+    {
+      "id": "vw-catch-up",
+      "front": "aggiornarsi (con qualcuno)",
+      "back": "catch up (with someone)",
+      "example": "Let's catch up tomorrow about the migration plan."
+    },
+    {
+      "id": "vw-bring-forward",
+      "front": "anticipare (una riunione)",
+      "back": "bring forward (a meeting, a date)",
+      "example": "Can we bring the review forward to Wednesday?"
+    },
+    {
+      "id": "vw-put-off",
+      "front": "rinviare",
+      "back": "put off / postpone",
+      "example": "We had to put off the go-live until next quarter."
+    },
+    {
+      "id": "vw-call-off",
+      "front": "annullare",
+      "back": "call off / cancel",
+      "example": "The workshop has been called off due to the outage."
+    },
+    {
+      "id": "vw-go-live",
+      "front": "andare in produzione",
+      "back": "go live (noun: go-live)",
+      "example": "The new reporting module will go live next Monday."
+    },
+    {
+      "id": "vw-ship-feature",
+      "front": "rilasciare una funzionalità",
+      "back": "ship a feature",
+      "example": "We shipped the digital signature feature ahead of schedule."
+    },
+    {
+      "id": "vw-phase-out",
+      "front": "dismettere gradualmente",
+      "back": "phase out / decommission (a system)",
+      "example": "We're phasing out the legacy batch jobs this year."
+    },
+    {
+      "id": "vw-scale-up",
+      "front": "scalare",
+      "back": "scale up / scale out (more nodes)",
+      "example": "We scaled out the order service to handle the peak."
+    },
+    {
+      "id": "vw-troubleshoot",
+      "front": "fare troubleshooting / diagnosticare",
+      "back": "troubleshoot / debug",
+      "example": "I spent the morning troubleshooting the login failures."
+    },
+    {
+      "id": "vw-fix-bug",
+      "front": "correggere un bug",
+      "back": "fix a bug / patch (urgent)",
+      "example": "We patched the vulnerability within twenty-four hours."
+    },
+    {
+      "id": "vw-reconcile",
+      "front": "riconciliare (dati, conti)",
+      "back": "reconcile (accounts, positions with the bank)",
+      "example": "We reconcile our positions with the partner bank every morning."
+    },
+    {
+      "id": "vw-onboard-client",
+      "front": "fare onboarding di un cliente",
+      "back": "onboard a client",
+      "example": "We onboarded two hundred new clients last month."
+    },
+    {
+      "id": "vw-route-orders",
+      "front": "instradare gli ordini",
+      "back": "route orders (to the fund platform)",
+      "example": "The gateway routes orders to the fund platform in real time."
+    },
+    {
+      "id": "vw-comply-with",
+      "front": "rispettare (norme)",
+      "back": "comply with (regulations)",
+      "example": "All client data must comply with GDPR requirements."
+    },
+    {
+      "id": "vw-keep-posted",
+      "front": "tenere aggiornato",
+      "back": "keep someone posted / in the loop",
+      "example": "I'll keep you posted on the vendor's response."
+    },
+    {
+      "id": "vw-weigh-up",
+      "front": "valutare pro e contro",
+      "back": "weigh up (the options)",
+      "example": "We weighed up the options before choosing the managed database."
+    },
+    {
+      "id": "vw-come-up-with",
+      "front": "proporre / ideare",
+      "back": "come up with (an idea, a solution)",
+      "example": "The team came up with a simpler retry strategy."
+    },
+    {
+      "id": "vw-allocate-resources",
+      "front": "assegnare risorse",
+      "back": "allocate resources / assign (a task)",
+      "example": "We need to allocate two developers to the reconciliation work."
+    },
+    {
+      "id": "vw-prioritise",
+      "front": "dare priorità",
+      "back": "prioritise / put first",
+      "example": "Let's prioritise the regulatory fixes over new features."
+    }
+  ]
+}

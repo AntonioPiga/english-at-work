@@ -40,6 +40,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -211,3 +212,9 @@ textarea { width: 100%; min-height: 9rem; font: inherit; padding: 0.7rem 0.8rem;
 .fade-in { animation: fade 0.25s ease; }
 @keyframes fade { from { opacity: 0; transform: translateY(4px); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Flip robustness: switch faces explicitly halfway through the rotation (some renderers ignore backface-visibility). */
+.flashcard .face { transition: visibility 0s 0.22s; }
+.flashcard .face.back { visibility: hidden; }
+.flashcard.flipped .face.back { visibility: visible; }
+.flashcard.flipped .face.front { visibility: hidden; }

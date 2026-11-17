@@ -1,0 +1,63 @@
+{
+  "id": "emails-02-request",
+  "track": "emails",
+  "order": 2,
+  "title": "Making a formal request",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Modali di cortesia: could, would, would you mind, I would appreciate it if…",
+    "explanation": "In inglese una richiesta diretta ('Send me the file') suona brusca, anche se in italiano 'Mi invii il file' è normale. Nelle email formali si 'ammorbidisce' con i modali. 'Could you + verbo base?' è la forma più comune e sicura: 'Could you send us the test credentials?'. 'Would you be able to + verbo?' è ancora più cortese, utile con banche e fornitori. 'Would you mind + verbo in -ing?' si usa per piccoli favori: 'Would you mind checking the logs?'. Con 'I would appreciate it if you could + verbo' e 'I would be grateful if you could + verbo' la richiesta diventa un'affermazione, molto formale e adatta al primo contatto. Per rendere la richiesta utile, aggiungi sempre cosa serve e entro quando: 'by Friday 15 March', 'by the end of the week'. Ricorda: dopo could/would il verbo è sempre alla forma base, senza 'to' (could send, non 'could to send').",
+    "examples": [
+      { "en": "Could you send us the test credentials for the sandbox?", "note": "richiesta cortese standard" },
+      { "en": "Would you be able to confirm the cut-off time for orders?", "note": "più cortese, adatta a una banca" },
+      { "en": "Would you mind checking whether the file was delivered?", "note": "'would you mind' + -ing" },
+      { "en": "I would appreciate it if you could share the API documentation by Friday.", "note": "molto formale, con scadenza" },
+      { "en": "I would be grateful if you could confirm receipt of this email.", "note": "formula formale di richiesta" }
+    ],
+    "italianTrap": "Errori tipici: 'Would you mind to check…?' (corretto: 'Would you mind checking…?'), 'Could you to send…?' (corretto: 'Could you send…?') e 'I would appreciate if you could…' (manca 'it': corretto 'I would appreciate it if you could…')."
+  },
+  "phrases": [
+    { "en": "Could you please send us the updated specification?", "it": "Potrebbe inviarci la specifica aggiornata?", "when": "richiesta" },
+    { "en": "Would you be able to confirm the maintenance window?", "it": "Sarebbe in grado di confermare la finestra di manutenzione?", "when": "richiesta" },
+    { "en": "Would you mind sharing the error logs?", "it": "Le dispiacerebbe condividere i log degli errori?", "when": "richiesta" },
+    { "en": "I would appreciate it if you could reply by Friday.", "it": "Le sarei grato se potesse rispondere entro venerdì.", "when": "richiesta" },
+    { "en": "I would be grateful if you could look into this.", "it": "Le sarei grato se potesse verificare la questione.", "when": "richiesta" },
+    { "en": "We would like to request access to the production reports.", "it": "Vorremmo richiedere l'accesso ai report di produzione.", "when": "richiesta" },
+    { "en": "Ideally, we would need this by the end of the week.", "it": "Idealmente ci servirebbe entro fine settimana.", "when": "scadenza" },
+    { "en": "This would allow us to start testing on Monday.", "it": "Questo ci permetterebbe di iniziare i test lunedì.", "when": "motivazione" },
+    { "en": "Thank you in advance for your help.", "it": "La ringrazio anticipatamente per l'aiuto.", "when": "chiusura" },
+    { "en": "Please let me know if you need any further information.", "it": "Mi faccia sapere se ha bisogno di ulteriori informazioni.", "when": "chiusura" }
+  ],
+  "quiz": [
+    { "q": "'Would you mind ___ the cut-off time for fund orders?'", "options": ["to confirm", "confirming", "confirm", "confirmed"], "answer": 1, "why": "'Would you mind' è seguito dal verbo in -ing." },
+    { "q": "Which request is the most appropriate in a first email to the partner bank?", "options": ["Send us the file format.", "I want the file format.", "I would be grateful if you could send us the file format.", "You must send us the file format."], "answer": 2, "why": "Con una banca, al primo contatto, si usa una formula indiretta e formale." },
+    { "q": "'I would appreciate ___ if you could reply by Friday.'", "options": ["it", "that", "you", "this"], "answer": 0, "why": "La formula fissa è 'I would appreciate it if…': 'it' è obbligatorio." },
+    { "q": "'Could you ___ us the sandbox credentials?'", "options": ["to send", "sending", "sent", "send"], "answer": 3, "why": "Dopo 'could' il verbo è alla forma base, senza 'to'." },
+    { "q": "You need the KYC provider's documentation by Thursday. Which sentence is best?", "options": ["Could you share the documentation by Thursday?", "Could you share the documentation sometime?", "Share the documentation when you want.", "The documentation is needed, thanks."], "answer": 0, "why": "Una buona richiesta è cortese e include una scadenza precisa." },
+    { "q": "Which sentence is grammatically correct?", "options": ["Would you be able to checking the logs?", "Would you be able check the logs?", "Would you be able to check the logs?", "Would you able to check the logs?"], "answer": 2, "why": "La struttura è 'Would you be able to' + verbo base." },
+    { "q": "Choose the most polite way to ask the vendor for an extra test slot.", "options": ["We need another test slot.", "Give us another test slot, please.", "Another test slot is necessary.", "Would it be possible to schedule another test slot?"], "answer": 3, "why": "'Would it be possible to…?' è una richiesta indiretta e molto cortese." }
+  ],
+  "gapfill": [
+    { "text": "Would you mind ___ the IP addresses to your whitelist?", "answers": ["adding"], "hint": "aggiungere (dopo 'would you mind')" },
+    { "text": "I would be ___ if you could confirm receipt of the file.", "answers": ["grateful"], "hint": "grato" },
+    { "text": "___ you be able to share the test results by Friday?", "answers": ["Would", "Could"], "hint": "modale di cortesia" }
+  ],
+  "reorder": [
+    { "words": ["Could", "you", "please", "send", "us", "the", "credentials"], "answer": "Could you please send us the credentials" },
+    { "words": ["I", "would", "appreciate", "it", "if", "you", "could", "reply"], "answer": "I would appreciate it if you could reply" }
+  ],
+  "fluency": [
+    { "prompt": "Dictate aloud a two-sentence request to the vendor: you need the updated API documentation by Friday so the team can start testing on Monday. 30 seconds.", "seconds": 30, "model": "Could you please send us the updated API documentation by Friday? This would allow us to start testing on Monday.", "keyPhrases": ["could you please send us", "by Friday", "this would allow us to"] },
+    { "prompt": "Your manager asks how you will ask the partner bank to confirm the new cut-off time. Say aloud the sentence you would write, very formally. 30 seconds.", "seconds": 30, "model": "I would write: I would be grateful if you could confirm the new cut-off time for incoming orders. Ideally, we would need this confirmation by the end of the week.", "keyPhrases": ["I would be grateful if you could", "confirm the new cut-off time", "by the end of the week"] },
+    { "prompt": "Dictate a polite request to the custodian asking them to check whether yesterday's file was delivered, and close the email. 40 seconds.", "seconds": 40, "model": "Would you mind checking whether yesterday's position file was delivered to our SFTP server? We have not found it in the usual folder. Thank you in advance for your help.", "keyPhrases": ["would you mind checking", "we have not found it", "thank you in advance"] }
+  ],
+  "write": [
+    {
+      "prompt": "Write an email to the fund platform requesting test access to their order API. Include: you need credentials for three developers; you would like them by Wednesday 20 March; this would allow you to start integration tests the following week. Use at least two different polite request structures.",
+      "model": "Subject: Request for test credentials – order API\n\nDear Mr [Surname],\n\nI am writing to request test access to your order API for our integration project.\n\nCould you please create credentials for the three developers listed below? I would appreciate it if you could send them by Wednesday 20 March, as this would allow us to start integration tests the following week.\n\nPlease let me know if you need any further information from our side.\n\nThank you in advance for your help.\n\nKind regards,\n\n[Name]\nSoftware Architect",
+      "checklist": ["Oggetto chiaro e specifico", "Richiesta formulata con modali di cortesia (could / would)", "Richiesta esplicita con scadenza precisa", "Motivazione della scadenza", "Chiusura appropriata"],
+      "keyPhrases": ["I am writing to request", "Could you please", "I would appreciate it if you could", "this would allow us to"]
+    }
+  ]
+}
