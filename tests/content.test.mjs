@@ -126,3 +126,11 @@ test('real content tree validates with zero errors', async () => {
   const errors = await validateTree(new URL('../content/', import.meta.url));
   assert.deepEqual(errors, []);
 });
+
+test('reorder alternative answers must use the same words', () => {
+  const m = fixtureModule();
+  m.reorder[0].answers = ['Start with the incident let\'s'];
+  assert.deepEqual(validateModule(m), []);
+  m.reorder[0].answers = ['Start with the problem let\'s'];
+  assert.match(validateModule(m).join('\n'), /reorder\[0\] alternative/);
+});

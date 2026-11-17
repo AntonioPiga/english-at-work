@@ -67,6 +67,13 @@ export function validateModule(m) {
     if (!Array.isArray(r.words) || r.words.length < 3) errs.push(`${w}: reorder[${i}].words needs >= 3 words`);
     if (!isStr(r.answer)) errs.push(`${w}: reorder[${i}].answer missing`);
     else if (Array.isArray(r.words) && norm(r.words.join(' ')) !== norm(r.answer)) errs.push(`${w}: reorder[${i}] words do not form the answer`);
+    if (r.answers !== undefined) {
+      if (!Array.isArray(r.answers) || !r.answers.every(isStr)) errs.push(`${w}: reorder[${i}].answers must be a string array`);
+      else if (Array.isArray(r.words)) {
+        const bag = norm(r.words.join(' ')).split(' ').sort().join(' ');
+        r.answers.forEach((a, j) => { if (norm(a).split(' ').sort().join(' ') !== bag) errs.push(`${w}: reorder[${i}] alternative ${j} does not use the same words`); });
+      }
+    }
   });
 
   if (!Array.isArray(m.fluency) || m.fluency.length < 3 || m.fluency.length > 4) errs.push(`${w}: fluency must have 3-4 drills`);

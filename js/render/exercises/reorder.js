@@ -22,7 +22,7 @@ export function mount(container, items, { onProgress } = {}) {
     const btn = h('button', { class: 'btn btn-sm', type: 'button', onClick: () => {
       if (locked || target.length !== item.words.length) return;
       locked = true;
-      const ok = checkReorder(target, item.answer);
+      const ok = checkReorder(target, [item.answer, ...(item.answers ?? [])]);
       btn.disabled = true;
       result.className = `result ${ok ? 'ok' : 'ko'}`;
       result.textContent = ok ? 'Esatto.' : `Risposta: ${item.answer}`;

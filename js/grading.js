@@ -38,5 +38,7 @@ export function checkGap(input, answers) {
 }
 
 export function checkReorder(words, answer) {
-  return normalize(words.join(' ')) === normalize(answer);
+  const built = normalize(words.join(' '));
+  const accepted = Array.isArray(answer) ? answer : [answer];
+  return accepted.some((a) => normalize(a) === built);
 }

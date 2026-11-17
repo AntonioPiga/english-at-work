@@ -51,3 +51,9 @@ test('checkReorder joins words and compares normalized', () => {
   assert.equal(checkReorder(['Let\'s', 'start', 'with', 'the', 'incident'], "Let's start with the incident."), true);
   assert.equal(checkReorder(['start', 'Let\'s', 'with', 'the', 'incident'], "Let's start with the incident."), false);
 });
+
+test('checkReorder accepts any of several valid orders', () => {
+  const alts = ['By June we will have migrated every service', 'We will have migrated every service by June'];
+  assert.equal(checkReorder(['We', 'will', 'have', 'migrated', 'every', 'service', 'by', 'June'], alts), true);
+  assert.equal(checkReorder(['June', 'by', 'We', 'will', 'have', 'migrated', 'every', 'service'], alts), false);
+});
