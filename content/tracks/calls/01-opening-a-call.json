@@ -1,0 +1,50 @@
+{
+  "id": "calls-01-opening",
+  "track": "calls",
+  "order": 1,
+  "title": "Opening a call and setting the agenda",
+  "level": "B1",
+  "minutes": 12,
+  "grammar": {
+    "title": "Present simple vs present continuous per gli aggiornamenti di stato",
+    "explanation": "Placeholder: sostituito nel Task 7.",
+    "examples": [
+      { "en": "We're currently migrating the batch to the new cluster.", "note": "azione in corso" },
+      { "en": "The job runs every night at two.", "note": "routine" },
+      { "en": "I'm looking into the error right now.", "note": "in corso" },
+      { "en": "The service calls the bank API twice a day.", "note": "fatto abituale" }
+    ],
+    "italianTrap": "Gli italiani dicono spesso 'I work on it now': in inglese serve il continuous, 'I'm working on it now'."
+  },
+  "phrases": [
+    { "en": "Thanks everyone for joining.", "it": "Grazie a tutti per esserci.", "when": "apertura" },
+    { "en": "Shall we get started?", "it": "Possiamo iniziare?", "when": "apertura" },
+    { "en": "The purpose of today's call is to review the incident.", "it": "Lo scopo della call di oggi è rivedere l'incident.", "when": "agenda" },
+    { "en": "There are three points I'd like to cover.", "it": "Ci sono tre punti che vorrei trattare.", "when": "agenda" },
+    { "en": "Let's start with the batch failure.", "it": "Iniziamo dal fallimento del batch.", "when": "agenda" },
+    { "en": "Can everyone hear me OK?", "it": "Mi sentite tutti bene?", "when": "tecnico" },
+    { "en": "I'll share my screen in a second.", "it": "Condivido lo schermo tra un secondo.", "when": "tecnico" },
+    { "en": "We have about thirty minutes, so let's keep it focused.", "it": "Abbiamo circa trenta minuti, restiamo concentrati.", "when": "tempo" }
+  ],
+  "quiz": [
+    { "q": "Choose the natural opening: 'Thanks everyone ___.'", "options": ["for join", "for joining", "to join", "for the joining"], "answer": 1, "why": "Dopo una preposizione il verbo va in -ing: 'for joining'." },
+    { "q": "'The job ___ every night at 2 a.m.'", "options": ["is running", "runs", "run", "is run"], "answer": 1, "why": "Routine ripetuta: present simple, terza persona con -s." },
+    { "q": "'Right now we ___ the root cause.'", "options": ["investigate", "are investigating", "investigates", "investigated"], "answer": 1, "why": "Azione in corso in questo momento: present continuous." },
+    { "q": "Which sentence sets the agenda?", "options": ["How are you?", "There are two points I'd like to cover.", "Can you hear me?", "See you next week."], "answer": 1, "why": "Introduce i punti da trattare." },
+    { "q": "'Shall we ___ started?'", "options": ["get", "be", "make", "do"], "answer": 0, "why": "'Get started' è la collocazione fissa." },
+    { "q": "'The service ___ the bank API twice a day.'", "options": ["is calling", "calls", "call", "called"], "answer": 1, "why": "Frequenza abituale ('twice a day'): present simple." }
+  ],
+  "gapfill": [
+    { "text": "Could you ___ me through the error?", "answers": ["walk"], "hint": "guidare passo passo" },
+    { "text": "Let's ___ with the incident.", "answers": ["start", "begin"], "hint": "iniziare" }
+  ],
+  "reorder": [
+    { "words": ["There", "are", "three", "points", "I'd", "like", "to", "cover"], "answer": "There are three points I'd like to cover" },
+    { "words": ["The", "purpose", "of", "today's", "call", "is", "to", "review", "the", "incident"], "answer": "The purpose of today's call is to review the incident" }
+  ],
+  "fluency": [
+    { "prompt": "You are hosting the call. Greet the partner bank, state the purpose and list two agenda points. 30 seconds.", "seconds": 30, "model": "Thanks everyone for joining. The purpose of today's call is to review yesterday's batch failure. There are two points I'd like to cover: first the root cause, then the plan for tonight's run.", "keyPhrases": ["thanks everyone for joining", "the purpose of today's call", "two points", "root cause"] },
+    { "prompt": "Someone joins late. Welcome them and summarise where you are in one sentence. 20 seconds.", "seconds": 20, "model": "Hi, welcome. We've just started; we're currently going through the root cause of the batch failure.", "keyPhrases": ["welcome", "we have just started", "currently"] },
+    { "prompt": "Say what your team does every day and what you are doing right now about the incident. 40 seconds.", "seconds": 40, "model": "Our team runs the nightly reconciliation and monitors the batch every morning. Right now we're analysing the logs and we're working with the vendor on a fix.", "keyPhrases": ["every morning", "right now", "we are working with"] }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "false-friends",
+  "title": "False friends",
+  "description": "Falsi amici e calchi dall'italiano",
+  "cards": [
+    { "id": "ff-actually", "front": "attualmente", "back": "currently / at the moment (NOT 'actually' = in realtà)", "example": "We're currently testing the new release." },
+    { "id": "ff-eventually", "front": "eventualmente", "back": "if necessary / possibly (NOT 'eventually' = alla fine)", "example": "We can add a second environment if necessary." },
+    { "id": "ff-control", "front": "controllare (verificare)", "back": "to check (NOT 'to control' = comandare)", "example": "Could you check the logs before the call?" }
+  ]
+}

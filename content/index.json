@@ -1,0 +1,18 @@
+{
+  "tracks": [
+    {
+      "id": "calls",
+      "title": "Tech calls",
+      "subtitle": "Call tecniche con banche, fornitori e team esterni",
+      "modules": [
+        { "id": "calls-01-opening", "file": "tracks/calls/01-opening-a-call.json", "title": "Opening a call and setting the agenda", "level": "B1", "minutes": 12 }
+      ]
+    },
+    { "id": "emails", "title": "Formal emails", "subtitle": "Mail formali verso banche, fornitori e management", "modules": [] },
+    { "id": "presentations", "title": "Presentations", "subtitle": "Presentazioni al management e al cliente", "modules": [] }
+  ],
+  "decks": [
+    { "id": "false-friends", "file": "decks/false-friends.json", "title": "False friends", "description": "Falsi amici e calchi dall'italiano" }
+  ],
+  "placement": "placement.json"
+}
